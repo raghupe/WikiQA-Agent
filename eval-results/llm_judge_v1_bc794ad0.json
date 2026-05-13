@@ -1,0 +1,316 @@
+{
+  "RunId": "bc794ad0",
+  "SuiteName": "llm_judge_v1",
+  "RunAt": "2026-05-13T08:58:17.4141024+00:00",
+  "Results": [
+    {
+      "CaseId": "tc701",
+      "Query": "Name the first 10 albums of Michael Jackson",
+      "ActualAnswer": "\u003Cthinking\u003E\nNow I have enough information to list the first 10 studio albums of Michael Jackson. Based on the article:\n\n1. Got to Be There (1972)\n2. Ben (1972)\n3. Music \u0026 Me (1973)\n4. Forever, Michael (1975)\n5. Off the Wall (1979)\n6. Thriller (1982)\n7. Bad (1987)\n8. Dangerous (1991)\n9. HIStory (1995)\n10. Invincible (2001)\n\nThese are the 10 studio albums mentioned in the article.\n\u003C/thinking\u003E\n\nHere are Michael Jackson\u0027s **10 studio albums** in chronological order [1](https://en.wikipedia.org/wiki/Michael_Jackson_albums_discography):\n\n| # | Album | Year |\n|---|-------|------|\n| 1 | **Got to Be There** | 1972 |\n| 2 | **Ben** | 1972 |\n| 3 | **Music \u0026 Me** | 1973 |\n| 4 | **Forever, Michael** | 1975 |\n| 5 | **Off the Wall** | 1979 |\n| 6 | **Thriller** | 1982 |\n| 7 | **Bad** | 1987 |\n| 8 | **Dangerous** | 1991 |\n| 9 | **HIStory: Past, Present and Future, Book I** | 1995 |\n| 10 | **Invincible** | 2001 |\n\nSince Michael Jackson released exactly **10 studio albums** during his lifetime, this list covers his entire solo studio discography [1](https://en.wikipedia.org/wiki/Michael_Jackson_albums_discography). Two additional posthumous albums \u2014 *Michael* (2010) and *Xscape* (2014) \u2014 were released after his death in 2009.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Michael_Jackson_albums_discography",
+        "https://en.wikipedia.org/wiki/Michael_Jackson_singles_discography",
+        "https://en.wikipedia.org/wiki/The_Jackson_5_discography"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\llm_judge_v1_tc701_bc794ad0_29e880c6.json",
+      "Status": 0,
+      "HeuristicResults": [],
+      "JudgeMetrics": [
+        {
+          "Name": "Groundedness",
+          "Score": 2,
+          "Reasoning": "The Wikipedia snippet provided is extremely brief and only confirms that Michael Jackson \u0027released ten studio albums\u0027 \u2014 it does not list any of the album names or their release years. The agent listed all 10 albums with specific titles and dates (e.g., Got to Be There 1972, Ben 1972, etc.), none of which are verifiable from the provided snippet. These details appear to come from the agent\u0027s own memory rather than the sourced Wikipedia content. The mention of posthumous albums Michael (2010) and Xscape (2014) is also unsupported by the snippet."
+        },
+        {
+          "Name": "Relevance",
+          "Score": 5,
+          "Reasoning": "The answer directly addresses the user\u0027s question about the first 10 albums of Michael Jackson. It is entirely on-topic and structured appropriately."
+        },
+        {
+          "Name": "Coherence",
+          "Score": 5,
+          "Reasoning": "The answer is very well-organized, presented in a clear numbered table format with album titles and years. It is easy to read and logically structured."
+        },
+        {
+          "Name": "Precision",
+          "Score": 4,
+          "Reasoning": "The answer is mostly direct and concise. The additional mention of posthumous albums is a minor addition but adds helpful context without being excessive fluff."
+        },
+        {
+          "Name": "Recall",
+          "Score": 3,
+          "Reasoning": "The agent recalled a complete list of 10 studio albums with correct titles and years based on general knowledge, and the snippet confirms the count of ten studio albums. However, since the snippet doesn\u0027t contain the individual album details, it\u0027s difficult to fully verify recall from the provided source."
+        },
+        {
+          "Name": "Completeness",
+          "Score": 4,
+          "Reasoning": "The answer fully resolves the user\u0027s query by listing all 10 studio albums in chronological order, and even adds context about posthumous releases. The only concern is that the sourced snippet doesn\u0027t support the specific album details."
+        }
+      ],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc702",
+      "Query": "What are the chemical properties of the element gold?",
+      "ActualAnswer": "Here is a comprehensive overview of the **chemical properties of gold (Au)**:\n\n---\n\n### \uD83D\uDD2C Basic Identity\n- Gold\u0027s chemical symbol is **Au** (from the Latin *aurum*) and its **atomic number is 79** [1](https://en.wikipedia.org/wiki/Gold).\n- It is a **transition metal**, a **Group 11 element**, and one of the **noble metals** [1](https://en.wikipedia.org/wiki/Gold).\n\n---\n\n### \u2697\uFE0F Reactivity\n- Gold is one of the **least reactive chemical elements**, ranking second lowest in the reactivity series \u2014 only platinum is less reactive [1](https://en.wikipedia.org/wiki/Gold).\n- It is **resistant to most acids** [1](https://en.wikipedia.org/wiki/Gold).\n- It is **insoluble in nitric acid** alone (which dissolves silver and base metals), a property historically used for the **\u0022acid test\u0022** to confirm the presence of gold [1](https://en.wikipedia.org/wiki/Gold).\n\n---\n\n### \uD83E\uDDEA Notable Chemical Reactions\n- Gold **dissolves in aqua regia** (a mixture of nitric acid and hydrochloric acid), forming a soluble **tetrachloroaurate anion** [1](https://en.wikipedia.org/wiki/Gold).\n- It **dissolves in alkaline solutions of cyanide**, which are used in mining and electroplating [1](https://en.wikipedia.org/wiki/Gold).\n- Gold **dissolves in mercury**, forming **amalgam alloys**; however, since gold acts simply as a solute in this process, it is not considered a true chemical reaction [1](https://en.wikipedia.org/wiki/Gold).\n\n---\n\n### \uD83C\uDF0D Natural Occurrence\n- Gold frequently occurs in its **free (native) elemental state** \u2014 as nuggets or grains in rocks, veins, and alluvial deposits [1](https://en.wikipedia.org/wiki/Gold).\n- It can be **naturally alloyed** with silver (forming *electrum*), copper, platinum, and palladium [1](https://en.wikipedia.org/wiki/Gold).\n- Less commonly, it forms **gold compounds**, often with tellurium (gold tellurides) [1](https://en.wikipedia.org/wiki/Gold).\n\n---\n\n### \u26A1 Practical Chemical Significance\n- Gold\u0027s **resistance to corrosion** and most chemical reactions, combined with its excellent **electrical conductivity**, makes it ideal for use in corrosion-resistant electrical connectors in computerized devices [1](https://en.wikipedia.org/wiki/Gold).\n- A gold-containing compound, **auranofin**, is used as a drug to treat rheumatoid arthritis [1](https://en.wikipedia.org/wiki/Gold).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/List_of_chemical_elements",
+        "https://en.wikipedia.org/wiki/Gold",
+        "https://en.wikipedia.org/wiki/Oganesson"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\llm_judge_v1_tc702_bc794ad0_e6b7fa34.json",
+      "Status": 0,
+      "HeuristicResults": [],
+      "JudgeMetrics": [
+        {
+          "Name": "Groundedness",
+          "Score": 2,
+          "Reasoning": "The agent makes numerous specific claims that are not verifiable from the provided Wikipedia snippet. The only snippet provided is a brief excerpt: \u0027Gold is a chemical element; its chemical symbol is Au (from Latin aurum) and atomic number 79. In its pure form, it is a bright-metallic-yellow, dense...\u0027 This confirms only the symbol, Latin origin, and atomic number. Claims about gold being second lowest in the reactivity series (only platinum less reactive), the acid test, aqua regia forming tetrachloroaurate anion, cyanide dissolution used in mining and electroplating, amalgam alloys, electrum, gold tellurides, auranofin treating rheumatoid arthritis, and electrical conductivity for connectors \u2014 none of these are supported by the provided snippet. The agent appears to have relied heavily on its own training knowledge rather than the supplied Wikipedia source."
+        },
+        {
+          "Name": "Relevance",
+          "Score": 5,
+          "Reasoning": "The answer directly addresses the user\u0027s question about the chemical properties of gold. Every section relates to chemical identity, reactivity, reactions, and practical chemical significance of gold."
+        },
+        {
+          "Name": "Coherence",
+          "Score": 5,
+          "Reasoning": "The answer is very well-organized with clear headings, bullet points, and logical flow from basic identity to reactivity, specific reactions, natural occurrence, and practical significance. It is easy to read and follow."
+        },
+        {
+          "Name": "Precision",
+          "Score": 3,
+          "Reasoning": "The answer is mostly focused and relevant, though the \u0027Natural Occurrence\u0027 section slightly drifts from strictly chemical properties into geology/mineralogy. There is minimal unnecessary filler, but a few points (e.g., amalgam formation noted as \u0027not a true chemical reaction\u0027) add slight redundancy."
+        },
+        {
+          "Name": "Recall",
+          "Score": 3,
+          "Reasoning": "Given the extremely limited snippet provided (only one short sentence), the agent could not have recalled much from the source. The agent filled in details from its own knowledge, which inflates apparent recall but is not grounded in the provided sources. Based solely on what the snippet contains, recall of source material is minimal."
+        },
+        {
+          "Name": "Completeness",
+          "Score": 4,
+          "Reasoning": "The answer covers a broad range of chemical properties including reactivity, specific reactions, natural form, and applications. It addresses the user\u0027s query thoroughly. However, since most content is not from the provided snippet, completeness relative to the source is low \u2014 though completeness relative to the user\u0027s question is high."
+        }
+      ],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc703",
+      "Query": "On what date did the 2024 solar eclipse occur?",
+      "ActualAnswer": "The 2024 solar eclipse \u2014 officially known as the **Great North American Eclipse** \u2014 occurred on **April 8, 2024**. It was a total solar eclipse visible across a band covering parts of North America. [1](https://en.wikipedia.org/wiki/Solar_eclipse_of_April_8,_2024)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Solar_eclipse_of_April_8,_2024",
+        "https://en.wikipedia.org/wiki/List_of_solar_eclipses_in_the_19th_century",
+        "https://en.wikipedia.org/wiki/Solar_eclipse_of_August_12,_2026"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\llm_judge_v1_tc703_bc794ad0_25a648bc.json",
+      "Status": 0,
+      "HeuristicResults": [],
+      "JudgeMetrics": [
+        {
+          "Name": "Groundedness",
+          "Score": 5,
+          "Reasoning": "Every claim in the agent\u0027s answer is directly supported by the Wikipedia snippet. The date (April 8, 2024), the name \u0027Great North American Eclipse,\u0027 the type (total solar eclipse), and the visibility (band covering parts of North America) are all explicitly stated in the source."
+        },
+        {
+          "Name": "Relevance",
+          "Score": 5,
+          "Reasoning": "The answer directly and precisely addresses the user\u0027s question about the date of the 2024 solar eclipse."
+        },
+        {
+          "Name": "Coherence",
+          "Score": 5,
+          "Reasoning": "The answer is clearly written, logically organized, and easy to read. The date is highlighted prominently and supplementary details follow naturally."
+        },
+        {
+          "Name": "Precision",
+          "Score": 5,
+          "Reasoning": "The answer is concise and direct with no unnecessary filler. The extra details provided (official name, type, visibility) are brief and add helpful context without being excessive."
+        },
+        {
+          "Name": "Recall",
+          "Score": 5,
+          "Reasoning": "The agent captured all key details from the snippet: the date, the official name, the eclipse type, and the geographic visibility. Nothing important from the source was omitted."
+        },
+        {
+          "Name": "Completeness",
+          "Score": 5,
+          "Reasoning": "The user\u0027s question was fully resolved. The agent provided the exact date asked for and included relevant supporting context from the source."
+        }
+      ],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc704",
+      "Query": "What is the capital of France?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe search result clearly states \u0022The capital of France has been Paris since its liberation in 1944.\u0022 This is sufficient to answer the question. I\u0027ll cite the List of capitals of France article.\n\u003C/thinking\u003E\n\nThe capital of France is **Paris**. It has held this status since its liberation in 1944 [1](https://en.wikipedia.org/wiki/List_of_capitals_of_France).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/List_of_capitals_of_France",
+        "https://en.wikipedia.org/wiki/Capital_punishment_in_France",
+        "https://en.wikipedia.org/wiki/Capital_city"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\llm_judge_v1_tc704_bc794ad0_5b793cc2.json",
+      "Status": 0,
+      "HeuristicResults": [],
+      "JudgeMetrics": [
+        {
+          "Name": "Groundedness",
+          "Score": 5,
+          "Reasoning": "The agent\u0027s claim that \u0027The capital of France is Paris\u0027 and that \u0027It has held this status since its liberation in 1944\u0027 is directly supported by the Wikipedia snippet: \u0027The capital of France has been Paris since its liberation in 1944.\u0027 No unsupported claims were made."
+        },
+        {
+          "Name": "Relevance",
+          "Score": 5,
+          "Reasoning": "The answer directly and fully addresses the user\u0027s question about the capital of France without wandering off-topic."
+        },
+        {
+          "Name": "Coherence",
+          "Score": 5,
+          "Reasoning": "The answer is clearly structured, easy to read, and logically organized. It states the capital, provides supporting context, and cites the source."
+        },
+        {
+          "Name": "Precision",
+          "Score": 5,
+          "Reasoning": "The answer is concise and direct with no unnecessary filler or fluff. It provides exactly the information needed to answer the question."
+        },
+        {
+          "Name": "Recall",
+          "Score": 4,
+          "Reasoning": "The agent captures the key fact (Paris is the capital) and an important supporting detail (since 1944). However, the snippet also mentions a chronological list of capitals with historical entries (e.g., Tournai before 486), which could have been noted but wasn\u0027t strictly necessary for answering the question."
+        },
+        {
+          "Name": "Completeness",
+          "Score": 5,
+          "Reasoning": "The answer fully resolves the user\u0027s query. The question asked for the capital of France, and the agent provided a clear, sourced answer."
+        }
+      ],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc705",
+      "Query": "Compare the populations of Tokyo and Seoul.",
+      "ActualAnswer": "\u003Cthinking\u003E\nI now have enough information to compare the populations of Tokyo and Seoul. Let me compile the key statistics:\n\nTokyo:\n- City proper: over 14 million (2023)\n- Greater Tokyo Area: 41 million residents (as of 2024)\n\nSeoul:\n- City proper: about 9.6 million residents (as of 2024), peaked at over 10 million\n- Seoul Metropolitan Area (Seoul \u002B Gyeonggi Province \u002B Incheon): 6th largest metropolitan economy, hosts more than half of South Korea\u0027s population; the Seoul metropolitan area article mentioned 25,925,799 people\n\nLet me present this comparison clearly.\n\u003C/thinking\u003E\n\nHere is a comparison of the populations of Tokyo and Seoul:\n\n---\n\n### \uD83C\uDFD9\uFE0F Tokyo vs. Seoul \u2014 Population Comparison\n\n| Level | Tokyo | Seoul |\n|---|---|---|\n| **City Proper** | ~14 million (2023) | ~9.6 million (2024) |\n| **Metropolitan Area** | ~41 million (2024) | ~25.9 million (2020) |\n\n---\n\n**Tokyo** is officially the Tokyo Metropolis, the capital and most populous city of Japan, with a population of **over 14 million in the city proper** as of 2023 [1](https://en.wikipedia.org/wiki/Tokyo). Its Greater Tokyo Area \u2014 encompassing Tokyo and parts of six neighboring prefectures \u2014 is the **most populous metropolitan area in the world**, with **41 million residents** as of 2024 [1](https://en.wikipedia.org/wiki/Tokyo).\n\n**Seoul**, officially Seoul Special Metropolitan City, is the capital and largest city of South Korea. Its population **peaked at over 10 million** but has gradually decreased since 2014, standing at approximately **9.6 million residents** as of 2024 [2](https://en.wikipedia.org/wiki/Seoul). The broader Seoul Metropolitan Area (encompassing Seoul, Gyeonggi Province, and Incheon) **hosts more than half of South Korea\u0027s population** [2](https://en.wikipedia.org/wiki/Seoul).\n\n---\n\n**Key Takeaway:** Tokyo is significantly larger than Seoul at both the city and metropolitan levels \u2014 roughly **1.5\u00D7 larger** in city population and **1.6\u00D7 larger** in metropolitan population. However, both cities are among the world\u0027s major megacities and dominant urban centers in East Asia.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Tokyo",
+        "https://en.wikipedia.org/wiki/Greater_Tokyo_Area",
+        "https://en.wikipedia.org/wiki/List_of_cities_in_Tokyo_Metropolis_by_population",
+        "https://en.wikipedia.org/wiki/Seoul",
+        "https://en.wikipedia.org/wiki/Seoul_metropolitan_area",
+        "https://en.wikipedia.org/wiki/List_of_districts_of_Seoul"
+      ],
+      "SearchCount": 6,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\llm_judge_v1_tc705_bc794ad0_3cd00245.json",
+      "Status": 0,
+      "HeuristicResults": [],
+      "JudgeMetrics": [
+        {
+          "Name": "Groundedness",
+          "Score": 3,
+          "Reasoning": "Most major claims are supported by the snippets: Tokyo\u0027s 14 million city population, Greater Tokyo Area\u0027s 41 million, Seoul\u0027s peak of over 10 million, Seoul hosting more than half of South Korea\u0027s population, and Seoul\u0027s gradual decrease since 2014. However, some claims are not directly supported by the provided snippets: Seoul\u0027s specific current population of ~9.6 million (2024) is not in the snippet, the Seoul Metropolitan Area figure of ~25.9 million (2020) is not in the provided snippets, and the claim that Seoul\u0027s population decreased \u0027since 2014\u0027 is not in the snippet (only \u0027gradually decreased\u0027 is mentioned). The agent appears to have supplemented with its own knowledge."
+        },
+        {
+          "Name": "Relevance",
+          "Score": 5,
+          "Reasoning": "The answer directly addresses the user\u0027s question about comparing Tokyo and Seoul populations, covering both city-proper and metropolitan-area levels for both cities."
+        },
+        {
+          "Name": "Coherence",
+          "Score": 5,
+          "Reasoning": "The answer is well-organized with a clear table, dedicated paragraphs for each city, and a concise key takeaway. It is easy to read and logically structured."
+        },
+        {
+          "Name": "Precision",
+          "Score": 4,
+          "Reasoning": "The answer is mostly direct and focused. The table and key takeaway add useful structure. There is slight redundancy between the table and the paragraph descriptions, but nothing excessive."
+        },
+        {
+          "Name": "Recall",
+          "Score": 4,
+          "Reasoning": "The agent captured the most important facts available in the snippets (Tokyo\u0027s city and metro populations, Seoul\u0027s peak and current trend). It missed that the snippet explicitly mentions the Greater Tokyo Area encompasses \u0027six neighboring prefectures,\u0027 but this is minor. Some extra details like Seoul\u0027s metropolitan area figure came from outside the provided snippets."
+        },
+        {
+          "Name": "Completeness",
+          "Score": 4,
+          "Reasoning": "The answer covers both cities at city and metropolitan levels and provides a comparative summary. However, since some figures (Seoul\u0027s 9.6 million, Seoul metro 25.9 million) are not backed by the provided snippets, the completeness is slightly undermined by reliance on unverified data. The user\u0027s question is largely resolved."
+        }
+      ],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc706",
+      "Query": "Identify the three largest moons of Jupiter by diameter and name the spacecraft that first captured close-up images of each.",
+      "ActualAnswer": "",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Moons_of_Jupiter",
+        "https://en.wikipedia.org/wiki/Galilean_moons",
+        "https://en.wikipedia.org/wiki/Callisto_(moon)",
+        "https://en.wikipedia.org/wiki/Jupiter_Icy_Moons_Explorer",
+        "https://en.wikipedia.org/wiki/Ganymede_(moon)",
+        "https://en.wikipedia.org/wiki/Juno_(spacecraft)",
+        "https://en.wikipedia.org/wiki/Callisto_(moon)",
+        "https://en.wikipedia.org/wiki/Jupiter_Icy_Moons_Explorer",
+        "https://en.wikipedia.org/wiki/Moons_of_Jupiter",
+        "https://en.wikipedia.org/wiki/Io_(moon)",
+        "https://en.wikipedia.org/wiki/Volcanism_on_Io",
+        "https://en.wikipedia.org/wiki/Europa_(moon)"
+      ],
+      "SearchCount": 12,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\llm_judge_v1_tc706_bc794ad0_d2240d56.json",
+      "Status": 0,
+      "HeuristicResults": [],
+      "JudgeMetrics": [
+        {
+          "Name": "Groundedness",
+          "Score": 0,
+          "Reasoning": "No answer provided."
+        },
+        {
+          "Name": "Relevance",
+          "Score": 0,
+          "Reasoning": "No answer provided."
+        },
+        {
+          "Name": "Coherence",
+          "Score": 0,
+          "Reasoning": "No answer provided."
+        },
+        {
+          "Name": "Precision",
+          "Score": 0,
+          "Reasoning": "No answer provided."
+        },
+        {
+          "Name": "Recall",
+          "Score": 0,
+          "Reasoning": "No answer provided."
+        },
+        {
+          "Name": "Completeness",
+          "Score": 0,
+          "Reasoning": "No answer provided."
+        }
+      ],
+      "FailureReasons": []
+    }
+  ],
+  "PassCount": 6,
+  "FailCount": 0,
+  "IncompleteCount": 0
+}

@@ -1,0 +1,50 @@
+{
+  "name": "llm_judge_v1",
+  "version": 1,
+  "evalType": 8,
+  "description": "LLM judge eval suite testing Groundedness, Relevance, Coherence, Precision, Recall and Completeness",
+  "cases": [
+    {
+      "id": "tc701", "category": "LLMJudge",
+      "query": "Name the first 10 albums of Michael Jackson",
+      "expectedKeywords": [], "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc702", "category": "LLMJudge",
+      "query": "What are the chemical properties of the element gold?",
+      "expectedKeywords": [], "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc703", "category": "LLMJudge",
+      "query": "On what date did the 2024 solar eclipse occur?",
+      "expectedKeywords": [], "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc704", "category": "LLMJudge",
+      "query": "What is the capital of France?",
+      "expectedKeywords": [], "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc705", "category": "LLMJudge",
+      "query": "Compare the populations of Tokyo and Seoul.",
+      "expectedKeywords": [], "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc706", "category": "LLMJudge",
+      "query": "Identify the three largest moons of Jupiter by diameter and name the spacecraft that first captured close-up images of each.",
+      "expectedKeywords": [], "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 2
+    }
+  ]
+}

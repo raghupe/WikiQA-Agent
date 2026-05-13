@@ -1,16 +1,21 @@
 using System.Text.Json;
 using WikiQA.Agent.Agent;
 using WikiQA.Agent.Models;
+using WikiQA.Agent.Prompts;
 using WikiQA.Agent.Transcript;
 using WikiQA.Evals.Heuristics;
+using WikiQA.Evals.LLMJudge;
+using WikiQA.Evals.Safety;
 using AgentException = WikiQA.Agent.Agent.AgentException;
 
 namespace WikiQA.Evals;
 
-public class EvalExecutor(string suitesDirectory, IQAAgent agent, EvalResultWriter evalResultWriter)
+public class EvalExecutor(string suitesDirectory, IQAAgent agent, EvalResultWriter evalResultWriter, IPromptBuilder promptBuilder)
 {
     private static readonly JsonSerializerOptions JsonOptions = new() { PropertyNameCaseInsensitive = true };
     private readonly HeuristicValidator _heuristics = new();
+    private readonly LLMJudge.LLMJudge _judge = new(promptBuilder);
+    private readonly SafetyEvaluator _safety = new(promptBuilder);
 
     public async Task<EvalRunResult> RunAsync(string suiteName, Func<EvalResult, Task>? onResult = null)
     {
@@ -67,6 +72,34 @@ public class EvalExecutor(string suitesDirectory, IQAAgent agent, EvalResultWrit
                     heuristicResults.Add(_heuristics.ValidateWordOverlap(response.Answer, response.Sources));
                 }
 
+                var judgeMetrics = new List<JudgeMetricStats>();
+                if (suite.EvalType.HasFlag(EvalType.LLMJudge))
+                {
+                    judgeMetrics.AddRange(await _judge.EvaluateWithConfidenceAsync(
+                        testCase.Query, response.Answer, response.Sources));
+
+                    var hardFail = judgeMetrics.Any(m => m.PassAtK < 2);
+                    var judgePass = judgeMetrics.All(m => m.PassAtK >= 3);
+
+                    if (hardFail)
+                        failures.Add($"LLM Judge hard fail: {string.Join(", ",
+                            judgeMetrics.Where(m => m.PassAtK < 2).Select(m => $"{m.Name}={m.PassAtK}"))}");
+                    else if (!judgePass)
+                        failures.Add($"LLM Judge fail: {string.Join(", ",
+                            judgeMetrics.Where(m => m.PassAtK < 3).Select(m => $"{m.Name}={m.PassAtK}"))}");
+                }
+
+                var safetyMetrics = new List<SafetyMetricStats>();
+                if (suite.EvalType.HasFlag(EvalType.Safety))
+                {
+                    safetyMetrics.AddRange(await _safety.EvaluateWithConfidenceAsync(
+                        testCase.Query, response.Answer));
+
+                    var safetyFailed = safetyMetrics.Where(m => !m.PassAtK).ToList();
+                    if (safetyFailed.Count > 0)
+                        failures.Add($"Safety fail: {string.Join(", ", safetyFailed.Select(m => m.Name))}");
+                }
+
                 evalResult = new EvalResult(
                     CaseId: testCase.Id,
                     Query: testCase.Query,
@@ -78,6 +111,8 @@ public class EvalExecutor(string suitesDirectory, IQAAgent agent, EvalResultWrit
                     TranscriptPath: response.TranscriptPath,
                     Status: failures.Count == 0 ? EvalStatus.Passed : EvalStatus.Failed,
                     HeuristicResults: heuristicResults,
+                    JudgeMetrics: judgeMetrics,
+                    SafetyMetrics: safetyMetrics,
                     FailureReasons: failures
                 );
             }
@@ -103,6 +138,8 @@ public class EvalExecutor(string suitesDirectory, IQAAgent agent, EvalResultWrit
                     TranscriptPath: ex.TranscriptPath,
                     Status: EvalStatus.Incomplete,
                     HeuristicResults: [],
+                    JudgeMetrics: new List<JudgeMetricStats>(),
+                    SafetyMetrics: new List<SafetyMetricStats>(),
                     FailureReasons: [$"System failure: {reason} | {ex.Message}{(ex.InnerException != null ? " | " + ex.InnerException.Message : "")}"]
                 );
             }
@@ -119,6 +156,8 @@ public class EvalExecutor(string suitesDirectory, IQAAgent agent, EvalResultWrit
                     TranscriptPath: string.Empty,
                     Status: EvalStatus.Incomplete,
                     HeuristicResults: [],
+                    JudgeMetrics: new List<JudgeMetricStats>(),
+                    SafetyMetrics: new List<SafetyMetricStats>(),
                     FailureReasons: [$"System failure: {ex.Message}{(ex.InnerException != null ? " | " + ex.InnerException.Message : "")}"]
                 );
             }

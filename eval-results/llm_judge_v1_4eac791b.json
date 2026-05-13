@@ -1,0 +1,533 @@
+{
+  "RunId": "4eac791b",
+  "SuiteName": "llm_judge_v1",
+  "RunAt": "2026-05-13T09:19:35.1939928+00:00",
+  "Results": [
+    {
+      "CaseId": "tc701",
+      "Query": "Name the first 10 albums of Michael Jackson",
+      "ActualAnswer": "\u003Cthinking\u003E\nNow I have all the information I need. The article mentions Michael Jackson\u0027s 10 studio albums. Let me list them in order:\n\n1. Got to Be There (1972)\n2. Ben (1972)\n3. Music \u0026 Me (1973)\n4. Forever, Michael (1975)\n5. Off the Wall (1979)\n6. Thriller (1982)\n7. Bad (1987)\n8. Dangerous (1991)\n9. HIStory (1995)\n10. Invincible (2001)\n\nThese are the 10 studio albums of Michael Jackson as a solo artist.\n\u003C/thinking\u003E\n\nHere are Michael Jackson\u0027s **10 solo studio albums** in chronological order:\n\n| # | Album | Year |\n|---|-------|------|\n| 1 | **Got to Be There** | 1972 |\n| 2 | **Ben** | 1972 |\n| 3 | **Music \u0026 Me** | 1973 |\n| 4 | **Forever, Michael** | 1975 |\n| 5 | **Off the Wall** | 1979 |\n| 6 | **Thriller** | 1982 |\n| 7 | **Bad** | 1987 |\n| 8 | **Dangerous** | 1991 |\n| 9 | **HIStory: Past, Present and Future, Book I** | 1995 |\n| 10 | **Invincible** | 2001 |\n\nMichael Jackson released these ten studio albums throughout his solo career. His debut album *Got to Be There* was released through Motown Records in 1972 while he was still part of The Jackson 5, and his final studio album *Invincible* topped international charts in 2001. [1](https://en.wikipedia.org/wiki/Michael_Jackson_albums_discography)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Michael_Jackson_albums_discography",
+        "https://en.wikipedia.org/wiki/Michael_Jackson_singles_discography",
+        "https://en.wikipedia.org/wiki/The_Jackson_5_discography"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\llm_judge_v1_tc701_4eac791b_705887ac.json",
+      "Status": 1,
+      "HeuristicResults": [],
+      "JudgeMetrics": [
+        {
+          "Name": "Groundedness",
+          "Scores": [
+            2,
+            1,
+            2
+          ],
+          "Mean": 1.67,
+          "StdDev": 0.47,
+          "PassAtK": 2
+        },
+        {
+          "Name": "Relevance",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Coherence",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Precision",
+          "Scores": [
+            4,
+            4,
+            4
+          ],
+          "Mean": 4,
+          "StdDev": 0,
+          "PassAtK": 4
+        },
+        {
+          "Name": "Recall",
+          "Scores": [
+            1,
+            1,
+            2
+          ],
+          "Mean": 1.33,
+          "StdDev": 0.47,
+          "PassAtK": 2
+        },
+        {
+          "Name": "Completeness",
+          "Scores": [
+            4,
+            5,
+            3
+          ],
+          "Mean": 4,
+          "StdDev": 0.82,
+          "PassAtK": 5
+        }
+      ],
+      "FailureReasons": [
+        "LLM Judge fail: Groundedness=2, Recall=2"
+      ]
+    },
+    {
+      "CaseId": "tc702",
+      "Query": "What are the chemical properties of the element gold?",
+      "ActualAnswer": "Here is a comprehensive overview of the **chemical properties of gold (Au)**:\n\n---\n\n### \uD83D\uDD2C Basic Identity\n- **Chemical symbol:** Au (from Latin *aurum*) [1](https://en.wikipedia.org/wiki/Gold)\n- **Atomic number:** 79 [1](https://en.wikipedia.org/wiki/Gold)\n- **Classification:** Transition metal, Group 11 element, and one of the **noble metals** [1](https://en.wikipedia.org/wiki/Gold)\n\n---\n\n### \u2697\uFE0F Reactivity\n- Gold is one of the **least reactive chemical elements**, ranked second-lowest in the reactivity series \u2014 only platinum is less reactive [1](https://en.wikipedia.org/wiki/Gold)\n- It is **resistant to most acids** [1](https://en.wikipedia.org/wiki/Gold)\n- It is **insoluble in nitric acid**, which does dissolve silver and base metals \u2014 a property historically used to refine gold and confirm its presence (the basis of the **\u0022acid test\u0022**) [1](https://en.wikipedia.org/wiki/Gold)\n\n---\n\n### \uD83E\uDDEA Notable Reactions\n- Gold **dissolves in aqua regia** (a mixture of nitric acid and hydrochloric acid), forming a soluble **tetrachloroaurate anion** [1](https://en.wikipedia.org/wiki/Gold)\n- It **dissolves in alkaline solutions of cyanide**, a property exploited in mining and electroplating [1](https://en.wikipedia.org/wiki/Gold)\n- Gold **dissolves in mercury** to form amalgam alloys; however, since gold acts as a solute in this process, it is not considered a true chemical reaction [1](https://en.wikipedia.org/wiki/Gold)\n\n---\n\n### \uD83C\uDF0D Natural Occurrence \u0026 Compounds\n- Gold most commonly occurs as a **free element (native state)** in nuggets, grains, rocks, veins, and alluvial deposits [1](https://en.wikipedia.org/wiki/Gold)\n- It can be **naturally alloyed** with silver (forming *electrum*), copper, platinum, and palladium [1](https://en.wikipedia.org/wiki/Gold)\n- Less commonly, it forms **gold compounds**, often with tellurium (gold tellurides) [1](https://en.wikipedia.org/wiki/Gold)\n\n---\n\n### \u2705 Practical Implications of its Chemistry\n- Its **resistance to corrosion** and most chemical reactions, combined with its **electrical conductivity**, make it invaluable for use in **corrosion-resistant electrical connectors** in computerized devices [1](https://en.wikipedia.org/wiki/Gold)\n- It is also used in **infrared shielding**, **colored glass production**, **gold leafing**, and **tooth restoration** [1](https://en.wikipedia.org/wiki/Gold)\n- The gold-containing compound **auranofin** is used as a drug to treat rheumatoid arthritis [1](https://en.wikipedia.org/wiki/Gold)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/List_of_chemical_elements",
+        "https://en.wikipedia.org/wiki/Gold",
+        "https://en.wikipedia.org/wiki/Oganesson"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\llm_judge_v1_tc702_4eac791b_5b08221d.json",
+      "Status": 0,
+      "HeuristicResults": [],
+      "JudgeMetrics": [
+        {
+          "Name": "Groundedness",
+          "Scores": [
+            4,
+            3,
+            4
+          ],
+          "Mean": 3.67,
+          "StdDev": 0.47,
+          "PassAtK": 4
+        },
+        {
+          "Name": "Relevance",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Coherence",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Precision",
+          "Scores": [
+            4,
+            4,
+            4
+          ],
+          "Mean": 4,
+          "StdDev": 0,
+          "PassAtK": 4
+        },
+        {
+          "Name": "Recall",
+          "Scores": [
+            3,
+            2,
+            4
+          ],
+          "Mean": 3,
+          "StdDev": 0.82,
+          "PassAtK": 4
+        },
+        {
+          "Name": "Completeness",
+          "Scores": [
+            4,
+            4,
+            4
+          ],
+          "Mean": 4,
+          "StdDev": 0,
+          "PassAtK": 4
+        }
+      ],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc703",
+      "Query": "On what date did the 2024 solar eclipse occur?",
+      "ActualAnswer": "There were actually **two** solar eclipses in 2024:\n\n1. **April 8, 2024** \u2014 A **total solar eclipse**, known as the \u0022Great North American Eclipse,\u0022 visible across a band covering parts of North America. [1](https://en.wikipedia.org/wiki/Solar_eclipse_of_April_8,_2024)\n\n2. **October 2, 2024** \u2014 An **annular solar eclipse**, occurring at the Moon\u0027s descending node of orbit. [2](https://en.wikipedia.org/wiki/Solar_eclipse_of_October_2,_2024)\n\nThe April 8th total solar eclipse was by far the more widely covered and anticipated of the two. Could you clarify which one you\u0027re referring to?",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Solar_eclipse_of_April_8,_2024",
+        "https://en.wikipedia.org/wiki/Solar_eclipse_of_October_2,_2024",
+        "https://en.wikipedia.org/wiki/List_of_solar_eclipses_in_the_19th_century"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\llm_judge_v1_tc703_4eac791b_a42c0859.json",
+      "Status": 0,
+      "HeuristicResults": [],
+      "JudgeMetrics": [
+        {
+          "Name": "Groundedness",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Relevance",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Coherence",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Precision",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Recall",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Completeness",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        }
+      ],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc704",
+      "Query": "What is the capital of France?",
+      "ActualAnswer": "The capital of France is **Paris**, a status it has held since its liberation in 1944. [1](https://en.wikipedia.org/wiki/List_of_capitals_of_France)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/List_of_capitals_of_France",
+        "https://en.wikipedia.org/wiki/Capital_punishment_in_France",
+        "https://en.wikipedia.org/wiki/Capital_city"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\llm_judge_v1_tc704_4eac791b_d46a65f9.json",
+      "Status": 0,
+      "HeuristicResults": [],
+      "JudgeMetrics": [
+        {
+          "Name": "Groundedness",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Relevance",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Coherence",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Precision",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Recall",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Completeness",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        }
+      ],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc705",
+      "Query": "Compare the populations of Tokyo and Seoul.",
+      "ActualAnswer": "\u003Cthinking\u003E\nNow I have good data for both cities. Let me also get info on Greater Tokyo Area for comparison purposes with Seoul Metropolitan Area.\n\nFrom the data:\n- Tokyo (city/prefecture): 14,195,730 as of 2025\n- Seoul: ~9.6 million residents as of 2024\n- Seoul Metropolitan Area: 25,925,799 people\n- Greater Tokyo Area: I need to check this\n\nLet me present what I have. I\u0027ll also mention the metropolitan areas.\n\u003C/thinking\u003E\n\nHere is a comparison of the populations of Tokyo and Seoul:\n\n---\n\n### \uD83D\uDDFC Tokyo vs. \uD83C\uDFD9\uFE0F Seoul \u2014 Population Comparison\n\n| | **Tokyo** | **Seoul** |\n|---|---|---|\n| **City/Prefecture Population** | ~14.2 million | ~9.6 million |\n| **Metropolitan Area Population** | largest in the world | ~25.9 million |\n\n---\n\n**Tokyo:** As of 2025, the total population of Tokyo is **14,195,730**, representing 11.5% of Japan\u0027s total population [1](https://en.wikipedia.org/wiki/Demographics_of_Tokyo).\n\n**Seoul:** As of 2024, Seoul\u0027s population stands at approximately **9.6 million** residents. Its population peaked at over 10 million but has been gradually decreasing since 2014 [2](https://en.wikipedia.org/wiki/Seoul).\n\n---\n\n### Metropolitan Areas\n- The **Seoul Metropolitan Area** (Seoul \u002B Gyeonggi Province \u002B Incheon) hosts more than half of South Korea\u0027s total population, with **25,925,799** people [3](https://en.wikipedia.org/wiki/Seoul_metropolitan_area).\n- The **Greater Tokyo Area** is widely recognized as the world\u0027s most populous metropolitan area, surpassing even the Seoul Metro Area.\n\n---\n\n### Key Takeaways\n- **Tokyo\u0027s city population (~14.2M) is roughly 1.5\u00D7 larger than Seoul\u0027s (~9.6M).**\n- Both cities are massive urban and economic hubs, ranking among the most influential metropolitan areas in the world [2](https://en.wikipedia.org/wiki/Seoul).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Demographics_of_Tokyo",
+        "https://en.wikipedia.org/wiki/Greater_Tokyo_Area",
+        "https://en.wikipedia.org/wiki/List_of_cities_in_Tokyo_Metropolis_by_population",
+        "https://en.wikipedia.org/wiki/Seoul",
+        "https://en.wikipedia.org/wiki/Seoul_metropolitan_area",
+        "https://en.wikipedia.org/wiki/List_of_districts_of_Seoul"
+      ],
+      "SearchCount": 6,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\llm_judge_v1_tc705_4eac791b_04afc468.json",
+      "Status": 0,
+      "HeuristicResults": [],
+      "JudgeMetrics": [
+        {
+          "Name": "Groundedness",
+          "Scores": [
+            4,
+            4,
+            4
+          ],
+          "Mean": 4,
+          "StdDev": 0,
+          "PassAtK": 4
+        },
+        {
+          "Name": "Relevance",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Coherence",
+          "Scores": [
+            5,
+            5,
+            5
+          ],
+          "Mean": 5,
+          "StdDev": 0,
+          "PassAtK": 5
+        },
+        {
+          "Name": "Precision",
+          "Scores": [
+            4,
+            4,
+            4
+          ],
+          "Mean": 4,
+          "StdDev": 0,
+          "PassAtK": 4
+        },
+        {
+          "Name": "Recall",
+          "Scores": [
+            4,
+            4,
+            4
+          ],
+          "Mean": 4,
+          "StdDev": 0,
+          "PassAtK": 4
+        },
+        {
+          "Name": "Completeness",
+          "Scores": [
+            4,
+            5,
+            5
+          ],
+          "Mean": 4.67,
+          "StdDev": 0.47,
+          "PassAtK": 5
+        }
+      ],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc706",
+      "Query": "Identify the three largest moons of Jupiter by diameter and name the spacecraft that first captured close-up images of each.",
+      "ActualAnswer": "",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Moons_of_Jupiter",
+        "https://en.wikipedia.org/wiki/Galilean_moons",
+        "https://en.wikipedia.org/wiki/Callisto_(moon)",
+        "https://en.wikipedia.org/wiki/Ganymede_(moon)",
+        "https://en.wikipedia.org/wiki/Europa_(moon)",
+        "https://en.wikipedia.org/wiki/Exploration_of_Jupiter",
+        "https://en.wikipedia.org/wiki/Moons_of_Jupiter",
+        "https://en.wikipedia.org/wiki/Europa_(moon)",
+        "https://en.wikipedia.org/wiki/Exploration_of_Jupiter"
+      ],
+      "SearchCount": 9,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\llm_judge_v1_tc706_4eac791b_b04f52ed.json",
+      "Status": 1,
+      "HeuristicResults": [],
+      "JudgeMetrics": [
+        {
+          "Name": "Groundedness",
+          "Scores": [
+            0,
+            0,
+            0
+          ],
+          "Mean": 0,
+          "StdDev": 0,
+          "PassAtK": 0
+        },
+        {
+          "Name": "Relevance",
+          "Scores": [
+            0,
+            0,
+            0
+          ],
+          "Mean": 0,
+          "StdDev": 0,
+          "PassAtK": 0
+        },
+        {
+          "Name": "Coherence",
+          "Scores": [
+            0,
+            0,
+            0
+          ],
+          "Mean": 0,
+          "StdDev": 0,
+          "PassAtK": 0
+        },
+        {
+          "Name": "Precision",
+          "Scores": [
+            0,
+            0,
+            0
+          ],
+          "Mean": 0,
+          "StdDev": 0,
+          "PassAtK": 0
+        },
+        {
+          "Name": "Recall",
+          "Scores": [
+            0,
+            0,
+            0
+          ],
+          "Mean": 0,
+          "StdDev": 0,
+          "PassAtK": 0
+        },
+        {
+          "Name": "Completeness",
+          "Scores": [
+            0,
+            0,
+            0
+          ],
+          "Mean": 0,
+          "StdDev": 0,
+          "PassAtK": 0
+        }
+      ],
+      "FailureReasons": [
+        "LLM Judge hard fail: Groundedness=0, Relevance=0, Coherence=0, Precision=0, Recall=0, Completeness=0"
+      ]
+    }
+  ],
+  "PassCount": 4,
+  "FailCount": 2,
+  "IncompleteCount": 0
+}

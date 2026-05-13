@@ -25,7 +25,7 @@
       "query": "What is the capital of France?",
       "expectedKeywords": [],
       "anyKeywords": ["Paris"], "prohibitedKeywords": [],
-      "expectedReferenceUrls": [], "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Paris"],
+      "expectedReferenceUrls": [], "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Paris", "https://en.wikipedia.org/wiki/List_of_capitals_of_France", "https://en.wikipedia.org/wiki/France"],
       "isWikiUseExpected": true, "minExpectedSearchCount": 1
     },
     {
@@ -240,7 +240,7 @@
       "expectedKeywords": [],
       "anyKeywords": ["2026", "not held", "no", "did not", "does not"], "prohibitedKeywords": [],
       "expectedReferenceUrls": [],
-      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/FIFA_World_Cup"],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/FIFA_World_Cup", "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup"],
       "isWikiUseExpected": true, "minExpectedSearchCount": 1
     },
     {

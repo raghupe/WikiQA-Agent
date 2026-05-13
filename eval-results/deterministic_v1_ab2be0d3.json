@@ -1,0 +1,1080 @@
+{
+  "RunId": "ab2be0d3",
+  "SuiteName": "deterministic_v1",
+  "RunAt": "2026-05-13T09:36:21.2720038+00:00",
+  "Results": [
+    {
+      "CaseId": "tc101",
+      "Query": "What is 2 \u002B 2?",
+      "ActualAnswer": "2 \u002B 2 = 4.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc101_ab2be0d3_b8385002.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "No URLs to validate."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "No sources to validate against."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc102",
+      "Query": "Hello, how are you?",
+      "ActualAnswer": "Hello! I\u0027m doing great, thank you for asking! I\u0027m here and ready to help you with whatever you need. Whether you have questions, need information, or just want to chat, feel free to ask! \uD83D\uDE0A",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc102_ab2be0d3_7b137a3c.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "No URLs to validate."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "No sources to validate against."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc103",
+      "Query": "What is the capital of France?",
+      "ActualAnswer": "**Paris** is the capital of France. It has held this status since its liberation in 1944. [1](https://en.wikipedia.org/wiki/List_of_capitals_of_France)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/List_of_capitals_of_France",
+        "https://en.wikipedia.org/wiki/Capital_punishment_in_France",
+        "https://en.wikipedia.org/wiki/Capital_city"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc103_ab2be0d3_d7cd63a3.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 13 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc104",
+      "Query": "Translate \u0027hello\u0027 to Spanish",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking for a translation of \u0027hello\u0027 to Spanish. This is a linguistic property (translation), so it falls under DOMAIN A. I can answer using internal knowledge.\n\u003C/thinking\u003E\n\n\u0027Hello\u0027 in Spanish is **hola**.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc104_ab2be0d3_15c54b28.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "No URLs to validate."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "No sources to validate against."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc105",
+      "Query": "Write an apology letter to a friend whose birthday I missed",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking me to write an apology letter. This is a creative writing/linguistic task, not an encyclopedic knowledge task. This is Domain A - I can handle this with internal knowledge. No Wikipedia search needed.\n\u003C/thinking\u003E\n\nHere\u0027s a heartfelt apology letter you can personalize for your friend:\n\n---\n\n**Subject: I\u0027m So Sorry I Missed Your Birthday**\n\nDear [Friend\u0027s Name],\n\nI hope this letter finds you well. I\u0027m writing because I owe you a sincere and heartfelt apology \u2014 I missed your birthday, and that is simply not okay.\n\nThere is no excuse good enough to justify forgetting such an important day for someone who means so much to me. You deserve to be celebrated, remembered, and made to feel special, and I failed to do that. I am truly sorry.\n\nYou have always been there for me through thick and thin, and the least I could have done was be there for you on your special day. Missing it has made me realize how much I take your presence in my life for granted, and that is something I intend to change.\n\nI would love the opportunity to make it up to you \u2014 whether that\u0027s treating you to dinner, celebrating a belated birthday together, or simply spending some quality time with you. You deserve a proper celebration, and I want to be the one to give it to you, even if it\u0027s a little late.\n\nI genuinely value your friendship more than words can express, and I hope you can find it in your heart to forgive me. I promise to do better and to always make sure you feel as appreciated as you truly are.\n\nOnce again, I am deeply sorry. Happy (belated) Birthday, [Friend\u0027s Name] \u2014 I hope it was as wonderful as you are.\n\nWith love and sincere apologies,\n[Your Name]\n\n---\n\n**\u270F\uFE0F Tips to personalize it:**\n- **Add a specific memory** you share with your friend to make it more personal.\n- **Mention a concrete plan** to make it up to them (e.g., \u0022I\u0027d love to take you to that restaurant you\u0027ve been wanting to try\u0022).\n- **Adjust the tone** \u2014 make it more casual and lighthearted if your friendship is playful, or keep it sincere if the situation feels more serious.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc105_ab2be0d3_e6775d1b.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "No URLs to validate."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "No sources to validate against."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc106",
+      "Query": "Who was the first president of the United States?",
+      "ActualAnswer": "**George Washington** was the first president of the United States, serving from **1789 to 1797** [1](https://en.wikipedia.org/wiki/George_Washington). A Founding Father, he is also renowned for his leadership as commander of the Continental Army during the American Revolutionary War [1](https://en.wikipedia.org/wiki/George_Washington).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/George_Washington",
+        "https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States_by_age",
+        "https://en.wikipedia.org/wiki/President_of_the_United_States"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc106_ab2be0d3_97b67c80.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 16 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc107",
+      "Query": "When was the Eiffel Tower built?",
+      "ActualAnswer": "The Eiffel Tower was designed and built by the company of engineer Gustave Eiffel **from 1887 to 1889**, in Paris, France [1](https://en.wikipedia.org/wiki/Eiffel_Tower). It was completed in time for the 1889 World\u0027s Fair [2](https://en.wikipedia.org/wiki/Gustave_Eiffel).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Eiffel_Tower",
+        "https://en.wikipedia.org/wiki/Gustave_Eiffel",
+        "https://en.wikipedia.org/wiki/Tokyo_Tower"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc107_ab2be0d3_be649a66.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 15 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc108",
+      "Query": "What is the population of Tokyo?",
+      "ActualAnswer": "Here are the key population figures for Tokyo:\n\n- **City proper**: Over **14 million** residents (2023) [1](https://en.wikipedia.org/wiki/Tokyo)\n- **Tokyo Metropolis** (including the 23 special wards and surrounding areas): **14,195,730** [2](https://en.wikipedia.org/wiki/Demographics_of_Tokyo)\n- **Greater Tokyo Area** (Tokyo \u002B parts of six neighboring prefectures): **~41 million** residents (2024), making it the **most populous metropolitan area in the world** [1](https://en.wikipedia.org/wiki/Tokyo)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Tokyo",
+        "https://en.wikipedia.org/wiki/Demographics_of_Tokyo",
+        "https://en.wikipedia.org/wiki/List_of_cities_in_Tokyo_Metropolis_by_population"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc108_ab2be0d3_ef6c16bd.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 14 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc109",
+      "Query": "What is the biggest country by land size?",
+      "ActualAnswer": "**Russia** is the largest country in the world by land area, covering over **17,125,191 square kilometers** (6,612,073 sq mi), encompassing more than one-eighth of Earth\u0027s inhabited land area [1](https://en.wikipedia.org/wiki/Geography_of_Russia). It also holds the distinction of being the largest country in both Europe and Asia [2](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area",
+        "https://en.wikipedia.org/wiki/List_of_European_countries_by_area",
+        "https://en.wikipedia.org/wiki/List_of_islands_by_area",
+        "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area",
+        "https://en.wikipedia.org/wiki/List_of_largest_empires",
+        "https://en.wikipedia.org/wiki/List_of_first-level_administrative_divisions_by_area",
+        "https://en.wikipedia.org/wiki/Geography_of_Russia",
+        "https://en.wikipedia.org/wiki/Urban_area",
+        "https://en.wikipedia.org/wiki/Krasnoyarsk_Krai"
+      ],
+      "SearchCount": 9,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc109_ab2be0d3_5c74ec32.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 9 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 26 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc201",
+      "Query": "Who wrote Romeo and Juliet?",
+      "ActualAnswer": "*Romeo and Juliet* \u2014 formally titled **The Tragedy of Romeo and Juliet** \u2014 was written by **William Shakespeare**. It is a tragedy about the romance between two young people from feuding families [1](https://en.wikipedia.org/wiki/Romeo_and_Juliet).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Romeo_and_Juliet_(1968_film)",
+        "https://en.wikipedia.org/wiki/Romeo_\u002B_Juliet",
+        "https://en.wikipedia.org/wiki/Romeo_and_Juliet_(Tchaikovsky)",
+        "https://en.wikipedia.org/wiki/Romeo_and_Juliet",
+        "https://en.wikipedia.org/wiki/Characters_in_Romeo_and_Juliet",
+        "https://en.wikipedia.org/wiki/Juliet_\u0026_Romeo_(film)"
+      ],
+      "SearchCount": 6,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc201_ab2be0d3_32ce480e.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 6 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 12 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc202",
+      "Query": "What year did World War II end?",
+      "ActualAnswer": "World War II ended in **1945**, though in two distinct stages:\n\n- **Europe:** The war ended in **May 1945**, following the suicide of Adolf Hitler on April 30 and the subsequent surrender of Nazi Germany. [1](https://en.wikipedia.org/wiki/End_of_World_War_II_in_Europe)\n- **Asia:** The war officially concluded on **September 2, 1945**, when Japan formally surrendered aboard the USS Missouri. [2](https://en.wikipedia.org/wiki/End_of_World_War_II_in_Asia)\n\nSeptember 2, 1945 is therefore considered the date of the **full and final end** of World War II globally.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/End_of_World_War_II_in_Europe",
+        "https://en.wikipedia.org/wiki/End_of_World_War_II_in_Asia",
+        "https://en.wikipedia.org/wiki/List_of_aircraft_of_World_War_II"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc202_ab2be0d3_ea4ee627.json",
+      "Status": 1,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 23 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/World_War_II\u0027"
+      ]
+    },
+    {
+      "CaseId": "tc203",
+      "Query": "Who invented the telephone?",
+      "ActualAnswer": "The invention of the telephone is primarily credited to **Alexander Graham Bell**, though the history involves multiple inventors:\n\n- **Alexander Graham Bell** (March 3, 1847 \u2013 August 2, 1922) was a Scottish-born Canadian-American inventor, scientist, and engineer **credited with patenting the first practical telephone**. He was awarded the first U.S. patent for the telephone on **March 7, 1876** [1](https://en.wikipedia.org/wiki/Alexander_Graham_Bell). He also co-founded AT\u0026T in 1885 [1](https://en.wikipedia.org/wiki/Alexander_Graham_Bell).\n\n- More specifically, Bell was **\u0022the first to be granted a United States patent for a device that produced clearly intelligible replication of the human voice at a second device\u0022** [2](https://en.wikipedia.org/wiki/Telephone).\n\n- However, **Antonio Meucci**, an Italian inventor, is also widely recognized for having developed an early voice communication device before Bell, and is claimed by some as the true originator of the telephone [3](https://en.wikipedia.org/wiki/Antonio_Meucci).\n\nIn summary, **Alexander Graham Bell** holds the official patent and is historically credited as the inventor of the telephone, though **Antonio Meucci**\u0027s prior work is also acknowledged in the broader historical debate.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Telephone",
+        "https://en.wikipedia.org/wiki/Alexander_Graham_Bell",
+        "https://en.wikipedia.org/wiki/Antonio_Meucci"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc203_ab2be0d3_e8745103.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 16 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc204",
+      "Query": "What is the speed of light?",
+      "ActualAnswer": "The speed of light in vacuum, commonly denoted **c**, is a universal physical constant exactly equal to **299,792,458 metres per second (m/s)** [1](https://en.wikipedia.org/wiki/Speed_of_light) \u2014 approximately **1 billion km/h** or **700 million mph** [1](https://en.wikipedia.org/wiki/Speed_of_light).\n\nKey facts about *c*:\n\n- **Defined \u0026 exact**: The value is fixed by international agreement, since the metre itself is defined as the distance light travels in vacuum in 1/299,792,458 of a second [1](https://en.wikipedia.org/wiki/Speed_of_light).\n- **Universal speed limit**: It is the upper limit for the speed at which information, matter, or energy can travel through space [1](https://en.wikipedia.org/wiki/Speed_of_light).\n- **Observer-independent**: The speed of light is the same for all observers, regardless of their relative velocity or the motion of the light source [1](https://en.wikipedia.org/wiki/Speed_of_light).\n- **In materials**: Light travels *slower* than *c* in transparent media (e.g., ~200,000 km/s in glass, with a refractive index of ~1.5) [1](https://en.wikipedia.org/wiki/Speed_of_light).\n- **Famous application**: Albert Einstein used *c* in his mass\u2013energy equivalence formula, **E = mc\u00B2** [1](https://en.wikipedia.org/wiki/Speed_of_light).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Speed_of_light",
+        "https://en.wikipedia.org/wiki/Faster-than-light",
+        "https://en.wikipedia.org/wiki/One-way_speed_of_light"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc204_ab2be0d3_59a80bce.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 15 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc205",
+      "Query": "Who painted the Mona Lisa?",
+      "ActualAnswer": "The **Mona Lisa** was painted by **Leonardo da Vinci**. It is believed to have been painted between **1503 and 1506**, though Leonardo may have continued working on it as late as 1517 [1](https://en.wikipedia.org/wiki/Mona_Lisa).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Mona_Lisa",
+        "https://en.wikipedia.org/wiki/Isleworth_Mona_Lisa",
+        "https://en.wikipedia.org/wiki/Two%E2%80%93Mona_Lisa_theory"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc205_ab2be0d3_a60eae0c.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 18 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc206",
+      "Query": "What is the capital of Australia?",
+      "ActualAnswer": "**Canberra** is the capital city of Australia. It is situated within the Australian Capital Territory (ACT) and serves as the seat of the national government [1](https://en.wikipedia.org/wiki/Australian_Capital_Territory).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/List_of_Australian_capital_cities",
+        "https://en.wikipedia.org/wiki/Australian_Capital_Territory",
+        "https://en.wikipedia.org/wiki/List_of_cities_in_Australia_by_population"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc206_ab2be0d3_755f6753.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 12 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc207",
+      "Query": "Who built the Space Needle?",
+      "ActualAnswer": "The Space Needle was designed through a collaboration between **Edward E. Carlson** and architect **John Graham, Jr.** [1](https://en.wikipedia.org/wiki/Space_Needle). Carlson, who was chairman of the 1962 World\u0027s Fair, sketched the original concept, and Graham\u0027s firm refined the design. It was constructed by **Howard S. Wright Construction Company** and built for the **1962 World\u0027s Fair** in Seattle, Washington [1](https://en.wikipedia.org/wiki/Space_Needle).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Space_Needle",
+        "https://en.wikipedia.org/wiki/Kakeya_set",
+        "https://en.wikipedia.org/wiki/Safety_syringe",
+        "https://en.wikipedia.org/wiki/Space_Needle",
+        "https://en.wikipedia.org/wiki/Jed_Johnson_(interior_designer)",
+        "https://en.wikipedia.org/wiki/The_Strat",
+        "https://en.wikipedia.org/wiki/Space_Needle",
+        "https://en.wikipedia.org/wiki/Westin_Seattle",
+        "https://en.wikipedia.org/wiki/Central_Park"
+      ],
+      "SearchCount": 9,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc207_ab2be0d3_8a4acc0a.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 9 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 22 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc208",
+      "Query": "What is the largest desert in the world?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/List_of_deserts",
+        "https://en.wikipedia.org/wiki/Patagonian_Desert",
+        "https://en.wikipedia.org/wiki/Gobi_Desert",
+        "https://en.wikipedia.org/wiki/Chihuahuan_Desert",
+        "https://en.wikipedia.org/wiki/Atacama_Desert",
+        "https://en.wikipedia.org/wiki/Patagonian_Desert",
+        "https://en.wikipedia.org/wiki/Atacama_Desert",
+        "https://en.wikipedia.org/wiki/Lut_Desert",
+        "https://en.wikipedia.org/wiki/Aralkum_Desert"
+      ],
+      "SearchCount": 9,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc208_ab2be0d3_4e104021.json",
+      "Status": 1,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 9 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": false,
+          "Details": "Insufficient word overlap: 0 (minimum 10)."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "Missing keyword: \u0027Antarctica\u0027",
+        "None of the expected URLs were referenced: https://en.wikipedia.org/wiki/Antarctic_Desert, https://en.wikipedia.org/wiki/List_of_deserts_by_area",
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/Desert\u0027"
+      ]
+    },
+    {
+      "CaseId": "tc301",
+      "Query": "Tell me about Mercury",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking about \u0022Mercury\u0022 which could refer to multiple things:\n1. Mercury (planet) - the first planet in the solar system\n2. Mercury (element) - a chemical element\n3. Freddie Mercury - the musician\n4. Mercury (mythology) - the Roman god\n5. Mercury (automobile) - the car brand\n\nSince the query is ambiguous, I should not assume the intended meaning and should ask the user to clarify.\n\u003C/thinking\u003E\n\nThe term **Mercury** has several common meanings. Could you clarify which one you\u0027re referring to?\n\n1. \uD83E\uDE90 **Mercury (Planet)** \u2014 The first planet in our Solar System, closest to the Sun.\n2. \u2697\uFE0F **Mercury (Element)** \u2014 A chemical element (Hg, atomic number 80), also known as quicksilver.\n3. \uD83C\uDFA4 **Freddie Mercury** \u2014 The iconic lead vocalist of the rock band Queen.\n4. \uD83C\uDFDB\uFE0F **Mercury (Mythology)** \u2014 The Roman god of commerce, communication, and travel.\n5. \uD83D\uDE97 **Mercury (Automobile)** \u2014 A former automobile brand by Ford Motor Company.\n\nPlease let me know which **Mercury** you\u0027d like to learn about!",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc301_ab2be0d3_7f9dd38c.json",
+      "Status": 1,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "No URLs to validate."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "No sources to validate against."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "Wiki use mismatch: expected True, actual False",
+        "Search count 0 below minimum 1"
+      ]
+    },
+    {
+      "CaseId": "tc302",
+      "Query": "Tell me about Python",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking about \u0022Python\u0022 - this is ambiguous. Python could refer to:\n1. Python (programming language)\n2. Python (snake/animal)\n\nI should search for both and ask the user to clarify. Let me search to get information on both meanings.\n\nActually, per my instructions: \u0022If a query refers to an entity without context and with multiple common meanings, do NOT assume the intended meaning. Use the search results to ask the user to clarify the intent.\u0022\n\nLet me search for Python to identify the multiple meanings.\n\u003C/thinking\u003E\n\nThe term **Python** has multiple common meanings. Could you clarify which one you\u0027re referring to?\n\n1. \uD83D\uDC0D **Python (Programming Language)** \u2014 A high-level, general-purpose programming language widely used in software development, data science, AI, and more.\n\n2. \uD83D\uDC0D **Python (Snake/Animal)** \u2014 A genus of large, non-venomous constrictor snakes found in Africa and Asia.\n\n3. \uD83C\uDFAD **Monty Python** \u2014 The famous British surreal comedy group known for *Monty Python\u0027s Flying Circus* and *Monty Python and the Holy Grail*.\n\nPlease let me know which **Python** you\u0027d like to learn about, and I\u0027ll provide detailed, sourced information right away!",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc302_ab2be0d3_73458d7a.json",
+      "Status": 1,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "No URLs to validate."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "No sources to validate against."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "Wiki use mismatch: expected True, actual False",
+        "Search count 0 below minimum 1"
+      ]
+    },
+    {
+      "CaseId": "tc303",
+      "Query": "Tell me about the Jaguar",
+      "ActualAnswer": "\u0022Jaguar\u0022 refers to two well-known and distinct subjects. Here is an overview of both:\n\n---\n\n## \uD83D\uDC06 Jaguar (Animal)\n\nThe jaguar (*Panthera onca*) is a large cat species and the **only living member of the genus *Panthera* native to the Americas** [1](https://en.wikipedia.org/wiki/Jaguar). Key facts:\n\n- **Appearance:** Its coat features pale yellow to tan fur covered by spots that transition to rosettes on the sides. A melanistic (all-black) coat also appears in some individuals [1](https://en.wikipedia.org/wiki/Jaguar).\n- **Size:** With a body length of up to **1.85 m (6 ft 1 in)** and a weight of up to **158 kg (348 lb)**, it is the biggest cat in the Americas and the **third largest in the world** [1](https://en.wikipedia.org/wiki/Jaguar).\n- **Hunting:** It is an apex predator known for its incredibly powerful bite \u2014 strong enough to pierce turtle shells and even bite directly through the skull of prey between the ears to deliver a fatal blow to the brain [1](https://en.wikipedia.org/wiki/Jaguar).\n- **Habitat \u0026 Range:** Its range extends from the Southwestern United States through Mexico, Central America, and the Amazon rainforest, south to Paraguay and northern Argentina. It prefers tropical and subtropical moist broadleaf forests and wetlands [1](https://en.wikipedia.org/wiki/Jaguar).\n- **Behavior:** It is largely **solitary, opportunistic, and a stalk-and-ambush predator**. It is also adept at swimming [1](https://en.wikipedia.org/wiki/Jaguar).\n- **Conservation Status:** Listed as **Near Threatened** on the IUCN Red List since 2002, it faces threats from habitat loss, poaching, and human\u2013wildlife conflict [1](https://en.wikipedia.org/wiki/Jaguar).\n- **Cultural Significance:** The jaguar has featured prominently in the mythology of indigenous peoples, including the Aztec and Maya civilizations [1](https://en.wikipedia.org/wiki/Jaguar).\n\n---\n\n## \uD83D\uDE97 Jaguar (Car Brand)\n\nJaguar is the **sports car and luxury vehicle brand** of Jaguar Land Rover, a British multinational car manufacturer headquartered in Whitley, Coventry, England [2](https://en.wikipedia.org/wiki/Jaguar_Cars). Key facts:\n\n- **Origins:** The business was founded as the **Swallow Sidecar Company in 1922**, originally making motorcycle sidecars before transitioning to passenger car bodies [2](https://en.wikipedia.org/wiki/Jaguar_Cars).\n- **Name Change:** The company\u0027s name was officially changed from SS Cars to **Jaguar Cars in 1945** [2](https://en.wikipedia.org/wiki/Jaguar_Cars).\n- **Ownership History:** It merged with the British Motor Corporation in 1966, was nationalized as part of British Leyland in 1975, was listed on the London Stock Exchange in 1984, acquired by **Ford in 1990**, and then sold to **Tata Motors in 2008** [2](https://en.wikipedia.org/wiki/Jaguar_Cars).\n- **Jaguar Land Rover:** In 2013, Jaguar Cars was fully merged with Land Rover to form **Jaguar Land Rover** [2](https://en.wikipedia.org/wiki/Jaguar_Cars).\n- **Royal \u0026 Government Use:** Since the late 1970s, Jaguar has manufactured cars for the **Prime Minister of the United Kingdom** and held royal warrants from Queen Elizabeth II and King Charles III [2](https://en.wikipedia.org/wiki/Jaguar_Cars).\n- **Electric Future:** On 15 February 2021, Jaguar Land Rover announced that **all Jaguar-branded cars will be fully electric by 2025** [2](https://en.wikipedia.org/wiki/Jaguar_Cars).\n\n---\n\nCould you clarify which \u0022Jaguar\u0022 you\u0027d like to know more about? I\u0027m happy to go deeper on either!",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Jaguar",
+        "https://en.wikipedia.org/wiki/Jaguars_in_Mesoamerican_cultures",
+        "https://en.wikipedia.org/wiki/List_of_largest_cats",
+        "https://en.wikipedia.org/wiki/Jaguar_Cars",
+        "https://en.wikipedia.org/wiki/Chery_Jaguar_Land_Rover",
+        "https://en.wikipedia.org/wiki/Rover_(marque)"
+      ],
+      "SearchCount": 6,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc303_ab2be0d3_2f0f270c.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 6 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 34 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc304",
+      "Query": "Tell me about Jordan",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking about \u0022Jordan\u0022 - this is ambiguous. Jordan could refer to:\n1. The country Jordan (Hashemite Kingdom of Jordan)\n2. The Jordan River\n3. Michael Jordan (basketball player)\n4. Jordan (name)\n5. Other people named Jordan\n\nI should not assume the intended meaning. Let me ask the user to clarify, or I could search to see what comes up. Actually, per my protocol: \u0022If a query refers to an entity without context and with multiple common meanings, do NOT assume the intended meaning. Use the search results to ask the user to clarify the intent.\u0022\n\nI should ask for clarification.\n\u003C/thinking\u003E\n\nThe name **\u0022Jordan\u0022** refers to several distinct entities. Could you please clarify which one you mean? Here are the most common possibilities:\n\n1. \uD83C\uDF0D **The Country** \u2014 The **Hashemite Kingdom of Jordan**, a nation in the Middle East.\n2. \uD83C\uDFC0 **Michael Jordan** \u2014 The legendary American professional basketball player.\n3. \uD83C\uDF0A **The Jordan River** \u2014 A significant river in the Middle East, important historically and religiously.\n4. \uD83D\uDC64 **Another person named Jordan** \u2014 e.g., a celebrity, athlete, politician, etc.\n\nPlease let me know which **Jordan** you\u0027re interested in, and I\u0027ll provide detailed, sourced information right away!",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc304_ab2be0d3_2146627f.json",
+      "Status": 1,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "No URLs to validate."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "No sources to validate against."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "Wiki use mismatch: expected True, actual False",
+        "Search count 0 below minimum 1"
+      ]
+    },
+    {
+      "CaseId": "tc305",
+      "Query": "Tell me about Apple, the famous technology company",
+      "ActualAnswer": "Here is a comprehensive overview of **Apple Inc.**:\n\n---\n\n## \uD83C\uDF4E Apple Inc.\n\n### Overview\nApple Inc. is an **American multinational technology company** headquartered in **Cupertino, California**, in Silicon Valley. It is renowned for its consumer electronics, software, and online services, and is considered one of the **\u0022Big Tech\u0022** companies [1](https://en.wikipedia.org/wiki/Apple_Inc.).\n\n---\n\n### Founding\nApple was **founded in 1976** as *Apple Computer Company* by three iconic figures:\n- **Steve Jobs**\n- **Steve Wozniak**\n- **Ronald Wayne**\n\nIt was incorporated by Jobs and Wozniak in 1977, and was **renamed Apple Inc. in 2007** as the company shifted focus from computers to broader consumer electronics [1](https://en.wikipedia.org/wiki/Apple_Inc.).\n\n---\n\n### Early History\n- The company was founded to market Wozniak\u0027s **Apple I** personal computer.\n- Its successor, the **Apple II**, became one of the **first successful mass-produced microcomputers**.\n- Apple introduced the **Lisa (1983)** and the landmark **Macintosh (1984)** \u2014 among the first computers to feature a **graphical user interface (GUI) and a mouse**.\n- By 1985, internal conflicts led to **Jobs leaving** to found NeXT, while Wozniak also withdrew. **John Sculley** then served as CEO for over a decade.\n- During the 1990s, Apple **lost significant market share** to the Wintel (Windows \u002B Intel) PC market and **neared bankruptcy by 1997** [1](https://en.wikipedia.org/wiki/Apple_Inc.).\n\n---\n\n### The Jobs Revival\nApple acquired **NeXT in 1997**, bringing **Steve Jobs back** to the company. Under his leadership, Apple staged a dramatic comeback by:\n- Launching the **iMac, iPod, iPhone, and iPad**\n- Creating the **iTunes Store**\n- Opening the **Apple Store** retail chain\n- Running the iconic **\u0022Think Different\u0022** advertising campaign [1](https://en.wikipedia.org/wiki/Apple_Inc.).\n\n---\n\n### Leadership\n- **Steve Jobs** resigned as CEO in 2011 due to health reasons and **passed away that same year**.\n- He was succeeded by **Tim Cook**, who is set to be succeeded by **John Ternus in 2026** [1](https://en.wikipedia.org/wiki/Apple_Inc.).\n\n---\n\n### Products \u0026 Services\nApple\u0027s current lineup includes:\n- **Hardware:** iPhone, iPad, Mac, Apple Watch, AirPods\n- **Operating Systems:** iOS, iPadOS, macOS\n- **Services \u0026 Software:** Apple Pay, iCloud, Apple Music, Apple TV [1](https://en.wikipedia.org/wiki/Apple_Inc.)\n\n---\n\n### Market Position \u0026 Valuation\n- Apple has been the **world\u0027s largest company by market capitalization** for most of the period since 2011.\n- As of 2024, it is the **largest manufacturing company by revenue**, the **largest vendor of tablet computers**, and the **largest vendor of mobile phones**.\n- It became the **first publicly traded US company valued at over $1 trillion** in 2018.\n- As of **October 2025**, Apple is valued at just over **$4 trillion** [1](https://en.wikipedia.org/wiki/Apple_Inc.).\n\n---\n\n### Criticism\nApple has faced criticism over:\n- **Contractors\u0027 labor conditions**\n- **Environmental practices**\n- **Anti-competitive tactics**\n- **Materials sourcing and acquisitions**\n\nDespite this, Apple enjoys **exceptionally high customer loyalty** and has been consistently ranked as one of the **world\u0027s most valuable brands** since the late 2000s [1](https://en.wikipedia.org/wiki/Apple_Inc.).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Technology_company",
+        "https://en.wikipedia.org/wiki/Apple_Inc.",
+        "https://en.wikipedia.org/wiki/Apple_in_China"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc305_ab2be0d3_ce7a9150.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 20 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc401",
+      "Query": "Did Einstein win a Nobel Prize for the theory of relativity?",
+      "ActualAnswer": "No, Einstein did **not** win the Nobel Prize for the theory of relativity. He was awarded the **1921 Nobel Prize in Physics** for *\u0022his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect\u0022* [1](https://en.wikipedia.org/wiki/Albert_Einstein) [2](https://en.wikipedia.org/wiki/Photoelectric_effect).\n\nThe photoelectric effect \u2014 the observation that light can eject electrons from a material \u2014 was explained by Einstein through his proposal that light travels in discrete packets of energy called **quanta (photons)**, a foundational insight for quantum mechanics.\n\nWhile the theory of relativity is arguably Einstein\u0027s most famous contribution, the Nobel Committee did not cite it as the basis for the award, in part because relativity remained theoretically controversial at the time.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Nobel_Peace_Prize_controversies",
+        "https://en.wikipedia.org/wiki/Nobel_Prize",
+        "https://en.wikipedia.org/wiki/Nobel_Prize_in_Physics",
+        "https://en.wikipedia.org/wiki/Albert_Einstein",
+        "https://en.wikipedia.org/wiki/Photoelectric_effect",
+        "https://en.wikipedia.org/wiki/Nobel_Prize_in_Physics_controversies"
+      ],
+      "SearchCount": 6,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc401_ab2be0d3_5ae159d8.json",
+      "Status": 1,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 6 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 20 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "Prohibited keyword found: \u0027relativity\u0027"
+      ]
+    },
+    {
+      "CaseId": "tc402",
+      "Query": "Was the Great Wall of China visible from space?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Artificial_structures_visible_from_space",
+        "https://en.wikipedia.org/wiki/Great_Wall_of_China",
+        "https://en.wikipedia.org/wiki/History_of_the_Great_Wall_of_China",
+        "https://en.wikipedia.org/wiki/Great_Wall_of_China",
+        "https://en.wikipedia.org/wiki/List_of_MythBusters_cast_members",
+        "https://en.wikipedia.org/wiki/Apollo_program",
+        "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+      ],
+      "SearchCount": 7,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc402_ab2be0d3_ed9b4bb4.json",
+      "Status": 1,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 7 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": false,
+          "Details": "Insufficient word overlap: 0 (minimum 10)."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "None of the expected keywords found: no, not, myth, false, cannot"
+      ]
+    },
+    {
+      "CaseId": "tc403",
+      "Query": "Did Napoleon win the Battle of Waterloo?",
+      "ActualAnswer": "No, Napoleon did **not** win the Battle of Waterloo \u2014 he was decisively defeated.\n\nThe Battle of Waterloo was fought on **18 June 1815**, near Waterloo (in present-day Belgium). Napoleon\u0027s French Imperial Army was defeated by two armies of the Seventh Coalition: a British-led force under the **Duke of Wellington** and three corps of the Prussian army under **Field Marshal Bl\u00FCcher** [1](https://en.wikipedia.org/wiki/Battle_of_Waterloo).\n\nThroughout the afternoon, the French launched repeated attacks but were ultimately repulsed. When the Prussians broke through on the French right flank and Wellington\u0027s forces repelled Napoleon\u0027s last reserve \u2014 the Imperial Guard \u2014 the French army was routed [1](https://en.wikipedia.org/wiki/Battle_of_Waterloo).\n\nThe consequences were sweeping: **Napoleon abdicated just four days later**, coalition forces entered Paris on 7 July, and the battle marked the end of the First French Empire and Napoleon\u0027s Hundred Days return from exile [1](https://en.wikipedia.org/wiki/Battle_of_Waterloo). The phrase *\u0022meeting one\u0027s Waterloo\u0022* has since entered popular culture as an expression for a catastrophic and final defeat [1](https://en.wikipedia.org/wiki/Battle_of_Waterloo).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Battle_of_Waterloo",
+        "https://en.wikipedia.org/wiki/Battle_of_Quatre_Bras",
+        "https://en.wikipedia.org/wiki/Military_career_of_Napoleon"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc403_ab2be0d3_03f3ec45.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 10 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc404",
+      "Query": "Did the Titanic sink on its first voyage?",
+      "ActualAnswer": "Yes. The RMS Titanic sank during its **maiden (first) voyage**. It departed Southampton on **10 April 1912** and sank in the early hours of **15 April 1912** after striking an iceberg, never completing its journey to New York [1](https://en.wikipedia.org/wiki/Titanic) [2](https://en.wikipedia.org/wiki/Sinking_of_the_Titanic).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Sinking_of_the_Titanic",
+        "https://en.wikipedia.org/wiki/Titanic",
+        "https://en.wikipedia.org/wiki/Iceberg_that_sank_the_Titanic"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc404_ab2be0d3_4ca4fc81.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 19 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc405",
+      "Query": "Who won the 2025 FIFA World Cup?",
+      "ActualAnswer": "There is no **2025 FIFA World Cup**. The FIFA World Cup (the main international men\u0027s national team tournament) is held every four years. The most recent edition was the **2022 FIFA World Cup**, and the next one is the **2026 FIFA World Cup**, which has not yet taken place.\n\nYou may be thinking of one of these related 2025 tournaments:\n- **2025 FIFA Club World Cup** \u2013 a club football competition (not a national team tournament).\n- **2025 FIFA U-17 World Cup** \u2013 for under-17 national teams.\n\nWould you like information on any of these instead?",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/2025_FIFA_Club_World_Cup",
+        "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
+        "https://en.wikipedia.org/wiki/2025_FIFA_U-17_World_Cup"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc405_ab2be0d3_18f335fb.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 15 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc406",
+      "Query": "What was the price of the Apple AirPower charging mat?",
+      "ActualAnswer": "The Apple AirPower was **never officially sold**, so it had no official retail price. It was announced on September 12, 2017, and was intended to be released in early 2018, but Apple canceled the product on March 29, 2019, before it ever went on sale [1](https://en.wikipedia.org/wiki/AirPower_(Apple)).\n\nThe AirPower was designed to wirelessly charge up to three devices simultaneously \u2014 an iPhone, AirPods, and an Apple Watch \u2014 but it was scrapped due to technical challenges that prevented it from reaching market [1](https://en.wikipedia.org/wiki/AirPower_(Apple)).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/AirPods",
+        "https://en.wikipedia.org/wiki/MagSafe_(wireless_charger)",
+        "https://en.wikipedia.org/wiki/Thunderbolt_(interface)",
+        "https://en.wikipedia.org/wiki/AirPower_(Apple)",
+        "https://en.wikipedia.org/wiki/AirPods",
+        "https://en.wikipedia.org/wiki/MagSafe_(wireless_charger)"
+      ],
+      "SearchCount": 6,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc406_ab2be0d3_f6b43833.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 6 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 17 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc407",
+      "Query": "Did humans and dinosaurs ever co-exist?",
+      "ActualAnswer": "**No** \u2014 humans and non-avian dinosaurs never co-existed.\n\n- **Non-avian dinosaurs went extinct ~66 million years ago**, wiped out by the Cretaceous\u2013Paleogene extinction event [1](https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event).\n- ***Homo sapiens* first appeared approximately 315,000 years ago** in Africa [2](https://en.wikipedia.org/wiki/Timeline_of_prehistory).\n\nThat leaves a gap of roughly **65.7 million years** between the last non-avian dinosaurs and the first modern humans. As Wikipedia\u0027s list of common misconceptions states directly: *\u0022humans and non-avian dinosaurs did not coexist at any point\u0022* [3](https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics).\n\n**Important nuance \u2014 birds *are* dinosaurs:** Avian dinosaurs (birds) survived the extinction event and do coexist with humans today [3](https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics). So in a strict scientific sense, humans *do* live alongside a lineage of dinosaurs \u2014 just not the large, non-avian ones popularly imagined.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/De-extinction",
+        "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics",
+        "https://en.wikipedia.org/wiki/Extinction",
+        "https://en.wikipedia.org/wiki/Timeline_of_prehistory",
+        "https://en.wikipedia.org/wiki/Timeline_of_human_evolution",
+        "https://en.wikipedia.org/wiki/Homo_rhodesiensis",
+        "https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event",
+        "https://en.wikipedia.org/wiki/Timeline_of_Cretaceous%E2%80%93Paleogene_extinction_event_research",
+        "https://en.wikipedia.org/wiki/The_Dinosaurs_(miniseries)"
+      ],
+      "SearchCount": 9,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc407_ab2be0d3_bee3a299.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 9 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 33 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc501",
+      "Query": "Who was the architect of the building where Lincoln was shot?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Washington,_D.C.",
+        "https://en.wikipedia.org/wiki/Uptown_Theater_(Washington,_D.C.)",
+        "https://en.wikipedia.org/wiki/Downtown_(Washington,_D.C.)",
+        "https://en.wikipedia.org/wiki/Studio_54",
+        "https://en.wikipedia.org/wiki/List_of_Cornell_University_alumni",
+        "https://en.wikipedia.org/wiki/High_Line",
+        "https://en.wikipedia.org/wiki/History_of_the_Ford_Motor_Company",
+        "https://en.wikipedia.org/wiki/Albert_Kahn_(architect)",
+        "https://en.wikipedia.org/wiki/Morris_A._Mechanic_Theatre"
+      ],
+      "SearchCount": 9,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc501_ab2be0d3_b97a7fb4.json",
+      "Status": 1,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 9 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": false,
+          "Details": "Insufficient word overlap: 0 (minimum 10)."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "Missing keyword: \u0027Ford\u0027",
+        "None of the expected keywords found: theatre, theater",
+        "None of the expected URLs were referenced: https://en.wikipedia.org/wiki/Ford%27s_Theatre, https://en.wikipedia.org/wiki/Abraham_Lincoln"
+      ]
+    },
+    {
+      "CaseId": "tc502",
+      "Query": "Who was the French president when the Eiffel Tower was built?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe Eiffel Tower was built from 1887 to 1889, and Sadi Carnot served as President of France from 1887. Let me verify the exact dates of Sadi Carnot\u0027s presidency to confirm he was president for the entire construction period.\n\u003C/thinking\u003E\n\nThe search results are clear. The Eiffel Tower was built from **1887 to 1889** [1](https://en.wikipedia.org/wiki/Eiffel_Tower), and **Sadi Carnot** served as President of France from **1887** [2](https://en.wikipedia.org/wiki/Sadi_Carnot_(statesman)) \u2014 covering the entire construction period.\n\n**Sadi Carnot** (Marie Fran\u00E7ois Sadi Carnot, 1837\u20131894) was the French president when the Eiffel Tower was designed and built by Gustave Eiffel\u0027s company for the 1889 Universal Exposition in Paris [1](https://en.wikipedia.org/wiki/Eiffel_Tower) [2](https://en.wikipedia.org/wiki/Sadi_Carnot_(statesman)).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Eiffel_Tower",
+        "https://en.wikipedia.org/wiki/Gustave_Eiffel",
+        "https://en.wikipedia.org/wiki/Eiffel_Tower_replicas_and_derivatives",
+        "https://en.wikipedia.org/wiki/Sadi_Carnot_(statesman)",
+        "https://en.wikipedia.org/wiki/Exposition_Universelle_(1889)",
+        "https://en.wikipedia.org/wiki/Anglo-French_Joint_Naval_Commission"
+      ],
+      "SearchCount": 6,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc502_ab2be0d3_9bf3713c.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 6 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 27 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc503",
+      "Query": "What team did Michael Jordan play for when he won his first NBA championship?",
+      "ActualAnswer": "Michael Jordan won his first NBA championship with the **Chicago Bulls** [1](https://en.wikipedia.org/wiki/Michael_Jordan). This came in the **1991 NBA Finals**, which was also his first NBA Finals appearance [2](https://en.wikipedia.org/wiki/1991_NBA_Finals).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Michael_Jordan",
+        "https://en.wikipedia.org/wiki/1993_NBA_Finals",
+        "https://en.wikipedia.org/wiki/1991_NBA_Finals"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc503_ab2be0d3_362487f8.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 12 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc504",
+      "Query": "What is the nationality of the artist who painted the ceiling of the Sistine Chapel?",
+      "ActualAnswer": "The ceiling of the Sistine Chapel was painted in fresco by **Michelangelo** between 1508 and 1512 [1](https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling). Michelangelo (1475\u20131564) was **Italian** \u2014 a sculptor, painter, and architect of the High Renaissance [2](https://en.wikipedia.org/wiki/List_of_people_from_Italy).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling",
+        "https://en.wikipedia.org/wiki/Gallery_of_the_Sistine_Chapel_ceiling",
+        "https://en.wikipedia.org/wiki/Restoration_of_the_Sistine_Chapel_frescoes",
+        "https://en.wikipedia.org/wiki/Italian_Renaissance",
+        "https://en.wikipedia.org/wiki/Italian_art",
+        "https://en.wikipedia.org/wiki/List_of_people_from_Italy"
+      ],
+      "SearchCount": 6,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc504_ab2be0d3_f330fde8.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 6 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 20 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc505",
+      "Query": "What country was the inventor of the World Wide Web born in?",
+      "ActualAnswer": "The inventor of the World Wide Web is **Tim Berners-Lee**, who is described as an **English** computer scientist [1](https://en.wikipedia.org/wiki/World_Wide_Web). He was therefore born in **England** (United Kingdom).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/World_Wide_Web_Foundation",
+        "https://en.wikipedia.org/wiki/World_Wide_Web",
+        "https://en.wikipedia.org/wiki/This_Is_for_Everyone",
+        "https://en.wikipedia.org/wiki/CERN",
+        "https://en.wikipedia.org/wiki/2012_Summer_Olympics_opening_ceremony",
+        "https://en.wikipedia.org/wiki/Samuel_Morse"
+      ],
+      "SearchCount": 6,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc505_ab2be0d3_6eda3d3d.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 6 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 10 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc506",
+      "Query": "Who is the president of the country that won the 2024 T20 World Cup?",
+      "ActualAnswer": "**India** won the 2024 ICC Men\u0027s T20 World Cup, defeating South Africa by seven runs in the final on 29 June 2024. It was India\u0027s second T20 World Cup title, and they became the first team to win it while remaining undefeated throughout the tournament. [1](https://en.wikipedia.org/wiki/2024_Men\u0027s_T20_World_Cup)\n\nThe President of India is **Droupadi Murmu**, the 15th and current president, who took office on 25 July 2022. [2](https://en.wikipedia.org/wiki/President_of_India)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/2026_Men\u0027s_T20_World_Cup",
+        "https://en.wikipedia.org/wiki/2024_Men\u0027s_T20_World_Cup",
+        "https://en.wikipedia.org/wiki/2024_Women\u0027s_T20_World_Cup",
+        "https://en.wikipedia.org/wiki/President_of_India",
+        "https://en.wikipedia.org/wiki/List_of_presidents_of_India",
+        "https://en.wikipedia.org/wiki/Vice_President_of_India"
+      ],
+      "SearchCount": 6,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc506_ab2be0d3_538eeb0f.json",
+      "Status": 1,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 6 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 12 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "None of the expected URLs were referenced: https://en.wikipedia.org/wiki/2024_ICC_Men%27s_T20_World_Cup, https://en.wikipedia.org/wiki/Droupadi_Murmu, https://en.wikipedia.org/wiki/India_national_cricket_team"
+      ]
+    }
+  ],
+  "PassCount": 26,
+  "FailCount": 9,
+  "IncompleteCount": 0
+}

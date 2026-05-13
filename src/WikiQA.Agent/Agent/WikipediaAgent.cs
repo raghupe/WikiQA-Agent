@@ -17,6 +17,9 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
     private readonly WikipediaSearchTool _wikipediaTool = new(
         transcriptLogger.CreateLogger<WikipediaSearchTool>(),
         transcriptLogger.CreateLogger<WikipediaClient>());
+    private readonly WikipediaGetArticleTool _getArticleTool = new(
+        transcriptLogger.CreateLogger<WikipediaGetArticleTool>(),
+        transcriptLogger.CreateLogger<WikipediaClient>());
     private const int MaxSearchCount = 3;
 
     public async Task<AgentResponse> AnswerAsync(string query, string? correlationId = null)
@@ -25,7 +28,7 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
         var startedAt = DateTimeOffset.UtcNow;
         _logger.LogInformation("[{CorrelationId}] Query received: {Query}", correlationId, query);
 
-        var systemPrompt = promptBuilder.Load("System", 5);
+        var systemPrompt = promptBuilder.Load("System", 8);
         var sources = new List<WikipediaResult>();
         var steps = new List<TranscriptStep>();
         var searchCount = 0;
@@ -47,7 +50,9 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
                     System = string.IsNullOrEmpty(systemPrompt)
                         ? null
                         : [new SystemMessage(systemPrompt)],
-                    Tools = searchCount < MaxSearchCount ? [WikipediaSearchTool.Definition] : null,
+                    Tools = searchCount < MaxSearchCount
+                        ? [WikipediaSearchTool.Definition, WikipediaGetArticleTool.Definition]
+                        : null,
                     Messages = messages
                 };
 
@@ -55,10 +60,10 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
 
                 if (response.StopReason == "end_turn")
                 {
-                    var answer = response.Content.OfType<TextContent>().FirstOrDefault()?.Text ?? string.Empty;
+                    var answer = StripThinking(response.Content.OfType<TextContent>().FirstOrDefault()?.Text ?? string.Empty);
                     _logger.LogInformation("[{CorrelationId}] Final answer produced, sources: {SourceCount}", correlationId, sources.Count);
 
-                    var agentResponse = new AgentResponse(answer, 5, sources, transcriptPath);
+                    var agentResponse = new AgentResponse(answer, 8, sources, transcriptPath);
                     var traces = transcriptLogger.Flush();
                     await transcriptWriter.WriteAsync(new Models.Transcript(
                         CorrelationId: correlationId,
@@ -67,7 +72,7 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
                         CompletedAt: DateTimeOffset.UtcNow,
                         Question: query,
                         SystemPrompt: systemPrompt,
-                        PromptVersion: 5,
+                        PromptVersion: 8,
                         Traces: traces,
                         Steps: steps,
                         Response: agentResponse));
@@ -81,6 +86,17 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
                 var toolResults = new List<ContentBase>();
                 foreach (var toolUse in toolUses)
                 {
+                    if (toolUse.Name == "wikipedia_get_article")
+                    {
+                        var url = toolUse.Input["url"]?.GetValue<string>() ?? string.Empty;
+                        _logger.LogInformation("[{CorrelationId}] Claude fetching article: {Url}", correlationId, url);
+                        steps.Add(new TranscriptStep("GetArticle", url, DateTimeOffset.UtcNow));
+                        var content = await _getArticleTool.ExecuteAsync(url, correlationId);
+                        steps.Add(new TranscriptStep("ArticleContent", content[..Math.Min(500, content.Length)], DateTimeOffset.UtcNow));
+                        toolResults.Add(new ToolResultContent { ToolUseId = toolUse.Id, Content = [new TextContent { Text = content }] });
+                        continue;
+                    }
+
                     var question = toolUse.Input["question"]?.GetValue<string>() ?? query;
                     _logger.LogInformation("[{CorrelationId}] Claude requested tool call: {Question}", correlationId, question);
                     steps.Add(new TranscriptStep("ToolCall", question, DateTimeOffset.UtcNow));
@@ -104,7 +120,7 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
             }
 
             _logger.LogWarning("[{CorrelationId}] Agent loop exited without end_turn", correlationId);
-            var fallbackResponse = new AgentResponse(string.Empty, 5, sources, transcriptPath);
+            var fallbackResponse = new AgentResponse(string.Empty, 8, sources, transcriptPath);
             var fallbackTraces = transcriptLogger.Flush();
             await transcriptWriter.WriteAsync(new Models.Transcript(
                 CorrelationId: correlationId,
@@ -113,7 +129,7 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
                 CompletedAt: DateTimeOffset.UtcNow,
                 Question: query,
                 SystemPrompt: systemPrompt,
-                PromptVersion: 5,
+                PromptVersion: 8,
                 Traces: fallbackTraces,
                 Steps: steps,
                 Response: fallbackResponse));
@@ -130,11 +146,16 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
                 CompletedAt: DateTimeOffset.UtcNow,
                 Question: query,
                 SystemPrompt: systemPrompt,
-                PromptVersion: 5,
+                PromptVersion: 8,
                 Traces: traces,
                 Steps: steps,
-                Response: new AgentResponse(string.Empty, 5, sources, transcriptPath)));
+                Response: new AgentResponse(string.Empty, 8, sources, transcriptPath)));
             throw new AgentException(ex.Message, transcriptPath, ex);
         }
     }
+
+    private static string StripThinking(string text) =>
+        System.Text.RegularExpressions.Regex.Replace(
+            text, @"<thinking>[\s\S]*?</thinking>", string.Empty,
+            System.Text.RegularExpressions.RegexOptions.IgnoreCase).Trim();
 }

@@ -18,7 +18,8 @@ if (args is ["--eval", var suiteName])
     var executor = new EvalExecutor(
         Path.Combine(AppContext.BaseDirectory, "Suites"),
         agent,
-        evalResultWriter);
+        evalResultWriter,
+        promptBuilder);
 
     Console.WriteLine($"Suite  : {suiteName}");
     Console.WriteLine();
@@ -33,6 +34,22 @@ if (args is ["--eval", var suiteName])
         };
         Console.WriteLine($"  [{r.Status.ToString().ToUpper()}] {r.CaseId}: {r.Query}");
         Console.ResetColor();
+        if (r.JudgeMetrics.Count > 0)
+        {
+            Console.WriteLine("       Judge Metrics (pass@3):");
+            foreach (var m in r.JudgeMetrics)
+                Console.WriteLine($"         {m.Name,-16}: {m.Mean:F2} [{m.LowerBound:F2}, {m.UpperBound:F2}]  PassAtK={m.PassAtK}");
+        }
+        if (r.SafetyMetrics.Count > 0)
+        {
+            Console.WriteLine("       Safety Metrics (pass@3, strict):");
+            foreach (var m in r.SafetyMetrics)
+            {
+                var icon = m.PassAtK ? "✓" : "✗";
+                var results = string.Join(",", m.Results.Select(b => b ? "T" : "F"));
+                Console.WriteLine($"         {icon} {m.Name,-22}: [{results}]");
+            }
+        }
         return Task.CompletedTask;
     });
 

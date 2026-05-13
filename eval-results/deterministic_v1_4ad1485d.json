@@ -1,0 +1,658 @@
+{
+  "RunId": "4ad1485d",
+  "SuiteName": "deterministic_v1",
+  "RunAt": "2026-05-13T09:23:57.6414277+00:00",
+  "Results": [
+    {
+      "CaseId": "tc101",
+      "Query": "What is 2 \u002B 2?",
+      "ActualAnswer": "2 \u002B 2 = 4.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc101_4ad1485d_c1e13210.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "No URLs to validate."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "No sources to validate against."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc102",
+      "Query": "Hello, how are you?",
+      "ActualAnswer": "Hello! I\u0027m doing great, thank you for asking! I\u0027m here and ready to help you with any questions you might have. What can I do for you today?",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc102_4ad1485d_2f1fe539.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "No URLs to validate."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "No sources to validate against."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc103",
+      "Query": "What is the capital of France?",
+      "ActualAnswer": "The capital of France is **Paris**, a status it has held since its liberation in 1944 [1](https://en.wikipedia.org/wiki/List_of_capitals_of_France).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/List_of_capitals_of_France",
+        "https://en.wikipedia.org/wiki/Capital_punishment_in_France",
+        "https://en.wikipedia.org/wiki/Capital_city"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc103_4ad1485d_2832c114.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 12 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc104",
+      "Query": "Translate \u0027hello\u0027 to Spanish",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking for a translation, which is a linguistic property. This is Domain A - I can answer using internal knowledge without searching.\n\u003C/thinking\u003E\n\n\u0027Hello\u0027 in Spanish is **hola**.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc104_4ad1485d_acae627c.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "No URLs to validate."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "No sources to validate against."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc105",
+      "Query": "Write an apology letter to a friend whose birthday I missed",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking me to write an apology letter. This is a creative/linguistic task, not an encyclopedic knowledge task. This falls under Domain A - I can handle this with internal knowledge. No search needed.\n\u003C/thinking\u003E\n\nHere\u0027s a heartfelt apology letter you can personalize for your friend:\n\n---\n\n**Subject: I\u0027m So Sorry I Missed Your Birthday**\n\nDear [Friend\u0027s Name],\n\nI am writing this letter with a heavy heart and a sincere apology. I completely missed your birthday, and I feel terrible about it. There is simply no excuse good enough for forgetting such an important day \u2014 a day that celebrates **you**.\n\nYou mean so much to me, and the last thing I ever want is for you to feel overlooked or unimportant, especially on your special day. I know that a belated \u0022sorry\u0022 doesn\u0027t undo the hurt, but please know that it comes from the deepest place of genuine regret.\n\nI value our friendship more than words can express, and I promise to make it up to you. I\u0027d love to take you out for a meal, a coffee, or whatever you\u0027d enjoy \u2014 a belated celebration that\u0027s all about you, because you truly deserve to be celebrated.\n\nThank you for being the kind of friend who has always shown up for me. I hope you can find it in your heart to forgive me, and I give you my word that this will not happen again.\n\nWith love and sincere apologies,\n[Your Name]\n\n---\n\n**\u270F\uFE0F Tips to personalize this letter:**\n- **Add a specific memory** \u2014 mention a birthday or moment you *did* share together to reinforce the value of your friendship.\n- **Explain briefly (not excessively)** \u2014 if there was a genuine reason you missed it, mention it in one sentence without over-justifying.\n- **Propose something concrete** \u2014 instead of a vague \u0022make it up to you,\u0022 suggest a specific plan (e.g., *\u0022dinner at your favorite restaurant this Saturday\u0022*).\n- **Match the tone** \u2014 if your friendship is more casual and humorous, feel free to lighten the tone slightly while keeping the sincerity intact.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc105_4ad1485d_e3c4dde0.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "No URLs to validate."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "No sources to validate against."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc106",
+      "Query": "Who was the first president of the United States?",
+      "ActualAnswer": "**George Washington** was the first president of the United States, serving from **1789 to 1797** [1](https://en.wikipedia.org/wiki/George_Washington). A Founding Father, he is also widely known for commanding the Continental Army during the American Revolutionary War [1](https://en.wikipedia.org/wiki/George_Washington).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/George_Washington",
+        "https://en.wikipedia.org/wiki/President_of_the_United_States",
+        "https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States_by_age"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc106_4ad1485d_b8435f61.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 15 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc107",
+      "Query": "When was the Eiffel Tower built?",
+      "ActualAnswer": "The Eiffel Tower was **built from 1887 to 1889** by the company of engineer **Gustave Eiffel** [1](https://en.wikipedia.org/wiki/Eiffel_Tower). It was constructed as the centrepiece of the **1889 World\u0027s Fair** in Paris, France, and to commemorate the centennial anniversary of the French Revolution [1](https://en.wikipedia.org/wiki/Eiffel_Tower).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Eiffel_Tower",
+        "https://en.wikipedia.org/wiki/Eiffel_(film)",
+        "https://en.wikipedia.org/wiki/Eiffel_Tower_(Six_Flags)"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc107_4ad1485d_6bf401e7.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": false,
+          "Details": "Insufficient word overlap: 8 (minimum 10)."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc108",
+      "Query": "What is the population of Tokyo?",
+      "ActualAnswer": "Here are the key population figures for Tokyo:\n\n- **City proper**: Over **14 million** residents (2023) [1](https://en.wikipedia.org/wiki/Tokyo)\n- **Tokyo Metropolis**: **14,195,730** (representing 11.5% of Japan\u0027s total population) [2](https://en.wikipedia.org/wiki/Demographics_of_Tokyo)\n- **Greater Tokyo Area** (Tokyo \u002B parts of six neighboring prefectures): **41 million** residents (2024), making it the **most populous metropolitan area in the world** [1](https://en.wikipedia.org/wiki/Tokyo)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Tokyo",
+        "https://en.wikipedia.org/wiki/Demographics_of_Tokyo",
+        "https://en.wikipedia.org/wiki/List_of_cities_in_Tokyo_Metropolis_by_population"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc108_4ad1485d_cce7f679.json",
+      "Status": 0,
+      "HeuristicResults": [
+        {
+          "Name": "WikipediaUrlValidation",
+          "Passed": true,
+          "Details": "All 3 URLs are valid Wikipedia URLs."
+        },
+        {
+          "Name": "WordOverlap",
+          "Passed": true,
+          "Details": "Word overlap: 15 words."
+        }
+      ],
+      "JudgeMetrics": [],
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc109",
+      "Query": "What is the biggest country by land size?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc109_4ad1485d_f7a7266d.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq1cdUwrjumq7pdvEx\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq1cdUwrjumq7pdvEx\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc201",
+      "Query": "Who wrote Romeo and Juliet?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc201_4ad1485d_98170665.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq3JppZs4i8XQFCKwQ\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq3JppZs4i8XQFCKwQ\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc202",
+      "Query": "What year did World War II end?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc202_4ad1485d_644ce8c2.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq3qpiEHfQiVqcdNZF\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq3qpiEHfQiVqcdNZF\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc203",
+      "Query": "Who invented the telephone?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc203_4ad1485d_5869c2c2.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq4NpSsKEtzuang4Qj\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq4NpSsKEtzuang4Qj\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc204",
+      "Query": "What is the speed of light?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc204_4ad1485d_6a578d4d.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq4y3TaKtaiikZJ8RB\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq4y3TaKtaiikZJ8RB\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc205",
+      "Query": "Who painted the Mona Lisa?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc205_4ad1485d_4ef0bc3b.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq5VnwoZ5525UK6aA6\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq5VnwoZ5525UK6aA6\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc206",
+      "Query": "What is the capital of Australia?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc206_4ad1485d_769c56f5.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq63n5eT2gJzy9Zj8H\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq63n5eT2gJzy9Zj8H\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc207",
+      "Query": "Who built the Space Needle?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc207_4ad1485d_ace2b811.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq6cGRSn4R4kTf9EwA\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq6cGRSn4R4kTf9EwA\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc208",
+      "Query": "What is the largest desert in the world?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc208_4ad1485d_6c979e90.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq791qsMfa5m6wysHF\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq791qsMfa5m6wysHF\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc301",
+      "Query": "Tell me about Mercury",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc301_4ad1485d_55874439.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq8eYrETy9Vg3VyHwx\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq8eYrETy9Vg3VyHwx\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc302",
+      "Query": "Tell me about Python",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc302_4ad1485d_58c89da4.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq9HkLBJuY2TeER7wU\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq9HkLBJuY2TeER7wU\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc303",
+      "Query": "Tell me about the Jaguar",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc303_4ad1485d_0d09f0da.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq9ryBDmE8y7n5iWDX\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKq9ryBDmE8y7n5iWDX\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc304",
+      "Query": "Tell me about Jordan",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc304_4ad1485d_0dc719c3.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqARxVo6VY94aP7c8o\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqARxVo6VY94aP7c8o\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc305",
+      "Query": "Tell me about Apple, the famous technology company",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc305_4ad1485d_c13e76c7.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqAzgnwz4rdn3y7ufE\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqAzgnwz4rdn3y7ufE\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc401",
+      "Query": "Did Einstein win a Nobel Prize for the theory of relativity?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc401_4ad1485d_51571b7d.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqBauh67o8SJcBKm3L\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqBauh67o8SJcBKm3L\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc402",
+      "Query": "Was the Great Wall of China visible from space?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc402_4ad1485d_98c4bb23.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqC8totJMn2tJAPJ1B\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqC8totJMn2tJAPJ1B\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc403",
+      "Query": "Did Napoleon win the Battle of Waterloo?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc403_4ad1485d_18ad3b2e.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqCj7mTdRqFaQaPbTm\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqCj7mTdRqFaQaPbTm\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc404",
+      "Query": "Did the Titanic sink on its first voyage?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc404_4ad1485d_81a52130.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqDLaatoVJjWA2BbRu\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqDLaatoVJjWA2BbRu\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc405",
+      "Query": "Who won the 2025 FIFA World Cup?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc405_4ad1485d_9c7a9db8.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqE11ZAGNQ89PShXZT\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqE11ZAGNQ89PShXZT\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc406",
+      "Query": "What was the price of the Apple AirPower charging mat?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc406_4ad1485d_1f06afb1.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqEajnCp7R2dv4ynTw\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqEajnCp7R2dv4ynTw\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc407",
+      "Query": "Did humans and dinosaurs ever co-exist?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc407_4ad1485d_a6632bc7.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqF7z55CFDnkusZTLK\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqF7z55CFDnkusZTLK\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc501",
+      "Query": "Who was the architect of the building where Lincoln was shot?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc501_4ad1485d_53ffc0ec.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqFfyALDLcMANdPvQF\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqFfyALDLcMANdPvQF\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc502",
+      "Query": "Who was the French president when the Eiffel Tower was built?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc502_4ad1485d_1c3d1caf.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqGFSqouwxn65QX2ks\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqGFSqouwxn65QX2ks\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc503",
+      "Query": "What team did Michael Jordan play for when he won his first NBA championship?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc503_4ad1485d_0b6f49b2.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqH1bEmQBdVn63CShW\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqH1bEmQBdVn63CShW\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc504",
+      "Query": "What is the nationality of the artist who painted the ceiling of the Sistine Chapel?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc504_4ad1485d_d463d6ac.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqHfHKjGoJf3x5EgAT\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqHfHKjGoJf3x5EgAT\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc505",
+      "Query": "What country was the inventor of the World Wide Web born in?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc505_4ad1485d_6d1f1fed.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqJTQMP3YKtDbm5LvB\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqJTQMP3YKtDbm5LvB\u0022}"
+      ]
+    },
+    {
+      "CaseId": "tc506",
+      "Query": "Who is the president of the country that won the 2024 T20 World Cup?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_tc506_4ad1485d_80379d6a.json",
+      "Status": 2,
+      "HeuristicResults": [],
+      "JudgeMetrics": [],
+      "FailureReasons": [
+        "System failure: SystemFailure | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqKF2aGGu8Mi92ChfS\u0022} | {\u0022type\u0022:\u0022error\u0022,\u0022error\u0022:{\u0022type\u0022:\u0022invalid_request_error\u0022,\u0022message\u0022:\u0022Your credit balance is too low to access the Anthropic API. Please go to Plans \u0026 Billing to upgrade or purchase credits.\u0022},\u0022request_id\u0022:\u0022req_011CazKqKF2aGGu8Mi92ChfS\u0022}"
+      ]
+    }
+  ],
+  "PassCount": 8,
+  "FailCount": 0,
+  "IncompleteCount": 27
+}

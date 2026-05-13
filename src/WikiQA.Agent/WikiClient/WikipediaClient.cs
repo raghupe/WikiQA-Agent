@@ -61,4 +61,29 @@ public class WikipediaClient(ILogger<WikipediaClient> logger)
         }
         return [];
     }
+
+    public async Task<string> GetArticleAsync(string url, string correlationId)
+    {
+        try
+        {
+            logger.LogInformation("[{CorrelationId}] Fetching article: {Url}", correlationId, url);
+            var title = Uri.UnescapeDataString(url.Split("/wiki/").Last());
+            var extractUrl = $"https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exintro=1&explaintext=1&titles={Uri.EscapeDataString(title)}&format=json&utf8=1";
+            var result = await Http.GetFromJsonAsync<JsonNode>(extractUrl);
+            var pages = result?["query"]?["pages"]?.AsObject();
+            var extract = pages?.FirstOrDefault().Value?["extract"]?.GetValue<string>();
+            if (string.IsNullOrWhiteSpace(extract))
+            {
+                logger.LogWarning("[{CorrelationId}] No extract found for: {Url}", correlationId, url);
+                return "No content found for this article.";
+            }
+            logger.LogInformation("[{CorrelationId}] Article fetched: {Title}", correlationId, title);
+            return extract;
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex, "[{CorrelationId}] Error fetching article: {Url}", correlationId, url);
+            return "Failed to retrieve article content.";
+        }
+    }
 }

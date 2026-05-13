@@ -11,5 +11,7 @@ public record EvalResult(
     string TranscriptPath,
     EvalStatus Status,
     IReadOnlyList<HeuristicResult> HeuristicResults,
+    IReadOnlyList<JudgeMetricStats> JudgeMetrics,
+    IReadOnlyList<SafetyMetricStats> SafetyMetrics,
     IReadOnlyList<string> FailureReasons
 );

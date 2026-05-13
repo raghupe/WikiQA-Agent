@@ -1,0 +1,48 @@
+{
+  "name": "heuristic_v1",
+  "version": 1,
+  "evalType": 4,
+  "description": "Heuristic eval suite testing Wikipedia URL validity and answer-snippet word overlap",
+  "cases": [
+    {
+      "id": "tc601", "category": "Heuristic",
+      "query": "What is photosynthesis?",
+      "expectedKeywords": [],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc602", "category": "Heuristic",
+      "query": "What is the exact population of Bellevue today?",
+      "expectedKeywords": [],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc603", "category": "Heuristic",
+      "query": "Compare the Java programming language and the island of Java.",
+      "expectedKeywords": [],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 2
+    },
+    {
+      "id": "tc604", "category": "Heuristic",
+      "query": "Tell me about Amazon",
+      "expectedKeywords": [],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc605", "category": "Heuristic",
+      "query": "Who invented the ZorbMax combustion engine in 1952?",
+      "expectedKeywords": [],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    }
+  ]
+}
