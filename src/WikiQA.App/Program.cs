@@ -6,9 +6,9 @@ using WikiQA.Agent.Transcript;
 
 var transcriptLogger = new TranscriptLoggerProvider();
 var transcriptWriter = new TranscriptWriter(
-    Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "..", "transcripts"));
+    Path.Combine(Directory.GetCurrentDirectory(), "transcripts"));
 var evalResultWriter = new EvalResultWriter(
-    Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "..", "eval-results"));
+    Path.Combine(Directory.GetCurrentDirectory(), "eval-results"));
 var promptBuilder = new PromptBuilder(Path.Combine(AppContext.BaseDirectory, "Prompts"));
 
 // ── Eval mode ────────────────────────────────────────────────
