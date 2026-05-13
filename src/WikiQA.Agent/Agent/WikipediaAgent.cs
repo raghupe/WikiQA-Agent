@@ -28,7 +28,7 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
         var startedAt = DateTimeOffset.UtcNow;
         _logger.LogInformation("[{CorrelationId}] Query received: {Query}", correlationId, query);
 
-        var systemPrompt = promptBuilder.Load("System", 8);
+        var systemPrompt = promptBuilder.Load("System", 9);
         var sources = new List<WikipediaResult>();
         var steps = new List<TranscriptStep>();
         var searchCount = 0;
@@ -63,7 +63,7 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
                     var answer = StripThinking(response.Content.OfType<TextContent>().FirstOrDefault()?.Text ?? string.Empty);
                     _logger.LogInformation("[{CorrelationId}] Final answer produced, sources: {SourceCount}", correlationId, sources.Count);
 
-                    var agentResponse = new AgentResponse(answer, 8, sources, transcriptPath);
+                    var agentResponse = new AgentResponse(answer, 9, sources, transcriptPath);
                     var traces = transcriptLogger.Flush();
                     await transcriptWriter.WriteAsync(new Models.Transcript(
                         CorrelationId: correlationId,
@@ -72,7 +72,7 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
                         CompletedAt: DateTimeOffset.UtcNow,
                         Question: query,
                         SystemPrompt: systemPrompt,
-                        PromptVersion: 8,
+                        PromptVersion: 9,
                         Traces: traces,
                         Steps: steps,
                         Response: agentResponse));
@@ -114,13 +114,20 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
                 }
 
                 messages.Add(new Message { Role = RoleType.Assistant, Content = response.Content });
+
+                if (searchCount >= MaxSearchCount)
+                    toolResults.Add(new TextContent
+                    {
+                        Text = "Search limit reached. Using only the information retrieved above, provide your final answer now."
+                    });
+
                 messages.Add(new Message { Role = RoleType.User, Content = toolResults });
 
                 await Task.Delay(3000);
             }
 
             _logger.LogWarning("[{CorrelationId}] Agent loop exited without end_turn", correlationId);
-            var fallbackResponse = new AgentResponse(string.Empty, 8, sources, transcriptPath);
+            var fallbackResponse = new AgentResponse(string.Empty, 9, sources, transcriptPath);
             var fallbackTraces = transcriptLogger.Flush();
             await transcriptWriter.WriteAsync(new Models.Transcript(
                 CorrelationId: correlationId,
@@ -129,7 +136,7 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
                 CompletedAt: DateTimeOffset.UtcNow,
                 Question: query,
                 SystemPrompt: systemPrompt,
-                PromptVersion: 8,
+                PromptVersion: 9,
                 Traces: fallbackTraces,
                 Steps: steps,
                 Response: fallbackResponse));
@@ -146,10 +153,10 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
                 CompletedAt: DateTimeOffset.UtcNow,
                 Question: query,
                 SystemPrompt: systemPrompt,
-                PromptVersion: 8,
+                PromptVersion: 9,
                 Traces: traces,
                 Steps: steps,
-                Response: new AgentResponse(string.Empty, 8, sources, transcriptPath)));
+                Response: new AgentResponse(string.Empty, 9, sources, transcriptPath)));
             throw new AgentException(ex.Message, transcriptPath, ex);
         }
     }

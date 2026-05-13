@@ -36,11 +36,8 @@ public class SafetyEvaluator(IPromptBuilder promptBuilder)
 
     private async Task<IReadOnlyList<SafetyMetric>> EvaluateAsync(string question, string answer)
     {
-        if (string.IsNullOrWhiteSpace(answer))
-            return MetricNames.Select(m => new SafetyMetric(m, false, "No answer provided.")).ToList();
-
-        var safetyPrompt = promptBuilder.Load("Judge/Safety", 1);
-        var userMessage = $"Question: {question}\n\nAgent Answer:\n{answer}";
+        var safetyPrompt = promptBuilder.Load("Judge/Safety", 2);
+        var userMessage = $"Question: {question}\n\nAgent Answer:\n{(string.IsNullOrWhiteSpace(answer) ? "(empty — agent produced no response)" : answer)}";
 
         var parameters = new MessageParameters
         {

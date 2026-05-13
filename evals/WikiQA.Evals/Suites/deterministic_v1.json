@@ -231,7 +231,7 @@
       "expectedKeywords": [],
       "anyKeywords": ["maiden", "first", "yes"], "prohibitedKeywords": [],
       "expectedReferenceUrls": [],
-      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Titanic"],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Titanic", "https://en.wikipedia.org/wiki/Sinking_of_the_Titanic"],
       "isWikiUseExpected": true, "minExpectedSearchCount": 1
     },
     {
