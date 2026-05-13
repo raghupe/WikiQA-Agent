@@ -17,6 +17,7 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
     private readonly WikipediaSearchTool _wikipediaTool = new(
         transcriptLogger.CreateLogger<WikipediaSearchTool>(),
         transcriptLogger.CreateLogger<WikipediaClient>());
+    private const int MaxSearchCount = 3;
 
     public async Task<AgentResponse> AnswerAsync(string query, string? correlationId = null)
     {
@@ -24,96 +25,116 @@ public class WikipediaAgent(IPromptBuilder promptBuilder, TranscriptLoggerProvid
         var startedAt = DateTimeOffset.UtcNow;
         _logger.LogInformation("[{CorrelationId}] Query received: {Query}", correlationId, query);
 
-        var systemPrompt = promptBuilder.Load("System", 1);
+        var systemPrompt = promptBuilder.Load("System", 5);
         var sources = new List<WikipediaResult>();
         var steps = new List<TranscriptStep>();
+        var searchCount = 0;
+        var transcriptPath = Path.Combine(transcriptWriter.TranscriptsDirectory, $"{correlationId}.json");
+
         var messages = new List<Message>
         {
             new() { Role = RoleType.User, Content = [new TextContent { Text = query }] }
         };
 
-        while (true)
+        try
         {
-            var parameters = new MessageParameters
+            while (true)
             {
-                Model = AnthropicModels.Claude46Sonnet,
-                MaxTokens = 1024,
-                System = string.IsNullOrEmpty(systemPrompt)
-                    ? null
-                    : [new SystemMessage(systemPrompt)],
-                Tools = [WikipediaSearchTool.Definition],
-                Messages = messages
-            };
+                var parameters = new MessageParameters
+                {
+                    Model = AnthropicModels.Claude46Sonnet,
+                    MaxTokens = 4096,
+                    System = string.IsNullOrEmpty(systemPrompt)
+                        ? null
+                        : [new SystemMessage(systemPrompt)],
+                    Tools = searchCount < MaxSearchCount ? [WikipediaSearchTool.Definition] : null,
+                    Messages = messages
+                };
 
-            var response = await _client.Messages.GetClaudeMessageAsync(parameters);
+                var response = await _client.Messages.GetClaudeMessageAsync(parameters);
 
-            if (response.StopReason == "end_turn")
-            {
-                var answer = response.Content.OfType<TextContent>().FirstOrDefault()?.Text ?? string.Empty;
-                _logger.LogInformation("[{CorrelationId}] Final answer produced, sources: {SourceCount}", correlationId, sources.Count);
+                if (response.StopReason == "end_turn")
+                {
+                    var answer = response.Content.OfType<TextContent>().FirstOrDefault()?.Text ?? string.Empty;
+                    _logger.LogInformation("[{CorrelationId}] Final answer produced, sources: {SourceCount}", correlationId, sources.Count);
 
-                var agentResponse = new AgentResponse(answer, 1, sources);
-                var traces = transcriptLogger.Flush();
-                var transcript = new Models.Transcript(
-                    CorrelationId: correlationId,
-                    Model: AnthropicModels.Claude46Sonnet,
-                    StartedAt: startedAt,
-                    CompletedAt: DateTimeOffset.UtcNow,
-                    Question: query,
-                    SystemPrompt: systemPrompt,
-                    PromptVersion: 1,
-                    Traces: traces,
-                    Steps: steps,
-                    Response: agentResponse);
+                    var agentResponse = new AgentResponse(answer, 5, sources, transcriptPath);
+                    var traces = transcriptLogger.Flush();
+                    await transcriptWriter.WriteAsync(new Models.Transcript(
+                        CorrelationId: correlationId,
+                        Model: AnthropicModels.Claude46Sonnet,
+                        StartedAt: startedAt,
+                        CompletedAt: DateTimeOffset.UtcNow,
+                        Question: query,
+                        SystemPrompt: systemPrompt,
+                        PromptVersion: 5,
+                        Traces: traces,
+                        Steps: steps,
+                        Response: agentResponse));
 
-                await transcriptWriter.WriteAsync(transcript);
-                return agentResponse;
-            }
+                    return agentResponse;
+                }
 
-            var toolUse = response.Content.OfType<ToolUseContent>().FirstOrDefault();
-            if (toolUse is null) break;
+                var toolUses = response.Content.OfType<ToolUseContent>().ToList();
+                if (toolUses.Count == 0) break;
 
-            var question = toolUse.Input["question"]?.GetValue<string>() ?? query;
-            _logger.LogInformation("[{CorrelationId}] Claude requested tool call: {Question}", correlationId, question);
-            steps.Add(new TranscriptStep("ToolCall", question, DateTimeOffset.UtcNow));
+                var toolResults = new List<ContentBase>();
+                foreach (var toolUse in toolUses)
+                {
+                    var question = toolUse.Input["question"]?.GetValue<string>() ?? query;
+                    _logger.LogInformation("[{CorrelationId}] Claude requested tool call: {Question}", correlationId, question);
+                    steps.Add(new TranscriptStep("ToolCall", question, DateTimeOffset.UtcNow));
 
-            var (json, result) = await _wikipediaTool.ExecuteAsync(question, correlationId);
-            steps.Add(new TranscriptStep("ToolResult", json, DateTimeOffset.UtcNow));
+                    var (json, results) = await _wikipediaTool.ExecuteAsync(question, correlationId);
+                    steps.Add(new TranscriptStep("ToolResult", json, DateTimeOffset.UtcNow));
+                    sources.AddRange(results);
+                    searchCount++;
 
-            if (result is not null)
-                sources.Add(result);
-
-            messages.Add(new Message { Role = RoleType.Assistant, Content = response.Content });
-            messages.Add(new Message
-            {
-                Role = RoleType.User,
-                Content =
-                [
-                    new ToolResultContent
+                    toolResults.Add(new ToolResultContent
                     {
                         ToolUseId = toolUse.Id,
                         Content = [new TextContent { Text = json }]
-                    }
-                ]
-            });
+                    });
+                }
+
+                messages.Add(new Message { Role = RoleType.Assistant, Content = response.Content });
+                messages.Add(new Message { Role = RoleType.User, Content = toolResults });
+
+                await Task.Delay(3000);
+            }
+
+            _logger.LogWarning("[{CorrelationId}] Agent loop exited without end_turn", correlationId);
+            var fallbackResponse = new AgentResponse(string.Empty, 5, sources, transcriptPath);
+            var fallbackTraces = transcriptLogger.Flush();
+            await transcriptWriter.WriteAsync(new Models.Transcript(
+                CorrelationId: correlationId,
+                Model: AnthropicModels.Claude46Sonnet,
+                StartedAt: startedAt,
+                CompletedAt: DateTimeOffset.UtcNow,
+                Question: query,
+                SystemPrompt: systemPrompt,
+                PromptVersion: 5,
+                Traces: fallbackTraces,
+                Steps: steps,
+                Response: fallbackResponse));
+
+            return fallbackResponse;
         }
-
-        _logger.LogWarning("[{CorrelationId}] Agent loop exited without end_turn", correlationId);
-        var fallbackResponse = new AgentResponse(string.Empty, 1, sources);
-        var fallbackTraces = transcriptLogger.Flush();
-        var fallbackTranscript = new Models.Transcript(
-            CorrelationId: correlationId,
-            Model: AnthropicModels.Claude46Sonnet,
-            StartedAt: startedAt,
-            CompletedAt: DateTimeOffset.UtcNow,
-            Question: query,
-            SystemPrompt: systemPrompt,
-            PromptVersion: 1,
-            Traces: fallbackTraces,
-            Steps: steps,
-            Response: fallbackResponse);
-
-        await transcriptWriter.WriteAsync(fallbackTranscript);
-        return fallbackResponse;
+        catch (Exception ex)
+        {
+            var traces = transcriptLogger.Flush();
+            await transcriptWriter.WriteAsync(new Models.Transcript(
+                CorrelationId: correlationId,
+                Model: AnthropicModels.Claude46Sonnet,
+                StartedAt: startedAt,
+                CompletedAt: DateTimeOffset.UtcNow,
+                Question: query,
+                SystemPrompt: systemPrompt,
+                PromptVersion: 5,
+                Traces: traces,
+                Steps: steps,
+                Response: new AgentResponse(string.Empty, 5, sources, transcriptPath)));
+            throw new AgentException(ex.Message, transcriptPath, ex);
+        }
     }
 }

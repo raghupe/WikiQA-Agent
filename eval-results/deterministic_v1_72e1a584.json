@@ -1,0 +1,580 @@
+{
+  "RunId": "72e1a584",
+  "SuiteName": "deterministic_v1",
+  "RunAt": "2026-05-13T06:27:26.7420963+00:00",
+  "Results": [
+    {
+      "CaseId": "tc101",
+      "Query": "What is 2 \u002B 2?",
+      "ActualAnswer": "2 \u002B 2 = **4**\n\nThis is a basic arithmetic addition problem and does not require a Wikipedia search to answer. Is there anything else I can help you with?",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_c6908686.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc102",
+      "Query": "Hello, how are you?",
+      "ActualAnswer": "Hello! I\u0027m doing great, thank you for asking! \uD83D\uDE0A How are you doing today? Is there anything I can help you with? Feel free to ask me any questions \u2014 I\u0027m here to help!",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_21a05159.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc103",
+      "Query": "What is the capital of France?",
+      "ActualAnswer": "The capital of France is **Paris**. It has been the capital of France since its liberation in 1944 and is the country\u0027s political, cultural, and economic center.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/List_of_capitals_of_France"
+      ],
+      "SearchCount": 1,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_7573e578.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Wiki use mismatch: expected False, actual True"
+      ]
+    },
+    {
+      "CaseId": "tc104",
+      "Query": "Translate \u0027hello\u0027 to Spanish",
+      "ActualAnswer": "I don\u0027t need to use Wikipedia for this one \u2014 the translation of **\u0022hello\u0022** in Spanish is:\n\n\u003E **\u0022Hola\u0022**\n\nIt is pronounced as *\u0022OH-lah\u0022* and is used as a common, everyday greeting in Spanish-speaking countries. Let me know if you need any other translations! \uD83D\uDE0A",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_8c838e7e.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc105",
+      "Query": "Write an apology letter to a friend whose birthday I missed",
+      "ActualAnswer": "I\u0027m sorry, but writing personal letters or creative content is outside of my capabilities. I am a question-and-answer agent designed to answer factual questions using Wikipedia as my knowledge source.\n\nHere\u0027s what I **can** help you with:\n- \uD83D\uDCDA **Factual questions** (e.g., \u0022When was Albert Einstein born?\u0022)\n- \uD83C\uDF0D **Historical events** (e.g., \u0022What caused World War I?\u0022)\n- \uD83D\uDD2C **Science topics** (e.g., \u0022How does photosynthesis work?\u0022)\n- \uD83C\uDFAD **People, places, and things** (e.g., \u0022Who is Nikola Tesla?\u0022)\n\nFor writing an apology letter, I\u0027d suggest:\n1. **ChatGPT** or similar AI writing tools\n2. Looking up **letter templates** on Google\n3. Writing from the **heart** \u2014 personal and sincere words always mean the most! \u2764\uFE0F\n\nIs there anything **factual** I can help you with today?",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_cf63ba32.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc106",
+      "Query": "Who was the first president of the United States?",
+      "ActualAnswer": "The first president of the United States was **George Washington**. He was a Founding Father who served as president from **1789 to 1797**. Before his presidency, he was also the commander of the Continental Army during the American Revolutionary War.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/George_Washington"
+      ],
+      "SearchCount": 1,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_e7575f42.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc107",
+      "Query": "When was the Eiffel Tower built?",
+      "ActualAnswer": "The Eiffel Tower was built from **1887 to 1889**. It was designed and constructed by the company of engineer **Gustave Eiffel**, after whom the tower is named. It is located in Paris, France, and is locally nicknamed *\u0022La dame de fer\u0022* (The Iron Lady).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Eiffel_Tower"
+      ],
+      "SearchCount": 1,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_125a3db5.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc108",
+      "Query": "What is the population of Tokyo?",
+      "ActualAnswer": "Based on Wikipedia, **Tokyo** \u2014 officially the Tokyo Metropolis \u2014 is the capital and most populous city of Japan. As of **2023**, Tokyo has a population of **over 14 million people** in the city proper. When including the greater metropolitan area, Tokyo is considered one of the most populous urban areas in the world, with tens of millions more residents in the surrounding region.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Tokyo"
+      ],
+      "SearchCount": 1,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_d46d4227.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc109",
+      "Query": "What is the biggest country by land size?",
+      "ActualAnswer": "The biggest country in the world by land size is **Russia**. It covers an enormous land area of approximately **17.1 million square kilometers (6.6 million square miles)**, making it by far the largest country on Earth. It spans across both Europe and Asia, covering about 11% of the world\u0027s total landmass.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area",
+        "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+      ],
+      "SearchCount": 2,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_e63b93b3.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/Russia\u0027"
+      ]
+    },
+    {
+      "CaseId": "tc201",
+      "Query": "Who wrote Romeo and Juliet?",
+      "ActualAnswer": "**Romeo and Juliet** was written by **William Shakespeare**. It is a tragic play believed to have been written around **1594\u20131596**. The story is set in Verona, Italy, and follows two young lovers, Romeo Montague and Juliet Capulet, whose families are engaged in a bitter feud. It remains one of Shakespeare\u0027s most famous and beloved works.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Romeo_%2B_Juliet",
+        "https://en.wikipedia.org/wiki/Characters_in_Romeo_and_Juliet"
+      ],
+      "SearchCount": 2,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_b3ed5042.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/Romeo_and_Juliet\u0027"
+      ]
+    },
+    {
+      "CaseId": "tc202",
+      "Query": "What year did World War II end?",
+      "ActualAnswer": "World War II ended in **1945**. More specifically:\n- The war in **Europe** ended on **May 8, 1945** (V-E Day), with the surrender of Nazi Germany.\n- The war in **Asia** officially ended on **September 2, 1945** (V-J Day), when Japan formally surrendered aboard the USS Missouri.\n\nSeptember 2, 1945 is generally considered the **official end** of World War II.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/End_of_World_War_II_in_Asia"
+      ],
+      "SearchCount": 1,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_57ec98ca.json",
+      "Status": 1,
+      "FailureReasons": [
+        "None of the expected URLs were referenced: https://en.wikipedia.org/wiki/End_of_World_War_II_in_Europe",
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/World_War_II\u0027"
+      ]
+    },
+    {
+      "CaseId": "tc203",
+      "Query": "Who invented the telephone?",
+      "ActualAnswer": "The invention of the telephone is most commonly credited to **Alexander Graham Bell**, who was granted the first patent for the telephone on March 7, 1876. However, the history of its invention is a bit complex, as several other inventors were also working on similar technology around the same time, including **Elisha Gray** and **Johann Philipp Reis**.\n\nAlexander Graham Bell is widely recognized as the primary inventor, as he was the first to successfully patent and demonstrate a working telephone that could transmit intelligible speech. His famous first words spoken over the telephone were to his assistant: *\u0022Mr. Watson, come here \u2013 I want to see you.\u0022*",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Telephone",
+        "https://en.wikipedia.org/wiki/Invention_of_the_telephone"
+      ],
+      "SearchCount": 2,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_39b82939.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc204",
+      "Query": "What is the speed of light?",
+      "ActualAnswer": "The **speed of light** in a vacuum, commonly denoted as **c**, is a universal physical constant exactly equal to:\n\n\u003E **299,792,458 meters per second (m/s)**\n\nThis is approximately **300,000 km/s** or about **186,282 miles per second**. According to Einstein\u0027s theory of special relativity, the speed of light is the ultimate speed limit of the universe \u2014 nothing with mass can reach or exceed it.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Speed_of_light"
+      ],
+      "SearchCount": 1,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_273e8d7d.json",
+      "Status": 1,
+      "FailureReasons": [
+        "None of the expected URLs were referenced: https://en.wikipedia.org/wiki/Light"
+      ]
+    },
+    {
+      "CaseId": "tc205",
+      "Query": "Who painted the Mona Lisa?",
+      "ActualAnswer": "The **Mona Lisa** was painted by the Italian Renaissance artist **Leonardo da Vinci**. It is believed to have been painted between **1503 and 1506**, though Leonardo may have continued working on it as late as 1517. The painting is now housed in the Louvre Museum in Paris, France, and is one of the most famous works of art in the world.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Mona_Lisa"
+      ],
+      "SearchCount": 1,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_751cb47b.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc206",
+      "Query": "What is the capital of Australia?",
+      "ActualAnswer": "The capital of Australia is **Canberra**. It is located within the **Australian Capital Territory (ACT)**, which was formerly known as the Federal Capital Territory until 1938. Canberra became the capital as a compromise between the two largest cities, Sydney and Melbourne, and has served as Australia\u0027s seat of government ever since.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Australian_Capital_Territory"
+      ],
+      "SearchCount": 1,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_a5d245f8.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Prohibited keyword found: \u0027Sydney\u0027",
+        "Prohibited keyword found: \u0027Melbourne\u0027",
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/Canberra\u0027"
+      ]
+    },
+    {
+      "CaseId": "tc207",
+      "Query": "Who built the Space Needle?",
+      "ActualAnswer": "Based on the Wikipedia article on the Space Needle, here is what is known about its construction:\n\nThe **Space Needle** was built for the **1962 World\u0027s Fair (Century 21 Exposition)** in Seattle, Washington. It was designed by a team that included **Edward E. Carlson**, who sketched the original concept, and **John Graham Jr.**, the architect who developed the design. It was constructed by the **Howard S. Wright Construction Company**. The project was financed by a group of Seattle businessmen, with **Bagley Wright**, **Ned Skinner**, **Norton Clapp**, and **Howard S. Wright** among the key investors and builders.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Space_Needle",
+        "https://en.wikipedia.org/wiki/The_Strat"
+      ],
+      "SearchCount": 2,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_95cf8ff7.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc208",
+      "Query": "What is the largest desert in the world?",
+      "ActualAnswer": "Based on the information gathered, the answer is clear:\n\nThe **largest desert in the world is the Antarctic Desert**, covering the continent of Antarctica with an area of approximately **14.2 million square kilometers (5.5 million square miles)**. Antarctica is considered a polar desert because it receives very little precipitation (less than 200mm per year).\n\nIf we\u0027re talking strictly about **hot deserts**, then the **Sahara Desert** in North Africa is the largest, covering approximately **9.2 million square kilometers (3.6 million square miles)**.\n\nSo the answer depends on the type of desert being considered:\n- \uD83C\uDF0D **Largest desert overall**: **Antarctic Desert** (~14.2 million km\u00B2)\n- \u2600\uFE0F **Largest hot desert**: **Sahara Desert** (~9.2 million km\u00B2)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/List_of_deserts",
+        "https://en.wikipedia.org/wiki/Lut_Desert",
+        "https://en.wikipedia.org/wiki/Aralkum_Desert",
+        "https://en.wikipedia.org/wiki/Wikipedia",
+        "https://en.wikipedia.org/wiki/Sonoran_Desert",
+        "https://en.wikipedia.org/wiki/Desert",
+        "https://en.wikipedia.org/wiki/List_of_deserts",
+        "https://en.wikipedia.org/wiki/Deserts_of_California",
+        "https://en.wikipedia.org/wiki/Desert_greening",
+        "https://en.wikipedia.org/wiki/Sahara",
+        "https://en.wikipedia.org/wiki/Continent"
+      ],
+      "SearchCount": 11,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_ccd864ac.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Prohibited keyword found: \u0027Sahara\u0027",
+        "None of the expected URLs were referenced: https://en.wikipedia.org/wiki/Antarctic_Desert, https://en.wikipedia.org/wiki/List_of_deserts_by_area"
+      ]
+    },
+    {
+      "CaseId": "tc301",
+      "Query": "Tell me about Mercury",
+      "ActualAnswer": "Great question! \u0022Mercury\u0022 refers to several different things. Here\u0027s an overview of the most notable ones:\n\n---\n\n## \uD83E\uDE90 Mercury (The Planet)\nMercury is the **first planet from the Sun** and the **smallest planet in the Solar System**. It is a rocky planet with only a trace atmosphere and a surface gravity slightly less than that of Mars. Key facts include:\n- It orbits closer to the Sun than any other planet.\n- Despite being the closest to the Sun, it is **not the hottest planet** \u2014 that distinction belongs to Venus, due to Mercury\u0027s lack of a substantial atmosphere to retain heat.\n- Its surface is heavily cratered, resembling Earth\u0027s Moon.\n- A year on Mercury (one orbit around the Sun) takes only about **88 Earth days**.\n\n---\n\n## \u2697\uFE0F Mercury (The Element)\nMercury is a **chemical element** with the symbol **Hg** and atomic number **80**. It is commonly known as **quicksilver**. Key facts include:\n- It is the **only metal that is liquid at room temperature**.\n- It is a heavy, silvery d-block element.\n- It has historically been used in **thermometers, barometers, and electrical switches**.\n- It is **highly toxic**, and concerns about its toxicity have led to a significant reduction in its use in instruments and industrial applications.\n\n---\n\n## \uD83C\uDFDB\uFE0F Mercury (Roman Mythology)\nMercury (Latin: *Mercurius*) is a **major god in Roman religion and mythology**, and one of the 12 *Dii Consentes* (the principal Roman deities). Key facts include:\n- He is the **messenger of the gods** and is associated with **communication, travel, commerce, and thieves**.\n- He is the Roman equivalent of the **Greek god Hermes**.\n- He is often depicted wearing a winged helmet and sandals, carrying a caduceus (a staff with two entwined snakes).\n\n---\n\nWould you like to dive deeper into any one of these? \uD83D\uDE0A",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Mercury_%28planet%29",
+        "https://en.wikipedia.org/wiki/Mercury_%28element%29",
+        "https://en.wikipedia.org/wiki/Mercury_%28mythology%29",
+        "https://en.wikipedia.org/wiki/Mercury_%28planet%29",
+        "https://en.wikipedia.org/wiki/Mercury_%28element%29",
+        "https://en.wikipedia.org/wiki/Mercury_%28mythology%29"
+      ],
+      "SearchCount": 6,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_9d6811ac.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc302",
+      "Query": "Tell me about Python",
+      "ActualAnswer": "Here\u0027s an overview of **Python**, the popular programming language:\n\n---\n\n## \uD83D\uDC0D Python (Programming Language)\n\n### \uD83D\uDCCC What is Python?\nPython is a **high-level, general-purpose programming language** that emphasizes **code readability, simplicity, and ease of writing**. It uses significant indentation (whitespace) to define code blocks, making it visually clean and easy to understand.\n\n---\n\n### \uD83D\uDD70\uFE0F History\n- Python was created by **Guido van Rossum** and first released in **1991**.\n- The name \u0022Python\u0022 was inspired by the British comedy group **Monty Python**, not the snake.\n- It has gone through major versions: **Python 2** (now retired) and **Python 3** (the current standard, released in 2008).\n\n---\n\n### \u2728 Key Features\n- **Easy to learn \u0026 read** \u2013 Its syntax is clean and beginner-friendly.\n- **Interpreted** \u2013 Code is executed line by line, making debugging easier.\n- **Dynamically typed** \u2013 No need to declare variable types explicitly.\n- **Multi-paradigm** \u2013 Supports object-oriented, procedural, and functional programming.\n- **Large standard library** \u2013 Comes with a rich set of built-in modules and functions.\n- **Cross-platform** \u2013 Runs on Windows, macOS, Linux, and more.\n- **Open-source** \u2013 Free to use and distribute.\n\n---\n\n### \uD83D\uDEE0\uFE0F Common Uses\n- **Web Development** (Django, Flask)\n- **Data Science \u0026 Machine Learning** (NumPy, Pandas, TensorFlow, PyTorch)\n- **Artificial Intelligence**\n- **Automation \u0026 Scripting**\n- **Scientific Computing**\n- **Cybersecurity**\n- **Game Development**\n- **Finance \u0026 Quantitative Analysis**\n\n---\n\n### \uD83D\uDCC8 Popularity\nPython is consistently ranked as one of the **most popular programming languages in the world** (often #1 on indices like TIOBE and Stack Overflow surveys). Its simplicity and versatility have made it a favorite among beginners and professionals alike.\n\n---\n\n### \uD83D\uDD17 Learn More\nYou can read more on [Wikipedia \u2013 Python (programming language)](https://en.wikipedia.org/wiki/Python_%28programming_language%29).\n\nWould you like to know more about any specific aspect of Python? \uD83D\uDE0A",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Python_%28programming_language%29",
+        "https://en.wikipedia.org/wiki/Python_%28programming_language%29"
+      ],
+      "SearchCount": 2,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_3768067e.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc303",
+      "Query": "Tell me about the Jaguar",
+      "ActualAnswer": "Great! Here\u0027s a comprehensive overview of both major meanings of **\u0022Jaguar\u0022**:\n\n---\n\n## \uD83D\uDC06 1. The Jaguar (Animal)\n\n**Scientific Name:** *Panthera onca*\n\nThe jaguar is a **large cat** and the **only living member of the genus *Panthera* native to the Americas**. It is the largest cat in the Western Hemisphere and the third-largest in the world, after the tiger and lion.\n\n### Key Facts:\n- **Appearance:** Jaguars are famous for their **distinctive spotted coat** \u2014 golden-yellow fur covered with black rosette-shaped markings (spots within spots). Melanistic (all-black) jaguars also exist and are sometimes called \u0022black panthers.\u0022\n- **Habitat:** They are found primarily in **Central and South America**, with the Amazon Basin being their stronghold. They favor dense rainforests, wetlands, and grasslands.\n- **Behavior:** Jaguars are **solitary, stealthy hunters**. Unlike most big cats, they are strong swimmers and are often found near rivers and lakes. They hunt a wide variety of prey, including deer, capybaras, caimans, and fish.\n- **Strength:** They have the **strongest bite force** of any big cat relative to their size, allowing them to pierce turtle shells and crocodile skulls.\n- **Conservation Status:** Listed as **Near Threatened** on the IUCN Red List, due to habitat loss, deforestation, and hunting.\n- **Cultural significance:** The jaguar has deep symbolic meaning in **Mesoamerican cultures** (Aztec, Maya), representing power, ferocity, and the underworld.\n\n---\n\n## \uD83D\uDE97 2. Jaguar (Car Brand)\n\n**Full Name:** Jaguar (part of **Jaguar Land Rover**)\n\nJaguar is a prestigious **British sports car and luxury vehicle brand**, owned by **Jaguar Land Rover (JLR)**, a British multinational car manufacturer.\n\n### Key Facts:\n- **Founded:** The company traces its roots back to **1922**, originally as the Swallow Sidecar Company, later becoming Jaguar Cars in the 1940s.\n- **Headquarters:** **Coventry, England, UK**\n- **Parent Company:** Jaguar Land Rover, which is owned by **Tata Motors** of India (since 2008).\n- **Known For:** Producing elegant, high-performance luxury cars, sports cars, and SUVs that blend **British craftsmanship** with cutting-edge technology.\n- **Iconic Models:** The brand has produced many legendary vehicles, including:\n  - **Jaguar E-Type** \u2013 considered one of the most beautiful cars ever made\n  - **Jaguar XJ** \u2013 flagship luxury sedan\n  - **Jaguar F-Type** \u2013 modern sports car\n  - **Jaguar F-PACE** \u2013 luxury SUV\n  - **Jaguar I-PACE** \u2013 all-electric SUV\n- **Motto/Brand Identity:** Jaguar is associated with the tagline *\u0022Grace, Space, Pace\u0022* and more recently *\u0022Feel Alive.\u0022*\n- **Electric Future:** Jaguar has committed to becoming a **fully electric luxury brand** in the coming years.\n\n---\n\nWould you like to know more details about either the **Jaguar animal** or the **Jaguar car brand**? \uD83D\uDE0A",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Jaguar",
+        "https://en.wikipedia.org/wiki/Jaguar_Cars",
+        "https://en.wikipedia.org/wiki/Jaguar",
+        "https://en.wikipedia.org/wiki/Jaguar_Cars"
+      ],
+      "SearchCount": 4,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_73ad3548.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc304",
+      "Query": "Tell me about Jordan",
+      "ActualAnswer": "Here is a comprehensive overview of **Jordan**:\n\n---\n\n## \uD83C\uDDEF\uD83C\uDDF4 Jordan \u2014 The Hashemite Kingdom of Jordan\n\n### \uD83D\uDCCD Overview\nJordan, officially the **Hashemite Kingdom of Jordan**, is a country located in the **Southern Levant region of West Asia** (the Middle East). It is bordered by **Syria** to the north, **Iraq** to the northeast, **Saudi Arabia** to the east and south, **Israel** and the **Palestinian territories** to the west, and has a small coastline on the **Red Sea** in the southwest.\n\n---\n\n### \uD83C\uDFDB\uFE0F Capital \u0026 Major Cities\n- **Capital:** Amman \u2014 the largest city and political, cultural, and economic hub of the country.\n- Other major cities include **Zarqa**, **Irbid**, and **Aqaba**.\n\n---\n\n### \uD83D\uDCDC History\n- The region has a rich ancient history, home to civilizations such as the **Nabataeans**, who built the famous city of **Petra**.\n- It was part of the **Ottoman Empire** for centuries before falling under **British mandate** after World War I.\n- The **Emirate of Transjordan** was established in 1921, and in **1946**, Jordan gained full independence.\n- In **1950**, it became the **Hashemite Kingdom of Jordan**.\n- Jordan has played a significant role in **Middle Eastern politics**, including wars with Israel in 1948, 1967, and 1973, and later signed a **peace treaty with Israel in 1994**.\n\n---\n\n### \uD83D\uDC51 Government \u0026 Politics\n- Jordan is a **constitutional monarchy**, currently ruled by **King Abdullah II**, who has been on the throne since **1999**.\n- The country has a **parliament** consisting of a Senate (upper house) and a House of Representatives (lower house).\n- Jordan is considered one of the more **politically stable** countries in the Middle East.\n\n---\n\n### \uD83C\uDF0D Geography\n- Jordan is largely **arid and desert-like**, with the **Arabian Desert** covering much of the east.\n- The **Jordan River** and the **Dead Sea** (the lowest point on Earth) lie on its western border.\n- The **Wadi Rum** desert is famous for its dramatic red sandstone landscapes.\n- The northwest region is more fertile and receives more rainfall.\n\n---\n\n### \uD83E\uDDD1\u200D\uD83E\uDD1D\u200D\uD83E\uDDD1 People \u0026 Culture\n- Population: approximately **10\u201311 million** people.\n- The majority of the population is **Arab**, with a significant number of **Palestinian refugees** and other communities.\n- **Islam** is the official religion, practiced by the majority, with a Christian minority.\n- **Arabic** is the official language.\n- Jordan is known for its **warm hospitality**, rich cuisine (including mansaf, the national dish), and cultural heritage.\n\n---\n\n### \uD83D\uDCB0 Economy\n- Jordan has a **developing economy** with key sectors including **tourism, phosphate mining, potash exports, and services**.\n- It is **resource-poor** compared to Gulf neighbors, with limited oil and water resources.\n- The country relies significantly on **foreign aid** and **remittances** from Jordanians working abroad.\n- **Tourism** is a major industry, drawing visitors to Petra, the Dead Sea, Wadi Rum, and Jerash.\n\n---\n\n### \uD83C\uDFFA Notable Attractions\n- **Petra** \u2013 The ancient Nabataean city, one of the **New Seven Wonders of the World**.\n- **The Dead Sea** \u2013 The lowest point on Earth, famous for its ultra-salty, buoyant waters.\n- **Wadi Rum** \u2013 A stunning desert valley used as a filming location for movies like *The Martian* and *Lawrence of Arabia*.\n- **Jerash** \u2013 One of the best-preserved Roman cities in the world.\n- **Aqaba** \u2013 A coastal city known for diving and Red Sea beaches.\n\n---\n\nJordan is widely regarded as a **gateway to the Middle East**, blending ancient history, natural wonders, and modern stability in a region often marked by conflict.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Jordan",
+        "https://en.wikipedia.org/wiki/Amman"
+      ],
+      "SearchCount": 2,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_7119c422.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Missing keyword: \u0027Michael\u0027"
+      ]
+    },
+    {
+      "CaseId": "tc305",
+      "Query": "Tell me about Apple, the famous technology company",
+      "ActualAnswer": "Here is a comprehensive overview of **Apple Inc.**:\n\n---\n\n## \uD83C\uDF4E Apple Inc.\n\n### Overview\nApple Inc. is an **American multinational technology company** headquartered in **Cupertino, California**, in Silicon Valley. It is one of the world\u0027s most recognized and valuable brands, known primarily for its consumer electronics, software, and services.\n\n---\n\n### \uD83C\uDFD7\uFE0F Founding\nApple was **founded in 1976** as *Apple Computer Company* by three co-founders:\n- **Steve Jobs** \u2013 visionary entrepreneur and marketer\n- **Steve Wozniak** \u2013 brilliant engineer and hardware designer\n- **Ronald Wayne** \u2013 who later sold his share back to Jobs and Wozniak\n\nThe company was later incorporated by Jobs and Wozniak and eventually renamed **Apple Inc.** in 2007 to reflect its expansion beyond computers.\n\n---\n\n### \uD83D\uDCBB Key Products \u0026 Services\nApple is known for a wide range of iconic products and services, including:\n- **iPhone** \u2013 its flagship smartphone, revolutionizing the mobile industry since 2007\n- **Mac** \u2013 its line of personal computers and laptops (MacBook, iMac, Mac Pro, etc.)\n- **iPad** \u2013 a leading tablet device\n- **Apple Watch** \u2013 a popular smartwatch\n- **AirPods** \u2013 widely used wireless earbuds\n- **Apple TV** \u2013 streaming and entertainment device\n- **Services** \u2013 including the App Store, Apple Music, iCloud, Apple TV\u002B, and Apple Pay\n\n---\n\n### \uD83C\uDFEA Retail\nApple sells its products online and through a global chain of retail stores known as **Apple Stores**, which are famous for their sleek, minimalist design and customer experience.\n\n---\n\n### \uD83D\uDCC8 Market Position\nApple consistently ranks as one of the **largest technology companies in the world by revenue**, alongside Samsung, Microsoft, and Alphabet (Google). It has historically been among the **most valuable publicly traded companies** in the world by market capitalization.\n\n---\n\n### \uD83C\uDF0D Legacy \u0026 Impact\nApple has had an enormous influence on the technology industry and popular culture. From the early personal computer revolution to the smartphone era, Apple has repeatedly redefined entire product categories and set new standards for design, user experience, and innovation.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Technology_company",
+        "https://en.wikipedia.org/wiki/History_of_Apple_Inc.",
+        "https://en.wikipedia.org/wiki/Apple_Store",
+        "https://en.wikipedia.org/wiki/Apple_Inc.",
+        "https://en.wikipedia.org/wiki/Apple_Inc."
+      ],
+      "SearchCount": 5,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_87ae0da0.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc401",
+      "Query": "Did Einstein win a Nobel Prize for the theory of relativity?",
+      "ActualAnswer": "No, Einstein did **not** win the Nobel Prize for the theory of relativity. While he is best known for developing the theory of relativity, he was awarded the **1921 Nobel Prize in Physics** (officially presented in 1922) *\u0022for his services to Theoretical Physics, and especially for his discovery of the law of the **photoelectric effect**.\u0022*\n\nThe photoelectric effect, which described how light can eject electrons from a material and helped lay the foundation for **quantum theory**, was the cited reason for his Nobel Prize. Interestingly, the Nobel Committee at the time considered the theory of relativity too controversial and speculative to be the basis for the award.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/List_of_awards_and_honors_received_by_Albert_Einstein",
+        "https://en.wikipedia.org/wiki/Albert_Einstein",
+        "https://en.wikipedia.org/wiki/Albert_Einstein"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_ae57c4dd.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Prohibited keyword found: \u0027relativity\u0027"
+      ]
+    },
+    {
+      "CaseId": "tc402",
+      "Query": "Was the Great Wall of China visible from space?",
+      "ActualAnswer": "Based on information from Wikipedia, the answer is: **No, the Great Wall of China is generally not visible from space with the naked eye \u2014 this is a popular myth.**\n\nHere are the key facts:\n\n- **The myth is widespread**: The Great Wall has long enjoyed the reputation of being \u0022the only man-made structure visible from space,\u0022 but this has been largely debunked.\n- **The problem is its width**: While the Great Wall is very long (thousands of miles), it is only about 15\u201330 feet (4.5\u20139 meters) wide \u2014 roughly the width of a highway. At orbital distances, something that narrow is essentially impossible to distinguish with the naked eye.\n- **Astronauts confirm it**: Yang Liwei, **China\u0027s first astronaut**, reported that he was **unable to see the Great Wall** from space. Other astronauts, such as Ed Lu aboard the International Space Station, have echoed this.\n- **With aid, maybe**: Some astronauts have reported being able to photograph it from low Earth orbit (around 160\u2013320 km altitude) **under perfect conditions and with optical aids** like cameras with zoom lenses, but even then it is very difficult to spot.\n- **Visible from the Moon? Absolutely not**: The claim that it\u0027s visible from the Moon is definitively false \u2014 from that distance, even entire continents are tiny features.\n\nIn short, the idea that the Great Wall of China is visible from space is one of the most famous **geographical myths**, and has been consistently contradicted by astronauts and scientific analysis.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Artificial_structures_visible_from_space",
+        "https://en.wikipedia.org/wiki/Great_Wall_of_China",
+        "https://en.wikipedia.org/wiki/Great_Wall_of_China",
+        "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+      ],
+      "SearchCount": 4,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_05e1a66a.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc403",
+      "Query": "Did Napoleon win the Battle of Waterloo?",
+      "ActualAnswer": "No, Napoleon did **not** win the Battle of Waterloo. According to Wikipedia, the Battle of Waterloo, fought on **June 18, 1815**, ended in a decisive **defeat for Napoleon Bonaparte**. He was defeated by the allied forces led by the **Duke of Wellington** (commanding the Anglo-allied army) and **Field Marshal Bl\u00FCcher** (commanding the Prussian army).\n\nThis loss marked the end of Napoleon\u0027s rule and his Hundred Days campaign \u2014 his attempt to regain power after his earlier exile to the island of Elba. Following his defeat at Waterloo, Napoleon was forced to abdicate and was exiled to the remote island of **Saint Helena**, where he spent the rest of his life. The Battle of Waterloo is widely considered one of history\u0027s most decisive military engagements.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Battle_of_Waterloo",
+        "https://en.wikipedia.org/wiki/Battle_of_Waterloo",
+        "https://en.wikipedia.org/wiki/The_Voice_%28American_TV_series%29_season_24"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_835d0fed.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc404",
+      "Query": "Did the Titanic sink on its first voyage?",
+      "ActualAnswer": "Yes! The Titanic did indeed sink on its **first voyage** (also known as its **maiden voyage**). The Titanic departed Southampton on **April 10, 1912**, heading to New York City. Just four days into the journey, on the night of **April 14\u201315, 1912**, the ship struck an iceberg in the North Atlantic Ocean and sank, making it one of the deadliest maritime disasters in history. The Titanic never completed its first \u2014 or any other \u2014 voyage.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Sinking_of_the_Titanic"
+      ],
+      "SearchCount": 1,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_13f88aef.json",
+      "Status": 1,
+      "FailureReasons": [
+        "None of the expected URLs were referenced: https://en.wikipedia.org/wiki/Titanic"
+      ]
+    },
+    {
+      "CaseId": "tc405",
+      "Query": "Who won the 2025 FIFA World Cup?",
+      "ActualAnswer": "The 2025 FIFA World Cup does not exist \u2014 the FIFA World Cup is not held in 2025. The tournament takes place every four years. The most recent one was the **2022 FIFA World Cup**, held in Qatar, and the next one will be the **2026 FIFA World Cup**, co-hosted by the United States, Canada, and Mexico.\n\nWould you like information about either of those tournaments?",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_e2925972.json",
+      "Status": 1,
+      "FailureReasons": [
+        "None of the expected URLs were referenced: https://en.wikipedia.org/wiki/FIFA_World_Cup",
+        "Wiki use mismatch: expected True, actual False",
+        "Search count 0 below minimum 1"
+      ]
+    },
+    {
+      "CaseId": "tc406",
+      "Query": "What was the price of the Apple AirPower charging mat?",
+      "ActualAnswer": "Based on the Wikipedia search results, the Apple AirPower was described as an **unreleased** wireless charging mat. Apple announced the AirPower in September 2017, but it was **never officially released or given a final retail price**. Apple cancelled the product in March 2019, citing that it \u0022would not achieve our high standards.\u0022 Therefore, no official price was ever set for the AirPower charging mat.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/AirPods",
+        "https://en.wikipedia.org/wiki/AirPower_%28Apple%29"
+      ],
+      "SearchCount": 2,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_d440c757.json",
+      "Status": 1,
+      "FailureReasons": [
+        "None of the expected URLs were referenced: https://en.wikipedia.org/wiki/AirPower_(Apple)"
+      ]
+    },
+    {
+      "CaseId": "tc407",
+      "Query": "Did humans and dinosaurs ever co-exist?",
+      "ActualAnswer": "Based on the information from Wikipedia, the answer is **no** \u2014 humans and (non-avian) dinosaurs never coexisted. Here\u0027s a summary of why:\n\n- **Non-avian dinosaurs went extinct approximately 66 million years ago**, during the **Cretaceous-Paleogene (K-Pg) extinction event**, which was likely caused by a massive asteroid impact and/or volcanic activity.\n- **Modern humans (*Homo sapiens*)** only evolved around **300,000 years ago**, meaning there is a gap of over **65 million years** between the last non-avian dinosaurs and the first humans.\n- The idea that humans and dinosaurs lived at the same time is considered a **myth** and is not supported by any scientific evidence.\n\n**However, there is an important nuance:** Birds are actually **avian dinosaurs** \u2014 they are the living descendants of theropod dinosaurs and are technically classified as dinosaurs. So in that sense, humans *do* coexist with a group of dinosaurs today \u2014 we just call them **birds**! \uD83D\uDC26",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Human%E2%80%93dinosaur_coexistence",
+        "https://en.wikipedia.org/wiki/Late_Pleistocene_extinctions",
+        "https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_34db5ef0.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc501",
+      "Query": "Who was the architect of the building where Lincoln was shot?",
+      "ActualAnswer": "The architect of **Ford\u0027s Theatre** \u2014 the building in Washington, D.C. where President Abraham Lincoln was shot on April 14, 1865 \u2014 was **James J. Gifford**. Gifford designed the theatre, which opened in 1863 and was owned by theatre manager **John T. Ford**. It was in this building that John Wilkes Booth assassinated Lincoln while he watched a performance from the presidential box.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/History_of_the_Ford_Motor_Company",
+        "https://en.wikipedia.org/wiki/History_of_Washington%2C_D.C.",
+        "https://en.wikipedia.org/wiki/Ford%27s_Theatre",
+        "https://en.wikipedia.org/wiki/Ford%27s_Grand_Opera_House",
+        "https://en.wikipedia.org/wiki/Victoria_and_Albert_Museum",
+        "https://en.wikipedia.org/wiki/Ford%27s_Grand_Opera_House",
+        "https://en.wikipedia.org/wiki/William_Adam_%28architect%29",
+        "https://en.wikipedia.org/wiki/Albert_Kahn_%28architect%29",
+        "https://en.wikipedia.org/wiki/The_Henry_Ford"
+      ],
+      "SearchCount": 9,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_c4f83fda.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc502",
+      "Query": "Who was the French president when the Eiffel Tower was built?",
+      "ActualAnswer": "The answer is clear! **Marie Fran\u00E7ois Sadi Carnot** was the President of France when the Eiffel Tower was built. The tower was constructed between **1887 and 1889** by engineer Gustave Eiffel\u0027s company, and Sadi Carnot served as President of France from **1887 until 1894**, making him the president throughout the entire construction period. The Eiffel Tower was completed just in time for the 1889 World\u0027s Fair (Exposition Universelle) in Paris.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Eiffel_Tower",
+        "https://en.wikipedia.org/wiki/19th_century",
+        "https://en.wikipedia.org/wiki/Eiffel_Tower",
+        "https://en.wikipedia.org/wiki/Sadi_Carnot_%28statesman%29"
+      ],
+      "SearchCount": 4,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_307bc5e7.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc503",
+      "Query": "What team did Michael Jordan play for when he won his first NBA championship?",
+      "ActualAnswer": "Michael Jordan won his first NBA championship with the **Chicago Bulls** in 1991. It was the first of six NBA titles he won with the Bulls, with all championships coming in two three-peats (1991\u20131993 and 1996\u20131998).",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Michael_Jordan"
+      ],
+      "SearchCount": 1,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_6f5ef949.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Search count 1 below minimum 2"
+      ]
+    },
+    {
+      "CaseId": "tc504",
+      "Query": "What is the nationality of the artist who painted the ceiling of the Sistine Chapel?",
+      "ActualAnswer": "The ceiling of the Sistine Chapel was painted by **Michelangelo**, who was **Italian**. He painted it in fresco between 1508 and 1512, and it is considered one of the greatest masterpieces of Renaissance art.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling"
+      ],
+      "SearchCount": 1,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_aaef82ca.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Search count 1 below minimum 2"
+      ]
+    },
+    {
+      "CaseId": "tc505",
+      "Query": "What country was the inventor of the World Wide Web born in?",
+      "ActualAnswer": "The inventor of the World Wide Web is **Tim Berners-Lee**, a computer scientist born on June 8, 1955, in **England** (United Kingdom). He is described as an English computer scientist and is best known for inventing the World Wide Web.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/World_Wide_Web",
+        "https://en.wikipedia.org/wiki/Israel",
+        "https://en.wikipedia.org/wiki/Sara_Berner",
+        "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+      ],
+      "SearchCount": 4,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_f8d2575b.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc506",
+      "Query": "Who is the president of the country that won the 2024 T20 World Cup?",
+      "ActualAnswer": "**India** won the 2024 ICC Men\u0027s T20 World Cup, defeating South Africa in the final. The President of India is **Droupadi Murmu**, who has been serving as the President since 2022. She is the first tribal woman to hold the office of President of India.",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/2026_Men%27s_T20_World_Cup",
+        "https://en.wikipedia.org/wiki/2024_Men%27s_T20_World_Cup",
+        "https://en.wikipedia.org/wiki/2024_Men%27s_T20_World_Cup",
+        "https://en.wikipedia.org/wiki/President_of_India",
+        "https://en.wikipedia.org/wiki/Droupadi_Murmu"
+      ],
+      "SearchCount": 5,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_72e1a584_6b62635d.json",
+      "Status": 0,
+      "FailureReasons": []
+    }
+  ],
+  "PassCount": 21,
+  "FailCount": 14,
+  "IncompleteCount": 0
+}

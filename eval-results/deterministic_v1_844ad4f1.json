@@ -1,0 +1,637 @@
+{
+  "RunId": "844ad4f1",
+  "SuiteName": "deterministic_v1",
+  "RunAt": "2026-05-13T07:01:06.5432482+00:00",
+  "Results": [
+    {
+      "CaseId": "tc101",
+      "Query": "What is 2 \u002B 2?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking a simple mathematical question. No Wikipedia search is needed for this.\n\u003C/thinking\u003E\n\n2 \u002B 2 = **4**\n\nThis is a basic arithmetic addition and doesn\u0027t require a Wikipedia search. \uD83D\uDE0A Is there anything else I can help you with?",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_26da3b80.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc102",
+      "Query": "Hello, how are you?",
+      "ActualAnswer": "Hello! I\u0027m doing great, thank you for asking! \uD83D\uDE0A I\u0027m here and ready to help you with any questions you might have. Whether you need information, research assistance, or just want to learn something new, feel free to ask! How can I help you today?",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_367ba27c.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc103",
+      "Query": "What is the capital of France?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking about the capital of France. This is a simple, well-known fact that doesn\u0027t require a Wikipedia search. The capital of France is Paris.\n\u003C/thinking\u003E\n\nThe capital of France is **Paris**! \uD83D\uDDFC\n\nParis is not only the political capital but also the cultural, economic, and historical heart of France. It is home to iconic landmarks such as the Eiffel Tower, the Louvre Museum, and Notre-Dame Cathedral, and it serves as the seat of the French government.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_3a44e37c.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc104",
+      "Query": "Translate \u0027hello\u0027 to Spanish",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user wants to translate \u0022hello\u0022 to Spanish. This is a simple, well-known translation fact that doesn\u0027t require a Wikipedia search. \u0022Hello\u0022 in Spanish is \u0022Hola.\u0022\n\u003C/thinking\u003E\n\nThe translation of **\u0022hello\u0022** in Spanish is **\u0022Hola\u0022**! \uD83C\uDDEA\uD83C\uDDF8\n\nIt\u0027s pronounced as **\u0022OH-lah\u0022** and is used universally in Spanish-speaking countries as a casual and friendly greeting.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_fa51b021.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc105",
+      "Query": "Write an apology letter to a friend whose birthday I missed",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user wants help writing an apology letter for missing a friend\u0027s birthday. This is a creative writing task, not a factual question that requires Wikipedia research. I can handle this directly without using any tools.\n\u003C/thinking\u003E\n\nHere\u0027s a heartfelt apology letter you can personalize for your friend:\n\n---\n\n**Subject: I\u0027m So Sorry I Missed Your Birthday \uD83C\uDF82**\n\nDear [Friend\u0027s Name],\n\nI hope this letter finds you well. I\u0027m writing because I owe you a sincere and long-overdue apology \u2014 **I missed your birthday**, and that is completely unacceptable given how much you mean to me.\n\nThere is no real excuse for it. Whether I got caught up in the busyness of life or simply lost track of the date, the bottom line is that I let you down on a day that was supposed to be all about celebrating *you*. You deserve so much better than that, and I am truly sorry.\n\nYou have always been there for me \u2014 through the good times and the tough ones \u2014 and the least I could do was acknowledge your special day. Missing it made me realize just how much I take your presence in my life for granted, and that is something I genuinely want to change.\n\nI\u0027d love to make it up to you. How about we plan a **belated birthday celebration** \u2014 just the two of us (or with the whole crew, whatever you prefer)? Dinner, a fun outing, or simply a good catch-up over coffee \u2014 I\u0027m fully on board with whatever makes you smile. Consider it your very own \u0022Part Two\u0022 birthday! \uD83C\uDF89\n\nAgain, I am deeply sorry. Your friendship is one of the things I treasure most, and I promise to do better going forward.\n\nWith love and a big (overdue) birthday wish,\n**[Your Name]**\n\n---\n\n\u003E \uD83D\uDCA1 **Tips to personalize this letter:**\n\u003E - Add a specific memory you share with your friend to make it more heartfelt.\n\u003E - Mention something special about them or why their friendship matters to you.\n\u003E - Include a birthday wish or a small gift alongside the letter for extra thoughtfulness.\n\u003E - Adjust the tone (more casual or more formal) based on your relationship.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_20e84e4b.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc106",
+      "Query": "Who was the first president of the United States?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking about the first president of the United States. This is a simple, well-known historical fact \u2014 George Washington. However, per my instructions, I should use Wikipedia for facts that must have references. Let me search for this.\n\nActually, the instructions say \u0022Do not use wikipedia for creative, mathematical asks and simple facts such as what is the color of the sky.\u0022 The first president of the US is a very simple, well-known fact. I can answer this without searching Wikipedia.\n\u003C/thinking\u003E\n\nThe first president of the United States was **George Washington**. He served two terms from **1789 to 1797**. Washington was a Founding Father, commander of the Continental Army during the American Revolutionary War, and is often referred to as the \u0022Father of His Country.\u0022 He was unanimously elected by the Electoral College, a distinction no other president has achieved.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_0dfdc30b.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/George_Washington\u0027",
+        "Wiki use mismatch: expected True, actual False",
+        "Search count 0 below minimum 1"
+      ]
+    },
+    {
+      "CaseId": "tc107",
+      "Query": "When was the Eiffel Tower built?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe search results clearly show that the Eiffel Tower was built from 1887 to 1889, designed and built by Gustave Eiffel\u0027s company.\n\u003C/thinking\u003E\n\nThe **Eiffel Tower** was constructed from **1887 to 1889**. It is located in Paris, France, and is named after the engineer **Gustave Eiffel**, whose company designed and built it. It was originally built for the **1889 World\u0027s Fair**. [Eiffel Tower](https://en.wikipedia.org/wiki/Eiffel_Tower)\n\n---\n\n**References**\n- [Eiffel Tower \u2013 Wikipedia](https://en.wikipedia.org/wiki/Eiffel_Tower)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Eiffel_Tower",
+        "https://en.wikipedia.org/wiki/Gustave_Eiffel",
+        "https://en.wikipedia.org/wiki/Tokyo_Tower"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_e682f70a.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc108",
+      "Query": "What is the population of Tokyo?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe search results provide clear information about Tokyo\u0027s population. Let me use the data from the Wikipedia articles to answer the question.\n\u003C/thinking\u003E\n\nBased on Wikipedia, **Tokyo** is the capital and most populous city of Japan. As of **2023**, Tokyo has a population of over **14 million people** (specifically **14,195,730**) in the city proper, representing about **11.5% of Japan\u0027s total population**. [Tokyo](https://en.wikipedia.org/wiki/Tokyo)\n\nIt\u0027s worth noting that the Greater Tokyo Area (including surrounding regions) is the most populous metropolitan area in the world, with tens of millions more residents. [Demographics of Tokyo](https://en.wikipedia.org/wiki/Demographics_of_Tokyo)\n\n---\n\n**References**\n- [Tokyo \u2013 Wikipedia](https://en.wikipedia.org/wiki/Tokyo)\n- [Demographics of Tokyo \u2013 Wikipedia](https://en.wikipedia.org/wiki/Demographics_of_Tokyo)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Tokyo",
+        "https://en.wikipedia.org/wiki/Demographics_of_Tokyo",
+        "https://en.wikipedia.org/wiki/List_of_cities_in_Tokyo_Metropolis_by_population"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_d7d0a804.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc109",
+      "Query": "What is the biggest country by land size?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking about the biggest country by land size. This is a simple, well-known fact \u2014 Russia is the largest country by land area. I don\u0027t need to search Wikipedia for this basic fact.\n\u003C/thinking\u003E\n\nThe largest country in the world by land area is **Russia**! \uD83C\uDF0D\n\nRussia covers approximately **17.1 million square kilometers (6.6 million square miles)**, making it by far the largest country on Earth. It spans across both Europe and Asia, covering more than one-eighth of Earth\u0027s total inhabited land area.\n\nHere\u0027s a quick look at the **Top 5 largest countries by land area**:\n\n| Rank | Country | Area (km\u00B2) |\n|------|-------------|----------------|\n| 1 | \uD83C\uDDF7\uD83C\uDDFA Russia | ~17,098,242 |\n| 2 | \uD83C\uDDE8\uD83C\uDDE6 Canada | ~9,984,670 |\n| 3 | \uD83C\uDDFA\uD83C\uDDF8 United States | ~9,833,517 |\n| 4 | \uD83C\uDDE8\uD83C\uDDF3 China | ~9,596,960 |\n| 5 | \uD83C\uDDE7\uD83C\uDDF7 Brazil | ~8,515,767 |\n\nRussia is nearly **twice the size** of the second-largest country, Canada! \uD83C\uDFD4\uFE0F",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_af99bbbc.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/Russia\u0027",
+        "Wiki use mismatch: expected True, actual False",
+        "Search count 0 below minimum 1"
+      ]
+    },
+    {
+      "CaseId": "tc201",
+      "Query": "Who wrote Romeo and Juliet?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThis is a simple, well-known fact \u2014 Romeo and Juliet was written by William Shakespeare. This is a basic fact that doesn\u0027t require a Wikipedia search.\n\u003C/thinking\u003E\n\n**Romeo and Juliet** was written by **William Shakespeare**. It is one of his most famous plays, believed to have been written around **1594\u20131596**. The play is a tragic love story about two young lovers from feuding families in Verona, Italy, and remains one of the most performed and celebrated works in literary history.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_56f9ba2e.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/Romeo_and_Juliet\u0027",
+        "Wiki use mismatch: expected True, actual False",
+        "Search count 0 below minimum 1"
+      ]
+    },
+    {
+      "CaseId": "tc202",
+      "Query": "What year did World War II end?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe search results clearly confirm the end of World War II. Let me compile the answer with citations.\n\u003C/thinking\u003E\n\nWorld War II ended in **1945**, though it concluded on two separate fronts:\n\n- **In Europe**, the war ended in **May 1945**, following the suicide of Adolf Hitler on April 30 and the subsequent surrender of Nazi Germany. [End of World War II in Europe](https://en.wikipedia.org/wiki/End_of_World_War_II_in_Europe)\n\n- **In Asia**, the war officially ended on **September 2, 1945**, when Japan formally surrendered aboard the USS Missouri. [End of World War II in Asia](https://en.wikipedia.org/wiki/End_of_World_War_II_in_Asia)\n\n---\n\n**References:**\n1. [End of World War II in Europe](https://en.wikipedia.org/wiki/End_of_World_War_II_in_Europe)\n2. [End of World War II in Asia](https://en.wikipedia.org/wiki/End_of_World_War_II_in_Asia)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/End_of_World_War_II_in_Europe",
+        "https://en.wikipedia.org/wiki/End_of_World_War_II_in_Asia",
+        "https://en.wikipedia.org/wiki/List_of_aircraft_of_World_War_II"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_ce1dac0c.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/World_War_II\u0027"
+      ]
+    },
+    {
+      "CaseId": "tc203",
+      "Query": "Who invented the telephone?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe search results clearly indicate that Alexander Graham Bell is credited with patenting the first practical telephone. Let me provide a well-cited answer.\n\u003C/thinking\u003E\n\n## The Invention of the Telephone\n\n**Alexander Graham Bell** is widely credited with inventing the telephone. He was a Scottish-born inventor, scientist, and engineer who is recognized for **patenting the first practical telephone**. He also went on to co-found the **American Telephone and Telegraph Company (AT\u0026T)**. [Alexander Graham Bell](https://en.wikipedia.org/wiki/Alexander_Graham_Bell)\n\nIt\u0027s worth noting that the invention of the telephone has been a subject of historical and legal debate, with other inventors such as **Elisha Gray** and **Antonio Meucci** also being recognized for their contributions to its development. [Telephone](https://en.wikipedia.org/wiki/Telephone) | [The Telephone Cases](https://en.wikipedia.org/wiki/The_Telephone_Cases)\n\n---\n\n### References\n- [Alexander Graham Bell \u2013 Wikipedia](https://en.wikipedia.org/wiki/Alexander_Graham_Bell)\n- [Telephone \u2013 Wikipedia](https://en.wikipedia.org/wiki/Telephone)\n- [The Telephone Cases \u2013 Wikipedia](https://en.wikipedia.org/wiki/The_Telephone_Cases)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Telephone",
+        "https://en.wikipedia.org/wiki/Alexander_Graham_Bell",
+        "https://en.wikipedia.org/wiki/The_Telephone_Cases"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_78e98209.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc204",
+      "Query": "What is the speed of light?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe speed of light is a simple, well-known scientific fact that doesn\u0027t require a Wikipedia search. I can answer this directly.\n\u003C/thinking\u003E\n\nThe speed of light in a vacuum is **299,792,458 meters per second** (approximately **3 \u00D7 10\u2078 m/s**, or about **186,282 miles per second**).\n\nThis is denoted by the letter **c** and is one of the fundamental constants of the universe. According to Einstein\u0027s theory of special relativity, the speed of light is the ultimate speed limit \u2014 nothing with mass can reach or exceed it.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_e2cc02ab.json",
+      "Status": 1,
+      "FailureReasons": [
+        "None of the expected URLs were referenced: https://en.wikipedia.org/wiki/Light",
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/Speed_of_light\u0027",
+        "Wiki use mismatch: expected True, actual False",
+        "Search count 0 below minimum 1"
+      ]
+    },
+    {
+      "CaseId": "tc205",
+      "Query": "Who painted the Mona Lisa?",
+      "ActualAnswer": "The **Mona Lisa** was painted by the Italian Renaissance artist **Leonardo da Vinci**. According to [Mona Lisa](https://en.wikipedia.org/wiki/Mona_Lisa), it is believed to have been painted between **1503 and 1506**, though Leonardo may have continued working on it as late as **1517**.\n\n---\n\n**References**\n- [Mona Lisa \u2013 Wikipedia](https://en.wikipedia.org/wiki/Mona_Lisa)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Mona_Lisa",
+        "https://en.wikipedia.org/wiki/Isleworth_Mona_Lisa",
+        "https://en.wikipedia.org/wiki/Two%E2%80%93Mona_Lisa_theory"
+      ],
+      "SearchCount": 3,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_107b3512.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc206",
+      "Query": "What is the capital of Australia?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking about the capital of Australia. This is a simple, well-known fact that doesn\u0027t require a Wikipedia search. The capital of Australia is Canberra.\n\u003C/thinking\u003E\n\nThe capital of Australia is **Canberra**. It is purpose-built city located in the Australian Capital Territory (ACT) and has served as the nation\u0027s capital since 1913. Canberra is home to the country\u0027s major governmental institutions, including the Parliament of Australia.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_60569115.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/Canberra\u0027",
+        "Wiki use mismatch: expected True, actual False",
+        "Search count 0 below minimum 1"
+      ]
+    },
+    {
+      "CaseId": "tc207",
+      "Query": "Who built the Space Needle?",
+      "ActualAnswer": "\u003Cthinking\u003E\nNow I have good information. Let me compile the details:\n\n1. The Space Needle was conceived by Edward E. Carlson, chairman of the 1962 World\u0027s Fair in Seattle.\n2. The architect was John Graham Jr. (of the firm John Graham \u0026 Company).\n3. The general contractor/builder was Howard S. Wright Companies.\n\nLet me provide a comprehensive answer with citations.\n\u003C/thinking\u003E\n\nThe **Space Needle** was the result of a collaboration between several key individuals and companies:\n\n- **Conceived by Edward E. Carlson**: The idea originated with Edward E. Carlson, chairman of the 1962 World\u0027s Fair (Century 21 Exposition) in Seattle. [Space Needle](https://en.wikipedia.org/wiki/Space_Needle)\n\n- **Designed by architect John Graham Jr.**: The architectural firm **John Graham \u0026 Company** was responsible for the design of the tower. [Space Needle](https://en.wikipedia.org/wiki/Space_Needle)\n\n- **Built by Howard S. Wright Companies**: The general contractor who physically constructed the Space Needle was **Howard S. Wright Construction Company**. [Howard S. Wright Companies](https://en.wikipedia.org/wiki/Howard_S._Wright_Companies)\n\nThe Space Needle was built for the **1962 World\u0027s Fair** in Seattle, Washington, and has since become an iconic landmark and observation tower in the city. [Space Needle](https://en.wikipedia.org/wiki/Space_Needle)\n\n---\n\n### References\n- [Space Needle \u2013 Wikipedia](https://en.wikipedia.org/wiki/Space_Needle)\n- [Howard S. Wright Companies \u2013 Wikipedia](https://en.wikipedia.org/wiki/Howard_S._Wright_Companies)\n- [Century 21 Exposition \u2013 Wikipedia](https://en.wikipedia.org/wiki/Century_21_Exposition)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Space_Needle",
+        "https://en.wikipedia.org/wiki/Kakeya_set",
+        "https://en.wikipedia.org/wiki/Safety_syringe",
+        "https://en.wikipedia.org/wiki/Space_Needle",
+        "https://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Seattle",
+        "https://en.wikipedia.org/wiki/Safeco_Plaza",
+        "https://en.wikipedia.org/wiki/Space_Needle",
+        "https://en.wikipedia.org/wiki/Century_21_Exposition",
+        "https://en.wikipedia.org/wiki/List_of_Vanderbilt_University_people",
+        "https://en.wikipedia.org/wiki/Howard_S._Wright_Companies",
+        "https://en.wikipedia.org/wiki/Landmark_(hotel_and_casino)",
+        "https://en.wikipedia.org/wiki/Seattle_Center_Monorail"
+      ],
+      "SearchCount": 12,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_c3f5b522.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc208",
+      "Query": "What is the largest desert in the world?",
+      "ActualAnswer": "\u003Cthinking\u003E\nNow I have enough information. According to the Wikipedia article on the Sahara, it is the \u0022largest hot desert in the world and the third-largest desert overall, smaller only than the deserts of Antarctica and the northern Arctic.\u0022 This confirms that the Antarctic Desert is the largest desert in the world, followed by the Arctic Desert, and then the Sahara.\n\nThe Antarctica article states it has an area of 14,200,000 km\u00B2 (5,500,000 sq mi).\n\nLet me compile this information into a clear answer.\n\u003C/thinking\u003E\n\nThe **Antarctic Desert** is the largest desert in the world! \uD83C\uDF0D\n\nWhile many people assume the Sahara holds this title, it is actually only the **largest *hot* desert** in the world and the **third-largest desert overall**. According to Wikipedia, the Sahara is *\u0022smaller only than the deserts of Antarctica and the northern Arctic.\u0022* [Sahara](https://en.wikipedia.org/wiki/Sahara)\n\nHere\u0027s a quick breakdown:\n\n| Rank | Desert | Type | Area |\n|------|--------|------|------|\n| 1 | **Antarctic Desert** | Polar (Cold) | ~14,200,000 km\u00B2 |\n| 2 | **Arctic Desert** | Polar (Cold) | ~13,900,000 km\u00B2 |\n| 3 | **Sahara** | Hot | ~9,000,000 km\u00B2 |\n\nAntarctica, covering an area of **14,200,000 km\u00B2 (5,500,000 sq mi)**, qualifies as a desert because it receives extremely little precipitation \u2014 making it the coldest, driest, and windiest continent on Earth. [Antarctica](https://en.wikipedia.org/wiki/Antarctica)\n\nSo, the key distinction is:\n- **Largest desert overall** \u2192 \uD83E\uDDCA **Antarctic Desert** (polar/cold desert)\n- **Largest hot desert** \u2192 \uD83C\uDF1E **Sahara Desert**\n\n---\n\n### References\n- [Sahara \u2013 Wikipedia](https://en.wikipedia.org/wiki/Sahara)\n- [Antarctica \u2013 Wikipedia](https://en.wikipedia.org/wiki/Antarctica)\n- [List of Deserts \u2013 Wikipedia](https://en.wikipedia.org/wiki/List_of_deserts)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/List_of_deserts",
+        "https://en.wikipedia.org/wiki/Patagonian_Desert",
+        "https://en.wikipedia.org/wiki/Gobi_Desert",
+        "https://en.wikipedia.org/wiki/Atacama_Desert",
+        "https://en.wikipedia.org/wiki/Patagonian_Desert",
+        "https://en.wikipedia.org/wiki/Chihuahuan_Desert",
+        "https://en.wikipedia.org/wiki/Wikipedia",
+        "https://en.wikipedia.org/wiki/East_Antarctica",
+        "https://en.wikipedia.org/wiki/Polar_desert",
+        "https://en.wikipedia.org/wiki/Antarctica",
+        "https://en.wikipedia.org/wiki/Continent",
+        "https://en.wikipedia.org/wiki/Geography_of_Antarctica",
+        "https://en.wikipedia.org/wiki/Lut_Desert",
+        "https://en.wikipedia.org/wiki/Chihuahuan_Desert",
+        "https://en.wikipedia.org/wiki/Great_Salt_Desert",
+        "https://en.wikipedia.org/wiki/Chihuahuan_Desert",
+        "https://en.wikipedia.org/wiki/Atacama_Desert",
+        "https://en.wikipedia.org/wiki/Sonoran_Desert",
+        "https://en.wikipedia.org/wiki/Sahara",
+        "https://en.wikipedia.org/wiki/Desert_greening",
+        "https://en.wikipedia.org/wiki/List_of_deserts"
+      ],
+      "SearchCount": 21,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_667a6559.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Prohibited keyword found: \u0027Sahara\u0027",
+        "None of the expected URLs were referenced: https://en.wikipedia.org/wiki/Antarctic_Desert, https://en.wikipedia.org/wiki/List_of_deserts_by_area",
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/Desert\u0027"
+      ]
+    },
+    {
+      "CaseId": "tc301",
+      "Query": "Tell me about Mercury",
+      "ActualAnswer": "",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Mercury_(planet)",
+        "https://en.wikipedia.org/wiki/Mercury",
+        "https://en.wikipedia.org/wiki/Outline_of_Mercury_(planet)",
+        "https://en.wikipedia.org/wiki/Mercury_(element)",
+        "https://en.wikipedia.org/wiki/Chemical_element",
+        "https://en.wikipedia.org/wiki/Chemical_symbol",
+        "https://en.wikipedia.org/wiki/Mercury_(mythology)",
+        "https://en.wikipedia.org/wiki/Lugus",
+        "https://en.wikipedia.org/wiki/Uranus_(mythology)",
+        "https://en.wikipedia.org/wiki/Mercury_(planet)",
+        "https://en.wikipedia.org/wiki/Ceres_(dwarf_planet)",
+        "https://en.wikipedia.org/wiki/BepiColombo",
+        "https://en.wikipedia.org/wiki/Mercury_(element)",
+        "https://en.wikipedia.org/wiki/Arsenic",
+        "https://en.wikipedia.org/wiki/Bromine",
+        "https://en.wikipedia.org/wiki/Mercury_(mythology)",
+        "https://en.wikipedia.org/wiki/Mercury_(planet)",
+        "https://en.wikipedia.org/wiki/Caduceus",
+        "https://en.wikipedia.org/wiki/Mercury_(planet)",
+        "https://en.wikipedia.org/wiki/Ganymede_(moon)",
+        "https://en.wikipedia.org/wiki/Moons_of_Saturn",
+        "https://en.wikipedia.org/wiki/Mercury_(element)",
+        "https://en.wikipedia.org/wiki/Group_12_element",
+        "https://en.wikipedia.org/wiki/Gallium",
+        "https://en.wikipedia.org/wiki/Hermes",
+        "https://en.wikipedia.org/wiki/Odin",
+        "https://en.wikipedia.org/wiki/Deity"
+      ],
+      "SearchCount": 27,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_573c17d9.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Missing keyword: \u0027planet\u0027",
+        "Missing keyword: \u0027element\u0027"
+      ]
+    },
+    {
+      "CaseId": "tc302",
+      "Query": "Tell me about Python",
+      "ActualAnswer": "\u003Cthinking\u003E\nNow I have enough information to provide a comprehensive answer about both Python the programming language and Pythons the snake. Let me compile the information and cite the relevant sources.\n\u003C/thinking\u003E\n\nGreat question! \u0022Python\u0022 can refer to two very different things \u2014 a **programming language** and a **family of snakes**. Here\u0027s a look at both:\n\n---\n\n# \uD83D\uDC0D Python (the Snake)\n\nPythons are a fascinating group of reptiles. According to [Pythonidae](https://en.wikipedia.org/wiki/Pythonidae), **Pythonidae** \u2014 commonly known as pythons \u2014 are a **family of nonvenomous snakes** found in **Africa, Asia, and Australia**. Among their members are some of the **largest snakes in the world**. Key facts include:\n\n- They are **constrictors**, meaning they subdue prey by squeezing rather than using venom.\n- They are found across diverse habitats including rainforests, grasslands, and deserts.\n- Well-known species include the **Reticulated Python**, **Burmese Python**, and **Ball Python**.\n- They are **ectothermic** (cold-blooded) reptiles, regulating body temperature through their environment.\n\n---\n\n# \uD83D\uDCBB Python (the Programming Language)\n\nPython is one of the most popular programming languages in the world today. According to [Python (programming language)](https://en.wikipedia.org/wiki/Python_(programming_language)):\n\n- Python is a **high-level, general-purpose programming language** that emphasizes **code readability, simplicity, and ease of writing**.\n- It supports **multiple programming paradigms**, with an emphasis on **object-oriented programming** and **dynamic typing**.\n- It was conceived in the **late 1980s** and its implementation was started in **December 1989** by **Guido van Rossum** at CWI (Centrum Wiskunde \u0026 Informatica) in the Netherlands, as noted by [History of Python](https://en.wikipedia.org/wiki/History_of_Python).\n- It was **first publicly released in 1991**.\n- [Guido van Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum) (born 31 January 1956) is a Dutch programmer and is the **creator** of Python. He is often referred to as Python\u0027s \u0022Benevolent Dictator For Life\u0022 (BDFL).\n\n### \uD83D\uDD11 Key Features of Python:\n| Feature | Description |\n|---|---|\n| **Readability** | Clean, English-like syntax |\n| **Versatility** | Used in web dev, AI/ML, data science, automation, and more |\n| **Dynamic Typing** | Variable types are determined at runtime |\n| **Large Ecosystem** | Thousands of libraries (e.g., NumPy, TensorFlow, Django) |\n| **Open Source** | Free to use and distribute |\n\n### \uD83C\uDFDB\uFE0F Why Is It Called \u0022Python\u0022?\nInterestingly, the name \u0022Python\u0022 was **not** inspired by the snake \u2014 it was inspired by the British comedy series **Monty Python\u0027s Flying Circus**, which van Rossum was a fan of.\n\n---\n\n## Which Python Were You Asking About?\nLet me know if you\u0027d like to dive deeper into either the **programming language** or the **snake**! \uD83D\uDE0A\n\n---\n\n## References\n- [Pythonidae \u2013 Wikipedia](https://en.wikipedia.org/wiki/Pythonidae)\n- [Python (programming language) \u2013 Wikipedia](https://en.wikipedia.org/wiki/Python_(programming_language))\n- [History of Python \u2013 Wikipedia](https://en.wikipedia.org/wiki/History_of_Python)\n- [Guido van Rossum \u2013 Wikipedia](https://en.wikipedia.org/wiki/Guido_van_Rossum)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Python_(programming_language)",
+        "https://en.wikipedia.org/wiki/Outline_of_the_Python_programming_language",
+        "https://en.wikipedia.org/wiki/Mojo_(programming_language)",
+        "https://en.wikipedia.org/wiki/Children\u0027s_python",
+        "https://en.wikipedia.org/wiki/Ball_python",
+        "https://en.wikipedia.org/wiki/2013_New_Brunswick_python_attack",
+        "https://en.wikipedia.org/wiki/Pythonidae",
+        "https://en.wikipedia.org/wiki/List_of_largest_snakes",
+        "https://en.wikipedia.org/wiki/Snake",
+        "https://en.wikipedia.org/wiki/Guido_van_Rossum",
+        "https://en.wikipedia.org/wiki/History_of_Python",
+        "https://en.wikipedia.org/wiki/Python_(programming_language)"
+      ],
+      "SearchCount": 12,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_7375bcda.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc303",
+      "Query": "Tell me about the Jaguar",
+      "ActualAnswer": "",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Jaguar",
+        "https://en.wikipedia.org/wiki/Big_cat",
+        "https://en.wikipedia.org/wiki/List_of_largest_cats",
+        "https://en.wikipedia.org/wiki/Jaguar_Cars",
+        "https://en.wikipedia.org/wiki/Chery_Jaguar_Land_Rover",
+        "https://en.wikipedia.org/wiki/List_of_car_brands",
+        "https://en.wikipedia.org/wiki/Jaguar",
+        "https://en.wikipedia.org/wiki/Tiger",
+        "https://en.wikipedia.org/wiki/Leopard",
+        "https://en.wikipedia.org/wiki/Jaguar_Land_Rover",
+        "https://en.wikipedia.org/wiki/Land_Rover",
+        "https://en.wikipedia.org/wiki/Chery_Jaguar_Land_Rover",
+        "https://en.wikipedia.org/wiki/Jaguar",
+        "https://en.wikipedia.org/wiki/Cat",
+        "https://en.wikipedia.org/wiki/Black_caiman",
+        "https://en.wikipedia.org/wiki/SS_Cars",
+        "https://en.wikipedia.org/wiki/Swallow_Sidecar_Company",
+        "https://en.wikipedia.org/wiki/Jaguar_Cars"
+      ],
+      "SearchCount": 18,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_e0fb89a1.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Missing keyword: \u0027car\u0027",
+        "Missing keyword: \u0027animal\u0027"
+      ]
+    },
+    {
+      "CaseId": "tc304",
+      "Query": "Tell me about Jordan",
+      "ActualAnswer": "",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Jordan",
+        "https://en.wikipedia.org/wiki/Overview_effect",
+        "https://en.wikipedia.org/wiki/Religions_by_country",
+        "https://en.wikipedia.org/wiki/Economy_of_Jordan",
+        "https://en.wikipedia.org/wiki/Culture_of_Jordan",
+        "https://en.wikipedia.org/wiki/Geography_of_Jordan",
+        "https://en.wikipedia.org/wiki/Jordan",
+        "https://en.wikipedia.org/wiki/Politics_of_Jordan",
+        "https://en.wikipedia.org/wiki/Hussein_of_Jordan",
+        "https://en.wikipedia.org/wiki/Amman",
+        "https://en.wikipedia.org/wiki/Paphos",
+        "https://en.wikipedia.org/wiki/Google_Street_View_in_Asia",
+        "https://en.wikipedia.org/wiki/Interregnum_(Transjordan)",
+        "https://en.wikipedia.org/wiki/Transjordan_(region)",
+        "https://en.wikipedia.org/wiki/Abdullah_I_of_Jordan",
+        "https://en.wikipedia.org/wiki/Economy_of_Jordan",
+        "https://en.wikipedia.org/wiki/Economy_of_Morocco",
+        "https://en.wikipedia.org/wiki/Economy_of_Syria",
+        "https://en.wikipedia.org/wiki/Easter_traditions",
+        "https://en.wikipedia.org/wiki/Culture_of_Palestine",
+        "https://en.wikipedia.org/wiki/History_of_music",
+        "https://en.wikipedia.org/wiki/Petra",
+        "https://en.wikipedia.org/wiki/List_of_World_Heritage_Sites_in_Jordan",
+        "https://en.wikipedia.org/wiki/Little_Petra",
+        "https://en.wikipedia.org/wiki/Geography_of_Jordan",
+        "https://en.wikipedia.org/wiki/Geography_of_Palestine",
+        "https://en.wikipedia.org/wiki/Geography_of_Lebanon"
+      ],
+      "SearchCount": 27,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_844ad4f1_b604bce0.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Missing keyword: \u0027country\u0027",
+        "Missing keyword: \u0027Michael\u0027"
+      ]
+    },
+    {
+      "CaseId": "tc305",
+      "Query": "Tell me about Apple, the famous technology company",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc401",
+      "Query": "Did Einstein win a Nobel Prize for the theory of relativity?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc402",
+      "Query": "Was the Great Wall of China visible from space?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc403",
+      "Query": "Did Napoleon win the Battle of Waterloo?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc404",
+      "Query": "Did the Titanic sink on its first voyage?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc405",
+      "Query": "Who won the 2025 FIFA World Cup?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc406",
+      "Query": "What was the price of the Apple AirPower charging mat?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc407",
+      "Query": "Did humans and dinosaurs ever co-exist?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc501",
+      "Query": "Who was the architect of the building where Lincoln was shot?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc502",
+      "Query": "Who was the French president when the Eiffel Tower was built?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc503",
+      "Query": "What team did Michael Jordan play for when he won his first NBA championship?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc504",
+      "Query": "What is the nationality of the artist who painted the ceiling of the Sistine Chapel?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc505",
+      "Query": "What country was the inventor of the World Wide Web born in?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc506",
+      "Query": "Who is the president of the country that won the 2024 T20 World Cup?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    }
+  ],
+  "PassCount": 11,
+  "FailCount": 10,
+  "IncompleteCount": 14
+}

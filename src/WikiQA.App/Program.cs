@@ -1,47 +1,58 @@
 using WikiQA.Evals;
 using WikiQA.Agent.Agent;
+using WikiQA.Agent.Models;
 using WikiQA.Agent.Prompts;
 using WikiQA.Agent.Transcript;
 
 var transcriptLogger = new TranscriptLoggerProvider();
-var transcriptWriter = new TranscriptWriter(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "..", "transcripts"));
-
+var transcriptWriter = new TranscriptWriter(
+    Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "..", "transcripts"));
+var evalResultWriter = new EvalResultWriter(
+    Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "..", "eval-results"));
 var promptBuilder = new PromptBuilder(Path.Combine(AppContext.BaseDirectory, "Prompts"));
 
+// ── Eval mode ────────────────────────────────────────────────
 if (args is ["--eval", var suiteName])
 {
     var agent = new WikipediaAgent(promptBuilder, transcriptLogger, transcriptWriter);
     var executor = new EvalExecutor(
         Path.Combine(AppContext.BaseDirectory, "Suites"),
-        agent);
-    var run = await executor.RunAsync(suiteName);
-    Console.WriteLine($"Run ID : {run.RunId}");
-    Console.WriteLine($"Suite  : {run.SuiteName}");
-    Console.WriteLine($"Ran At : {run.RunAt:u}");
-    Console.WriteLine($"Pass   : {run.PassCount}  Fail: {run.FailCount}");
+        agent,
+        evalResultWriter);
+
+    Console.WriteLine($"Suite  : {suiteName}");
     Console.WriteLine();
-    foreach (var r in run.Results)
+
+    var run = await executor.RunAsync(suiteName, onResult: r =>
     {
-        if (r.Passed)
+        Console.ForegroundColor = r.Status switch
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"[PASS] {r.CaseId}: {r.Query}");
-        }
-        else
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"[FAIL] {r.CaseId}: {r.Query}");
-        }
+            EvalStatus.Passed     => ConsoleColor.Green,
+            EvalStatus.Incomplete => ConsoleColor.Yellow,
+            _                     => ConsoleColor.Red
+        };
+        Console.WriteLine($"  [{r.Status.ToString().ToUpper()}] {r.CaseId}: {r.Query}");
         Console.ResetColor();
-        Console.WriteLine($"       Response: {r.ActualAnswer}");
-        if (r.ReferencedUrls.Count > 0)
-            Console.WriteLine($"       Sources: {string.Join(", ", r.ReferencedUrls)}");
-        foreach (var reason in r.FailureReasons)
-            Console.WriteLine($"       {reason}");
-    }
+        return Task.CompletedTask;
+    });
+
+    Console.WriteLine();
+    Console.WriteLine("─────────────────────────────────────");
+    Console.WriteLine($"  Total      : {run.Results.Count}");
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine($"  Pass       : {run.PassCount}");
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine($"  Fail       : {run.FailCount}");
+    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.WriteLine($"  Incomplete : {run.IncompleteCount}");
+    Console.ResetColor();
+    var pct = run.Results.Count > 0 ? run.PassCount * 100.0 / run.Results.Count : 0;
+    Console.WriteLine($"  Score      : {pct:F1}%");
+    Console.WriteLine("─────────────────────────────────────");
     return;
 }
 
+// ── Demo mode ─────────────────────────────────────────────────
 Console.WriteLine("WikiQA Agent");
 Console.WriteLine("============");
 Console.Write("Enter your question: ");

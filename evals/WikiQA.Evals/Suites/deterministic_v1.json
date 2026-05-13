@@ -1,0 +1,320 @@
+{
+  "name": "deterministic_v1",
+  "version": 1,
+  "evalType": 7,
+  "description": "Deterministic eval suite covering efficiency, fact retrieval, ambiguity, negative facts, and multi-hop reasoning",
+  "cases": [
+    {
+      "id": "tc101", "category": "Efficiency_NoWiki",
+      "query": "What is 2 + 2?",
+      "expectedKeywords": ["4"],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": false, "minExpectedSearchCount": 0
+    },
+    {
+      "id": "tc102", "category": "Efficiency_NoWiki",
+      "query": "Hello, how are you?",
+      "expectedKeywords": [],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": false, "minExpectedSearchCount": 0
+    },
+    {
+      "id": "tc103", "category": "Efficiency_WikiCall",
+      "query": "What is the capital of France?",
+      "expectedKeywords": [],
+      "anyKeywords": ["Paris"], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Paris"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc104", "category": "Efficiency_NoWiki",
+      "query": "Translate 'hello' to Spanish",
+      "expectedKeywords": [],
+      "anyKeywords": ["hola"], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": false, "minExpectedSearchCount": 0
+    },
+    {
+      "id": "tc105", "category": "Efficiency_NoWiki",
+      "query": "Write an apology letter to a friend whose birthday I missed",
+      "expectedKeywords": [],
+      "anyKeywords": ["sorry", "apology", "birthday", "forgive"], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": false, "minExpectedSearchCount": 0
+    },
+    {
+      "id": "tc106", "category": "Efficiency_WikiCall",
+      "query": "Who was the first president of the United States?",
+      "expectedKeywords": ["Washington"],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": ["https://en.wikipedia.org/wiki/George_Washington"],
+      "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc107", "category": "Efficiency_WikiCall",
+      "query": "When was the Eiffel Tower built?",
+      "expectedKeywords": [],
+      "anyKeywords": ["1889", "1887"], "prohibitedKeywords": [],
+      "expectedReferenceUrls": ["https://en.wikipedia.org/wiki/Eiffel_Tower"],
+      "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc108", "category": "Efficiency_WikiCall",
+      "query": "What is the population of Tokyo?",
+      "expectedKeywords": [],
+      "anyKeywords": ["Tokyo"], "prohibitedKeywords": [],
+      "expectedReferenceUrls": ["https://en.wikipedia.org/wiki/Tokyo"],
+      "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc109", "category": "Efficiency_WikiCall",
+      "query": "What is the biggest country by land size?",
+      "expectedKeywords": ["Russia"],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Russia", "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area", "https://en.wikipedia.org/wiki/Geography_of_Russia"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc201", "category": "FactRetrieval",
+      "query": "Who wrote Romeo and Juliet?",
+      "expectedKeywords": ["Shakespeare"],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": ["https://en.wikipedia.org/wiki/Romeo_and_Juliet"],
+      "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc202", "category": "FactRetrieval",
+      "query": "What year did World War II end?",
+      "expectedKeywords": [],
+      "anyKeywords": ["1945"], "prohibitedKeywords": [],
+      "expectedReferenceUrls": ["https://en.wikipedia.org/wiki/World_War_II"],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/End_of_World_War_II_in_Europe"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc203", "category": "FactRetrieval",
+      "query": "Who invented the telephone?",
+      "expectedKeywords": ["Bell"],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": ["https://en.wikipedia.org/wiki/Telephone"],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Alexander_Graham_Bell", "https://en.wikipedia.org/wiki/Invention_of_the_telephone"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc204", "category": "FactRetrieval",
+      "query": "What is the speed of light?",
+      "expectedKeywords": [],
+      "anyKeywords": ["299", "186"], "prohibitedKeywords": [],
+      "expectedReferenceUrls": ["https://en.wikipedia.org/wiki/Speed_of_light"],
+      "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc205", "category": "FactRetrieval",
+      "query": "Who painted the Mona Lisa?",
+      "expectedKeywords": ["Leonardo", "da Vinci"],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": ["https://en.wikipedia.org/wiki/Mona_Lisa"],
+      "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc206", "category": "FactRetrieval",
+      "query": "What is the capital of Australia?",
+      "expectedKeywords": [],
+      "anyKeywords": ["Canberra"],
+      "prohibitedKeywords": ["Sydney", "Melbourne"],
+      "expectedReferenceUrls": [],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Canberra", "https://en.wikipedia.org/wiki/Australian_Capital_Territory"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc207", "category": "FactRetrieval",
+      "query": "Who built the Space Needle?",
+      "expectedKeywords": ["John Graham"],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": ["https://en.wikipedia.org/wiki/Space_Needle"],
+      "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc208", "category": "FactRetrieval",
+      "query": "What is the largest desert in the world?",
+      "expectedKeywords": ["Antarctica"],
+      "anyKeywords": [], "prohibitedKeywords": ["Sahara"],
+      "expectedReferenceUrls": ["https://en.wikipedia.org/wiki/Desert"],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Antarctic_Desert", "https://en.wikipedia.org/wiki/List_of_deserts_by_area"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc301", "category": "HandleAmbiguity",
+      "query": "Tell me about Mercury",
+      "expectedKeywords": ["planet", "element"],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc302", "category": "HandleAmbiguity",
+      "query": "Tell me about Python",
+      "expectedKeywords": ["programming", "snake"],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc303", "category": "HandleAmbiguity",
+      "query": "Tell me about the Jaguar",
+      "expectedKeywords": ["car", "animal"],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc304", "category": "HandleAmbiguity",
+      "query": "Tell me about Jordan",
+      "expectedKeywords": ["country"],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [], "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc305", "category": "HandleAmbiguity",
+      "query": "Tell me about Apple, the famous technology company",
+      "expectedKeywords": ["Steve Jobs", "iPhone"],
+      "anyKeywords": ["Mac", "Cupertino", "Tim Cook"],
+      "prohibitedKeywords": ["fruit"],
+      "expectedReferenceUrls": ["https://en.wikipedia.org/wiki/Apple_Inc."],
+      "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc401", "category": "HandleNegativeFacts",
+      "query": "Did Einstein win a Nobel Prize for the theory of relativity?",
+      "expectedKeywords": ["photoelectric"],
+      "anyKeywords": ["not", "no", "instead"],
+      "prohibitedKeywords": ["yes", "relativity"],
+      "expectedReferenceUrls": [],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Albert_Einstein"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc402", "category": "HandleNegativeFacts",
+      "query": "Was the Great Wall of China visible from space?",
+      "expectedKeywords": [],
+      "anyKeywords": ["no", "not", "myth", "false", "cannot"],
+      "prohibitedKeywords": ["yes"],
+      "expectedReferenceUrls": [],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Great_Wall_of_China"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc403", "category": "HandleNegativeFacts",
+      "query": "Did Napoleon win the Battle of Waterloo?",
+      "expectedKeywords": ["Waterloo"],
+      "anyKeywords": ["no", "not", "lost", "defeated"],
+      "prohibitedKeywords": ["yes"],
+      "expectedReferenceUrls": ["https://en.wikipedia.org/wiki/Battle_of_Waterloo"],
+      "anyReferencedUrls": [],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc404", "category": "HandleNegativeFacts",
+      "query": "Did the Titanic sink on its first voyage?",
+      "expectedKeywords": [],
+      "anyKeywords": ["maiden", "first", "yes"], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Titanic"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc405", "category": "HandleNegativeFacts",
+      "query": "Who won the 2025 FIFA World Cup?",
+      "expectedKeywords": [],
+      "anyKeywords": ["2026", "not held", "no", "did not", "does not"], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/FIFA_World_Cup"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc406", "category": "HandleNegativeFacts",
+      "query": "What was the price of the Apple AirPower charging mat?",
+      "expectedKeywords": [],
+      "anyKeywords": ["cancelled", "canceled", "never released", "discontinued"], "prohibitedKeywords": ["$"],
+      "expectedReferenceUrls": [],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/AirPower_(Apple)"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc407", "category": "HandleNegativeFacts",
+      "query": "Did humans and dinosaurs ever co-exist?",
+      "expectedKeywords": [],
+      "anyKeywords": ["no", "not", "never", "extinct", "million years"],
+      "prohibitedKeywords": ["yes"],
+      "expectedReferenceUrls": [],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Dinosaur", "https://en.wikipedia.org/wiki/Human_evolution", "https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 1
+    },
+    {
+      "id": "tc501", "category": "MultiHop",
+      "query": "Who was the architect of the building where Lincoln was shot?",
+      "expectedKeywords": ["Ford"],
+      "anyKeywords": ["theatre", "theater"], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Ford%27s_Theatre", "https://en.wikipedia.org/wiki/Abraham_Lincoln"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 2
+    },
+    {
+      "id": "tc502", "category": "MultiHop",
+      "query": "Who was the French president when the Eiffel Tower was built?",
+      "expectedKeywords": ["Carnot"],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Eiffel_Tower", "https://en.wikipedia.org/wiki/Sadi_Carnot_(statesman)"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 2
+    },
+    {
+      "id": "tc503", "category": "MultiHop",
+      "query": "What team did Michael Jordan play for when he won his first NBA championship?",
+      "expectedKeywords": ["Chicago Bulls", "1991"],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Michael_Jordan", "https://en.wikipedia.org/wiki/Chicago_Bulls"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 2
+    },
+    {
+      "id": "tc504", "category": "MultiHop",
+      "query": "What is the nationality of the artist who painted the ceiling of the Sistine Chapel?",
+      "expectedKeywords": ["Italian", "Michelangelo"],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling", "https://en.wikipedia.org/wiki/Michelangelo"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 2
+    },
+    {
+      "id": "tc505", "category": "MultiHop",
+      "query": "What country was the inventor of the World Wide Web born in?",
+      "expectedKeywords": ["Tim Berners-Lee", "England"],
+      "anyKeywords": ["British", "United Kingdom"], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Tim_Berners-Lee", "https://en.wikipedia.org/wiki/World_Wide_Web"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 2
+    },
+    {
+      "id": "tc506", "category": "MultiHop",
+      "query": "Who is the president of the country that won the 2024 T20 World Cup?",
+      "expectedKeywords": ["India", "Droupadi Murmu"],
+      "anyKeywords": [], "prohibitedKeywords": [],
+      "expectedReferenceUrls": [],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/2024_ICC_Men%27s_T20_World_Cup", "https://en.wikipedia.org/wiki/Droupadi_Murmu", "https://en.wikipedia.org/wiki/India_national_cricket_team"],
+      "isWikiUseExpected": true, "minExpectedSearchCount": 3
+    }
+  ]
+}

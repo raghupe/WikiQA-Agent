@@ -1,0 +1,24 @@
+{
+  "RunId": "af126d05",
+  "SuiteName": "basic",
+  "RunAt": "2026-05-13T06:03:12.5239311+00:00",
+  "Results": [
+    {
+      "CaseId": "tc001",
+      "Query": "Who built the Space Needle?",
+      "ActualAnswer": "Based on the Wikipedia article on the Space Needle, here is what is known about its construction:\n\nThe **Space Needle** was built for the **1962 World\u0027s Fair (Century 21 Exposition)** in Seattle, Washington. It was designed by a team that included **Edward E. Carlson**, who sketched the original concept, and **architect John Graham Jr.**, whose firm developed the design. It was constructed by **Howard S. Wright Construction Co.** The project was privately funded by a group of Seattle businessmen led by **Bagley Wright, Howard S. Wright, and Ned Skinner**, among others.\n\nIt remains one of Seattle\u0027s most iconic landmarks to this day!",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Space_Needle",
+        "https://en.wikipedia.org/wiki/The_Strat"
+      ],
+      "SearchCount": 2,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\basic_af126d05_fc8316b7.json",
+      "Passed": true,
+      "FailureReasons": []
+    }
+  ],
+  "PassCount": 1,
+  "FailCount": 0
+}

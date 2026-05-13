@@ -1,0 +1,599 @@
+{
+  "RunId": "b4b4b5b6",
+  "SuiteName": "deterministic_v1",
+  "RunAt": "2026-05-13T06:48:30.1076695+00:00",
+  "Results": [
+    {
+      "CaseId": "tc101",
+      "Query": "What is 2 \u002B 2?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking a simple mathematical question. No Wikipedia search is needed for this.\n\u003C/thinking\u003E\n\n2 \u002B 2 = **4**\n\nThis is a basic arithmetic addition fact and doesn\u0027t require any external references to answer!",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_8777aa39.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc102",
+      "Query": "Hello, how are you?",
+      "ActualAnswer": "Hello! I\u0027m doing great, thank you for asking! \uD83D\uDE0A I\u0027m here and ready to help you with any questions you might have. Whether you need information, research, or just want to learn something new, feel free to ask! How can I assist you today?",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_f2425419.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc103",
+      "Query": "What is the capital of France?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking about the capital of France. This is a simple, well-known fact that doesn\u0027t require a Wikipedia search. The capital of France is Paris.\n\u003C/thinking\u003E\n\nThe capital of France is **Paris**. \uD83C\uDDEB\uD83C\uDDF7\n\nParis is one of the most well-known capital cities in the world, serving as France\u0027s political, cultural, and economic center. It is home to the French government, including the \u00C9lys\u00E9e Palace (the official residence of the President) and the National Assembly.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_f8994633.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc104",
+      "Query": "Translate \u0027hello\u0027 to Spanish",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user wants to translate \u0027hello\u0027 to Spanish. This is a simple translation fact that doesn\u0027t require a Wikipedia search. The Spanish word for \u0027hello\u0027 is \u0027hola\u0027.\n\u003C/thinking\u003E\n\nThe Spanish translation of **\u0022hello\u0022** is **\u0022hola\u0022**! \uD83C\uDDEA\uD83C\uDDF8\n\nIt is pronounced as **\u0022OH-lah\u0022** and is the most common greeting used in Spanish-speaking countries.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_7f296811.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc105",
+      "Query": "Write an apology letter to a friend whose birthday I missed",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user wants help writing an apology letter to a friend whose birthday they missed. This is a creative writing request, not a factual query, so I don\u0027t need to use Wikipedia for this. I can directly write the letter.\n\u003C/thinking\u003E\n\nHere\u0027s a heartfelt apology letter you can personalize for your friend:\n\n---\n\n**Subject: I\u0027m So Sorry I Missed Your Birthday \uD83C\uDF82**\n\nDear [Friend\u0027s Name],\n\nI hope this letter finds you well. I\u0027m writing to sincerely apologize for missing your birthday. There is truly no excuse good enough for forgetting such an important day \u2014 a day that celebrates **you**, someone I deeply care about.\n\nI know how much birthdays mean, and the thought that I wasn\u0027t there to make you feel special truly weighs on my heart. You have always shown up for me in ways that matter, and I failed to do the same for you. That wasn\u0027t fair, and you deserved better from me.\n\nI want you to know that missing your birthday was never a reflection of how much you mean to me. You are one of the most [kind / funny / generous / wonderful \u2014 pick what fits!] people in my life, and I am incredibly lucky to call you my friend.\n\nI\u0027d love the chance to make it up to you. How about we plan a **belated birthday celebration** \u2014 just the two of us (or the whole crew!) \u2014 dinner, dessert, and all the fun you deserve? The celebration of *you* doesn\u0027t have to stop at just one day.\n\nOnce again, I am truly sorry. I value our friendship more than words can express, and I promise to do better.\n\nWith love and a big (overdue) **Happy Birthday** \uD83C\uDF89,\n\n[Your Name]\n\n---\n\n### \u270F\uFE0F Tips to Personalize This Letter:\n- **Add a specific memory** you share with your friend to make it more genuine.\n- **Mention the reason** (briefly and honestly) if it was circumstantial \u2014 but don\u0027t over-explain or make excuses.\n- **Attach a gift or gift card** to go along with the letter for an extra thoughtful touch.\n- **Handwrite it** if possible \u2014 a handwritten note always feels more sincere than a typed one.\n\nThe most important thing is that your friend feels seen, valued, and appreciated. Good luck! \uD83D\uDC9B",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": false,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_685b4337.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc106",
+      "Query": "Who was the first president of the United States?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe search results clearly confirm that George Washington was the first president of the United States, serving from 1789 to 1797.\n\u003C/thinking\u003E\n\n**[George Washington](https://en.wikipedia.org/wiki/George_Washington)** was the first President of the United States. He was a Founding Father who served two terms as president, from **1789 to 1797**. Before his presidency, he was also the commander of the Continental Army during the American Revolutionary War.\n\n---\n\n### References\n- [George Washington \u2013 Wikipedia](https://en.wikipedia.org/wiki/George_Washington)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/George_Washington",
+        "https://en.wikipedia.org/wiki/President_of_the_United_States",
+        "https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States_by_age",
+        "https://en.wikipedia.org/wiki/Chester_A._Arthur",
+        "https://en.wikipedia.org/wiki/Vice_President_of_the_United_States",
+        "https://en.wikipedia.org/wiki/President_of_the_Continental_Congress",
+        "https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States",
+        "https://en.wikipedia.org/wiki/John_Adams",
+        "https://en.wikipedia.org/wiki/Acting_President_of_the_United_States",
+        "https://en.wikipedia.org/wiki/President_pro_tempore_of_the_United_States_Senate"
+      ],
+      "SearchCount": 10,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_c57cef21.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc107",
+      "Query": "When was the Eiffel Tower built?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe search results clearly show that the Eiffel Tower was built from 1887 to 1889. Let me provide a well-cited answer.\n\u003C/thinking\u003E\n\nThe **Eiffel Tower** was constructed between **1887 and 1889**. It is named after the engineer **Gustave Eiffel**, whose company designed and built it. The tower was built as a centerpiece for the **1889 World\u0027s Fair (Exposition Universelle)**, held in Paris to celebrate the 100th anniversary of the Storming of the Bastille. [Eiffel Tower](https://en.wikipedia.org/wiki/Eiffel_Tower)\n\nUpon its completion, it became the **world\u0027s tallest structure** at the time. [History of the world\u0027s tallest buildings](https://en.wikipedia.org/wiki/History_of_the_world%27s_tallest_buildings)\n\n---\n\n### References\n- [Eiffel Tower \u2013 Wikipedia](https://en.wikipedia.org/wiki/Eiffel_Tower)\n- [History of the world\u0027s tallest buildings \u2013 Wikipedia](https://en.wikipedia.org/wiki/History_of_the_world%27s_tallest_buildings)\n- [Exposition Universelle (1889) \u2013 Wikipedia](https://en.wikipedia.org/wiki/Exposition_Universelle_(1889))",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Eiffel_Tower",
+        "https://en.wikipedia.org/wiki/Gustave_Eiffel",
+        "https://en.wikipedia.org/wiki/Tokyo_Tower",
+        "https://en.wikipedia.org/wiki/Eiffel_(film)",
+        "https://en.wikipedia.org/wiki/Eiffel_Tower_(Six_Flags)",
+        "https://en.wikipedia.org/wiki/Watkin\u0027s_Tower",
+        "https://en.wikipedia.org/wiki/Landmark",
+        "https://en.wikipedia.org/wiki/History_of_the_world\u0027s_tallest_buildings",
+        "https://en.wikipedia.org/wiki/KCTV_Broadcast_Tower",
+        "https://en.wikipedia.org/wiki/Exposition_Universelle_(1889)"
+      ],
+      "SearchCount": 10,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_cdf3eb30.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc108",
+      "Query": "What is the population of Tokyo?",
+      "ActualAnswer": "\u003Cthinking\u003E\nBased on the search results, I have clear information about Tokyo\u0027s population. Let me compile the answer from the top results.\n\n1. From the Tokyo Wikipedia article: \u0022With a population of over 14 million in the city proper in 2023\u0022\n2. From the Demographics of Tokyo: \u0022population of Tokyo is 14,195,730\u0022\n\nI can use these two sources to answer the question.\n\u003C/thinking\u003E\n\n## Population of Tokyo\n\nTokyo, officially known as the **Tokyo Metropolis**, is the capital and most populous city of Japan. As of **2023**, Tokyo has a population of over **14 million people** in the city proper, with the figure recorded at approximately **14,195,730** \u2014 representing about **11.5% of Japan\u0027s total population**. [Tokyo](https://en.wikipedia.org/wiki/Tokyo) [Demographics of Tokyo](https://en.wikipedia.org/wiki/Demographics_of_Tokyo)\n\nTokyo is not only the most populous city in Japan but also one of the most populous metropolitan areas in the entire world.\n\n---\n\n### References\n- [Tokyo \u2013 Wikipedia](https://en.wikipedia.org/wiki/Tokyo)\n- [Demographics of Tokyo \u2013 Wikipedia](https://en.wikipedia.org/wiki/Demographics_of_Tokyo)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Tokyo",
+        "https://en.wikipedia.org/wiki/Demographics_of_Tokyo",
+        "https://en.wikipedia.org/wiki/List_of_cities_in_Tokyo_Metropolis_by_population",
+        "https://en.wikipedia.org/wiki/Special_wards_of_Tokyo",
+        "https://en.wikipedia.org/wiki/Greater_Tokyo_Area",
+        "https://en.wikipedia.org/wiki/World_population",
+        "https://en.wikipedia.org/wiki/List_of_first-level_administrative_divisions_by_population",
+        "https://en.wikipedia.org/wiki/Bombing_of_Tokyo",
+        "https://en.wikipedia.org/wiki/Minato,_Tokyo",
+        "https://en.wikipedia.org/wiki/Hachi%C5%8Dji"
+      ],
+      "SearchCount": 10,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_e4f42a02.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc109",
+      "Query": "What is the biggest country by land size?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe search results clearly confirm that Russia is the largest country in the world by land area, covering over 17,125,191 square kilometers.\n\u003C/thinking\u003E\n\n\uD83C\uDF0D **Russia** is the biggest country in the world by land size.\n\nAccording to Wikipedia, Russia covers over **17,125,191 square kilometers (6,612,073 sq mi)**, encompassing more than one-eighth of Earth\u0027s inhabited land area. [Geography of Russia](https://en.wikipedia.org/wiki/Geography_of_Russia)\n\nIt is also notably the largest country in Asia and spans across both Europe and Asia, making it a transcontinental nation of extraordinary scale. [List of countries and dependencies by area](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area)\n\n---\n\n**References**\n- [Geography of Russia \u2013 Wikipedia](https://en.wikipedia.org/wiki/Geography_of_Russia)\n- [List of countries and dependencies by area \u2013 Wikipedia](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area",
+        "https://en.wikipedia.org/wiki/List_of_European_countries_by_area",
+        "https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_area",
+        "https://en.wikipedia.org/wiki/List_of_largest_cities",
+        "https://en.wikipedia.org/wiki/Mexico",
+        "https://en.wikipedia.org/wiki/List_of_islands_by_area",
+        "https://en.wikipedia.org/wiki/List_of_companies_of_South_Africa",
+        "https://en.wikipedia.org/wiki/List_of_largest_cities_by_area",
+        "https://en.wikipedia.org/wiki/Geography_of_Australia",
+        "https://en.wikipedia.org/wiki/List_of_island_countries",
+        "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area",
+        "https://en.wikipedia.org/wiki/List_of_largest_empires",
+        "https://en.wikipedia.org/wiki/List_of_political_and_geographic_subdivisions_by_total_area_in_excess_of_1,000,000_square_kilometers",
+        "https://en.wikipedia.org/wiki/List_of_political_and_geographic_subdivisions_by_total_area_in_excess_of_200,000_square_kilometers",
+        "https://en.wikipedia.org/wiki/List_of_political_and_geographic_subdivisions_by_total_area_(all)",
+        "https://en.wikipedia.org/wiki/List_of_political_and_geographic_subdivisions_by_total_area_from_100,000_to_1,000,000_square_kilometers",
+        "https://en.wikipedia.org/wiki/List_of_political_and_geographic_subdivisions_by_total_area_from_3,000_to_5,000_square_kilometers",
+        "https://en.wikipedia.org/wiki/Geography_of_Russia",
+        "https://en.wikipedia.org/wiki/Perm,_Russia",
+        "https://en.wikipedia.org/wiki/Agricultural_land"
+      ],
+      "SearchCount": 20,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_6536474a.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/Russia\u0027"
+      ]
+    },
+    {
+      "CaseId": "tc201",
+      "Query": "Who wrote Romeo and Juliet?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe search results confirm that Romeo and Juliet was written by William Shakespeare. The Wikipedia article on Romeo and Juliet directly appears in the results. I can now provide a well-cited answer.\n\u003C/thinking\u003E\n\n*Romeo and Juliet* was written by **William Shakespeare**. It is a tragic play, formally known as *The Tragedy of Romeo and Juliet*, and is one of Shakespeare\u0027s most celebrated works. [Romeo and Juliet](https://en.wikipedia.org/wiki/Romeo_and_Juliet)\n\n---\n\n**References**\n- [Romeo and Juliet \u2013 Wikipedia](https://en.wikipedia.org/wiki/Romeo_and_Juliet)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Romeo_and_Juliet_(1968_film)",
+        "https://en.wikipedia.org/wiki/Romeo_and_Juliet_(Tchaikovsky)",
+        "https://en.wikipedia.org/wiki/Romeo_\u002B_Juliet",
+        "https://en.wikipedia.org/wiki/Tromeo_and_Juliet",
+        "https://en.wikipedia.org/wiki/Romeo_and_Juliet_(Dire_Straits_song)",
+        "https://en.wikipedia.org/wiki/Romeo_and_Juliet_in_Sarajevo",
+        "https://en.wikipedia.org/wiki/Romeo_and_Juliet",
+        "https://en.wikipedia.org/wiki/Romeo_and_Juliet_(1936_film)",
+        "https://en.wikipedia.org/wiki/Romeo_Juliet_(2015_film)",
+        "https://en.wikipedia.org/wiki/Romeo_\u0026_Juliet:_Sealed_with_a_Kiss"
+      ],
+      "SearchCount": 10,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_acc48a3f.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc202",
+      "Query": "What year did World War II end?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking about when World War II ended. This is a simple, well-known historical fact that doesn\u0027t require a Wikipedia search. World War II ended in 1945.\n\u003C/thinking\u003E\n\nWorld War II ended in **1945**. The war concluded in two stages:\n- **May 8, 1945 (V-E Day):** Victory in Europe, marking the surrender of Nazi Germany.\n- **September 2, 1945 (V-J Day):** Victory over Japan, after Japan\u0027s formal surrender, which ended the war in the Pacific.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_6a91ffd9.json",
+      "Status": 1,
+      "FailureReasons": [
+        "None of the expected URLs were referenced: https://en.wikipedia.org/wiki/End_of_World_War_II_in_Europe",
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/World_War_II\u0027",
+        "Wiki use mismatch: expected True, actual False",
+        "Search count 0 below minimum 1"
+      ]
+    },
+    {
+      "CaseId": "tc203",
+      "Query": "Who invented the telephone?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe search results clearly point to Alexander Graham Bell as the person credited with patenting the first practical telephone. There are also mentions of Antonio Meucci and others. Let me provide a comprehensive answer based on these results.\n\u003C/thinking\u003E\n\n## The Invention of the Telephone\n\nThe invention of the telephone is most commonly credited to **Alexander Graham Bell**, a Scottish-born inventor, scientist, and engineer who is credited with **patenting the first practical telephone**. He also co-founded the American Telephone and Telegraph Company (AT\u0026T). [Alexander Graham Bell](https://en.wikipedia.org/wiki/Alexander_Graham_Bell)\n\nHowever, the history of the telephone\u0027s invention is more complex and involves multiple contributors:\n\n- \uD83C\uDDEE\uD83C\uDDF9 **Antonio Meucci**, an Italian inventor, is also recognized by many as a key figure in the telephone\u0027s development, with some crediting him as the true inventor of the device. [Antonio Meucci](https://en.wikipedia.org/wiki/Antonio_Meucci)\n- \uD83C\uDDE9\uD83C\uDDEA **Philipp Reis** invented an early sound-transmitting device called the **Reis telephone** as far back as **1857**, with his first successful work dated to **October 1861**. [Reis telephone](https://en.wikipedia.org/wiki/Reis_telephone)\n\nThe question of who truly \u0022invented\u0022 the telephone has been the subject of significant legal and historical debate, involving lawyers, patents, and competing claims. [History of the Telephone](https://en.wikipedia.org/wiki/History_of_the_telephone)\n\n---\n\n### References\n- [Alexander Graham Bell \u2013 Wikipedia](https://en.wikipedia.org/wiki/Alexander_Graham_Bell)\n- [Antonio Meucci \u2013 Wikipedia](https://en.wikipedia.org/wiki/Antonio_Meucci)\n- [Reis Telephone \u2013 Wikipedia](https://en.wikipedia.org/wiki/Reis_telephone)\n- [History of the Telephone \u2013 Wikipedia](https://en.wikipedia.org/wiki/History_of_the_telephone)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Telephone",
+        "https://en.wikipedia.org/wiki/Alexander_Graham_Bell",
+        "https://en.wikipedia.org/wiki/Antonio_Meucci",
+        "https://en.wikipedia.org/wiki/The_Telephone_Cases",
+        "https://en.wikipedia.org/wiki/Reis_telephone",
+        "https://en.wikipedia.org/wiki/Mabel_Gardiner_Hubbard",
+        "https://en.wikipedia.org/wiki/The_Legend_of_Tennessee_Moltisanti",
+        "https://en.wikipedia.org/wiki/Edwin_S._Grosvenor",
+        "https://en.wikipedia.org/wiki/The_Buddy_Holly_Story",
+        "https://en.wikipedia.org/wiki/History_of_the_telephone"
+      ],
+      "SearchCount": 10,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_0052acd1.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc204",
+      "Query": "What is the speed of light?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe speed of light is a simple, well-known scientific fact that doesn\u0027t require a Wikipedia search. I can answer this directly.\n\u003C/thinking\u003E\n\nThe speed of light in a vacuum is approximately **299,792,458 meters per second (m/s)**, which is roughly **3 \u00D7 10\u2078 m/s** or about **186,282 miles per second**.\n\nThis value is denoted by the letter **c** and is a fundamental constant of nature. According to Einstein\u0027s theory of special relativity, nothing with mass can travel at or faster than the speed of light \u2014 making it the ultimate cosmic speed limit.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_2aa0ebfe.json",
+      "Status": 1,
+      "FailureReasons": [
+        "None of the expected URLs were referenced: https://en.wikipedia.org/wiki/Light",
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/Speed_of_light\u0027",
+        "Wiki use mismatch: expected True, actual False",
+        "Search count 0 below minimum 1"
+      ]
+    },
+    {
+      "CaseId": "tc205",
+      "Query": "Who painted the Mona Lisa?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking who painted the Mona Lisa. This is a simple, well-known fact that doesn\u0027t require a Wikipedia search. Leonardo da Vinci painted the Mona Lisa. However, per my instructions, I should use Wikipedia for facts that need references. This is a very basic fact, so I can answer directly without a search.\n\nActually, re-reading the instructions: \u0022Do not use wikipedia for creative, mathematical asks and simple facts such as what is the color of the sky.\u0022 The painter of the Mona Lisa is a simple, well-known fact, so I can answer without searching.\n\u003C/thinking\u003E\n\nThe **Mona Lisa** was painted by the Italian Renaissance artist **Leonardo da Vinci**. It is believed to have been created between approximately **1503 and 1519**. The painting is currently housed in the **Louvre Museum** in Paris, France, and is one of the most famous artworks in the world.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_8ebdc7d5.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/Mona_Lisa\u0027",
+        "Wiki use mismatch: expected True, actual False",
+        "Search count 0 below minimum 1"
+      ]
+    },
+    {
+      "CaseId": "tc206",
+      "Query": "What is the capital of Australia?",
+      "ActualAnswer": "\u003Cthinking\u003E\nThe user is asking about the capital of Australia. This is a simple, well-known fact that doesn\u0027t require a Wikipedia search. The capital of Australia is Canberra.\n\u003C/thinking\u003E\n\nThe capital of Australia is **Canberra**. It is a planned city that was purpose-built to serve as the nation\u0027s capital, and it has held that status since 1913. Canberra is located in the Australian Capital Territory (ACT) and is home to major governmental institutions, including the Parliament of Australia.",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_b2583d46.json",
+      "Status": 1,
+      "FailureReasons": [
+        "Expected URL not referenced: \u0027https://en.wikipedia.org/wiki/Canberra\u0027",
+        "Wiki use mismatch: expected True, actual False",
+        "Search count 0 below minimum 1"
+      ]
+    },
+    {
+      "CaseId": "tc207",
+      "Query": "Who built the Space Needle?",
+      "ActualAnswer": "\u003Cthinking\u003E\nI have some information from my searches. Let me now put together a comprehensive answer:\n1. The Space Needle was built for the 1962 World\u0027s Fair in Seattle.\n2. The Howard S. Wright Companies built the Space Needle (from the first search).\n3. The architect/designer was John Graham (mentioned in the Architecture of Seattle article), and more recently (for a renovation) Olson Kundig Architects.\n\nLet me search one more time specifically to confirm the original designer/architect of the Space Needle.\n\u003C/thinking\u003E\n\nBased on the search results, here is a comprehensive answer:\n\nThe **Space Needle** was **designed** by architect **John Graham** and his firm, and it was **constructed by the Howard S. Wright Companies**. It was built for the **1962 World\u0027s Fair** (Century 21 Exposition) in Seattle, Washington, rising 605 feet (184 m) tall. [Space Needle](https://en.wikipedia.org/wiki/Space_Needle)\n\nThe construction was carried out by the [Howard S. Wright Companies](https://en.wikipedia.org/wiki/Howard_S._Wright_Companies), a Seattle-based construction firm. The original concept is widely credited to **Edward Carlson**, a Seattle businessman, who sketched the initial idea on a napkin, while **John Graham \u0026 Company** developed and finalized the architectural design. [Architecture of Seattle](https://en.wikipedia.org/wiki/Architecture_of_Seattle)\n\nIn more recent years, for its major renovation, the Space Needle was redesigned by **Olson Kundig Architects**, with **Hoffman Construction Company** serving as the general contractor. [Space Needle](https://en.wikipedia.org/wiki/Space_Needle)\n\n---\n\n### References\n- [Space Needle \u2013 Wikipedia](https://en.wikipedia.org/wiki/Space_Needle)\n- [Howard S. Wright Companies \u2013 Wikipedia](https://en.wikipedia.org/wiki/Howard_S._Wright_Companies)\n- [Architecture of Seattle \u2013 Wikipedia](https://en.wikipedia.org/wiki/Architecture_of_Seattle)",
+      "ReferencedUrls": [
+        "https://en.wikipedia.org/wiki/Space_Needle",
+        "https://en.wikipedia.org/wiki/Kakeya_set",
+        "https://en.wikipedia.org/wiki/Safety_syringe",
+        "https://en.wikipedia.org/wiki/Howard_S._Wright_Companies",
+        "https://en.wikipedia.org/wiki/Atomic_Age_(design)",
+        "https://en.wikipedia.org/wiki/Cooke_and_Wheatstone_telegraph",
+        "https://en.wikipedia.org/wiki/Seattle_Center",
+        "https://en.wikipedia.org/wiki/Electrical_telegraph",
+        "https://en.wikipedia.org/wiki/List_of_Battle_for_Dream_Island_episodes",
+        "https://en.wikipedia.org/wiki/Compass",
+        "https://en.wikipedia.org/wiki/Space_Needle",
+        "https://en.wikipedia.org/wiki/The_Strat",
+        "https://en.wikipedia.org/wiki/Googie_architecture",
+        "https://en.wikipedia.org/wiki/1964_New_York_World\u0027s_Fair_pavilions",
+        "https://en.wikipedia.org/wiki/Architecture_of_Seattle",
+        "https://en.wikipedia.org/wiki/Seven_Sisters_(Moscow)",
+        "https://en.wikipedia.org/wiki/Chrysler_Building",
+        "https://en.wikipedia.org/wiki/Landmark_(hotel_and_casino)",
+        "https://en.wikipedia.org/wiki/Amazon_Spheres",
+        "https://en.wikipedia.org/wiki/History_of_Asmara",
+        "https://en.wikipedia.org/wiki/Space_Needle",
+        "https://en.wikipedia.org/wiki/List_of_Vanderbilt_University_people",
+        "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics",
+        "https://en.wikipedia.org/wiki/Timeline_of_1960s_counterculture",
+        "https://en.wikipedia.org/wiki/Space_Needle",
+        "https://en.wikipedia.org/wiki/Alexander_Graham_Bell",
+        "https://en.wikipedia.org/wiki/Landmark_(hotel_and_casino)",
+        "https://en.wikipedia.org/wiki/Chrysler_Building",
+        "https://en.wikipedia.org/wiki/Lumen_Field",
+        "https://en.wikipedia.org/wiki/1964_New_York_World\u0027s_Fair_pavilions",
+        "https://en.wikipedia.org/wiki/Architecture_of_Seattle",
+        "https://en.wikipedia.org/wiki/Nelson\u0027s_Column",
+        "https://en.wikipedia.org/wiki/Grantham",
+        "https://en.wikipedia.org/wiki/Central_Park"
+      ],
+      "SearchCount": 34,
+      "IsWikiUsed": true,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "C:\\Users\\raghu\\WikiQA-Agent\\src\\WikiQA.App\\bin\\Debug\\net10.0\\..\\..\\..\\..\\..\\transcripts\\deterministic_v1_b4b4b5b6_b4773368.json",
+      "Status": 0,
+      "FailureReasons": []
+    },
+    {
+      "CaseId": "tc208",
+      "Query": "What is the largest desert in the world?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc301",
+      "Query": "Tell me about Mercury",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc302",
+      "Query": "Tell me about Python",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc303",
+      "Query": "Tell me about the Jaguar",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc304",
+      "Query": "Tell me about Jordan",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc305",
+      "Query": "Tell me about Apple, the famous technology company",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc401",
+      "Query": "Did Einstein win a Nobel Prize for the theory of relativity?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc402",
+      "Query": "Was the Great Wall of China visible from space?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc403",
+      "Query": "Did Napoleon win the Battle of Waterloo?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc404",
+      "Query": "Did the Titanic sink on its first voyage?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc405",
+      "Query": "Who won the 2025 FIFA World Cup?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc406",
+      "Query": "What was the price of the Apple AirPower charging mat?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc407",
+      "Query": "Did humans and dinosaurs ever co-exist?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc501",
+      "Query": "Who was the architect of the building where Lincoln was shot?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc502",
+      "Query": "Who was the French president when the Eiffel Tower was built?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc503",
+      "Query": "What team did Michael Jordan play for when he won his first NBA championship?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc504",
+      "Query": "What is the nationality of the artist who painted the ceiling of the Sistine Chapel?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc505",
+      "Query": "What country was the inventor of the World Wide Web born in?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    },
+    {
+      "CaseId": "tc506",
+      "Query": "Who is the president of the country that won the 2024 T20 World Cup?",
+      "ActualAnswer": "",
+      "ReferencedUrls": [],
+      "SearchCount": 0,
+      "IsWikiUsed": false,
+      "IsWikiUseExpected": true,
+      "TranscriptPath": "",
+      "Status": 2,
+      "FailureReasons": [
+        "System failure: SystemFailure"
+      ]
+    }
+  ],
+  "PassCount": 11,
+  "FailCount": 5,
+  "IncompleteCount": 19
+}

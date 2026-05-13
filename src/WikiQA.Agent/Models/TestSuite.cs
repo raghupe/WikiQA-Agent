@@ -4,5 +4,6 @@ public record TestSuite(
     string Name,
     int Version,
     string Description,
+    EvalType EvalType,
     IReadOnlyList<TestCase> Cases
 );

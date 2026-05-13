@@ -15,20 +15,20 @@ public class WikipediaSearchTool(ILogger<WikipediaSearchTool> logger, ILogger<Wi
 
     public static Anthropic.SDK.Common.Tool Definition { get; } = BuildDefinition();
 
-    public async Task<(string Json, WikipediaResult? Result)> ExecuteAsync(string question, string correlationId)
+    public async Task<(string Json, IReadOnlyList<WikipediaResult> Results)> ExecuteAsync(string question, string correlationId)
     {
         logger.LogInformation("[{CorrelationId}] Tool 'wikipedia_search' invoked with: {Question}", correlationId, question);
 
-        var result = await _client.SearchAsync(question, correlationId);
+        var results = await _client.SearchAsync(question, correlationId);
 
-        if (result is null)
+        if (results.Count == 0)
         {
-            logger.LogWarning("[{CorrelationId}] Tool 'wikipedia_search' returned no result for: {Question}", correlationId, question);
-            return ("No Wikipedia article found.", null);
+            logger.LogWarning("[{CorrelationId}] Tool 'wikipedia_search' returned no results for: {Question}", correlationId, question);
+            return ("No Wikipedia articles found.", []);
         }
 
-        logger.LogInformation("[{CorrelationId}] Tool 'wikipedia_search' succeeded: {Title}", correlationId, result.Title);
-        return (JsonSerializer.Serialize(result), result);
+        logger.LogInformation("[{CorrelationId}] Tool 'wikipedia_search' returned {Count} results", correlationId, results.Count);
+        return (JsonSerializer.Serialize(results), results);
     }
 
     private static Anthropic.SDK.Common.Tool BuildDefinition()

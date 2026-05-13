@@ -17,7 +17,7 @@ public class WikipediaClient(ILogger<WikipediaClient> logger)
     };
     private const int MaxRetries = 3;
 
-    public async Task<WikipediaResult?> SearchAsync(string query, string correlationId)
+    public async Task<IReadOnlyList<WikipediaResult>> SearchAsync(string query, string correlationId)
     {
         for (int attempt = 1; attempt <= MaxRetries; attempt++)
         {
@@ -25,36 +25,40 @@ public class WikipediaClient(ILogger<WikipediaClient> logger)
             {
                 logger.LogInformation("[{CorrelationId}] Wikipedia search attempt {Attempt} for: {Query}", correlationId, attempt, query);
 
-                var searchUrl = $"https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch={Uri.EscapeDataString(query)}&format=json&utf8=1&srlimit=1";
+                var searchUrl = $"https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch={Uri.EscapeDataString(query)}&format=json&utf8=1&srlimit=3";
                 var searchResult = await Http.GetFromJsonAsync<JsonNode>(searchUrl);
 
-                var hit = searchResult?["query"]?["search"]?[0];
-                if (hit is null)
+                var hits = searchResult?["query"]?["search"]?.AsArray();
+                if (hits is null || hits.Count == 0)
                 {
                     logger.LogWarning("[{CorrelationId}] No search results found for: {Query}", correlationId, query);
-                    return null;
+                    return [];
                 }
 
-                var title   = hit["title"]?.GetValue<string>() ?? string.Empty;
-                var snippet = hit["snippet"]?.GetValue<string>() ?? string.Empty;
-                var pageUrl = $"https://en.wikipedia.org/wiki/{Uri.EscapeDataString(title.Replace(' ', '_'))}";
+                var results = hits.Select(hit =>
+                {
+                    var title = hit?["title"]?.GetValue<string>() ?? string.Empty;
+                    var snippet = hit?["snippet"]?.GetValue<string>() ?? string.Empty;
+                    var pageUrl = new UriBuilder("https", "en.wikipedia.org") { Path = $"/wiki/{title.Replace(' ', '_')}" }.Uri.AbsoluteUri;
+                    return new WikipediaResult(title, snippet, pageUrl);
+                }).ToList();
 
-                logger.LogInformation("[{CorrelationId}] Found article: {Title} | {PageUrl}", correlationId, title, pageUrl);
-
-                return new WikipediaResult(title, snippet, pageUrl);
+                logger.LogInformation("[{CorrelationId}] Found {Count} results for: {Query}", correlationId, results.Count, query);
+                return results;
             }
             catch (HttpRequestException ex) when (ex.StatusCode == HttpStatusCode.TooManyRequests)
             {
-                logger.LogWarning("[{CorrelationId}] Rate limited on attempt {Attempt}, retrying in {Delay}s", correlationId, attempt, attempt);
-                if (attempt == MaxRetries) return null;
-                await Task.Delay(TimeSpan.FromSeconds(attempt));
+                var delay = (int)Math.Pow(2, attempt + 1);
+                logger.LogWarning("[{CorrelationId}] Rate limited on attempt {Attempt}, retrying in {Delay}s", correlationId, attempt, delay);
+                if (attempt == MaxRetries) return [];
+                await Task.Delay(TimeSpan.FromSeconds(delay));
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, "[{CorrelationId}] Unexpected error searching Wikipedia for: {Query}", correlationId, query);
-                return null;
+                return [];
             }
         }
-        return null;
+        return [];
     }
 }

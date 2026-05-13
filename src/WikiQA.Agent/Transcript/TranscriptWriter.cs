@@ -6,6 +6,7 @@ namespace WikiQA.Agent.Transcript;
 
 public class TranscriptWriter(string transcriptsDirectory)
 {
+    public string TranscriptsDirectory => transcriptsDirectory;
     private static readonly JsonSerializerOptions JsonOptions = new()
     {
         WriteIndented = true,

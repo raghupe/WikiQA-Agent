@@ -6,5 +6,6 @@ public record EvalRunResult(
     DateTimeOffset RunAt,
     IReadOnlyList<EvalResult> Results,
     int PassCount,
-    int FailCount
+    int FailCount,
+    int IncompleteCount
 );
