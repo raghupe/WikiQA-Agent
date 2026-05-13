@@ -1,0 +1,14 @@
+{
+  "name": "basic",
+  "version": 1,
+  "description": "Basic factual Q&A test suite",
+  "cases": [
+    {
+      "id": "tc001",
+      "category": "KeyWordTest",
+      "query": "Who built the Space Needle?",
+      "expectedKeywords": ["John Graham"],
+      "anyReferencedUrls": ["https://en.wikipedia.org/wiki/Space_Needle"]
+    }
+  ]
+}

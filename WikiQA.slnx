@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/evals/">
+    <Project Path="evals/WikiQA.Evals/WikiQA.Evals.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/WikiQA.Agent/WikiQA.Agent.csproj" />
+    <Project Path="src/WikiQA.App/WikiQA.App.csproj" />
+  </Folder>
+</Solution>
