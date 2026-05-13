@@ -1,16 +1,16 @@
 using WikiQA.Evals;
 using WikiQA.Agent.Agent;
 using WikiQA.Agent.Prompts;
-using Microsoft.Extensions.Logging;
+using WikiQA.Agent.Transcript;
 
-using var loggerFactory = LoggerFactory.Create(builder => builder.AddConsole());
-var agentLogger = loggerFactory.CreateLogger<WikipediaAgent>();
+var transcriptLogger = new TranscriptLoggerProvider();
+var transcriptWriter = new TranscriptWriter(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "..", "transcripts"));
 
 var promptBuilder = new PromptBuilder(Path.Combine(AppContext.BaseDirectory, "Prompts"));
 
 if (args is ["--eval", var suiteName])
 {
-    var agent = new WikipediaAgent(promptBuilder, agentLogger, loggerFactory);
+    var agent = new WikipediaAgent(promptBuilder, transcriptLogger, transcriptWriter);
     var executor = new EvalExecutor(
         Path.Combine(AppContext.BaseDirectory, "Suites"),
         agent);
@@ -22,8 +22,17 @@ if (args is ["--eval", var suiteName])
     Console.WriteLine();
     foreach (var r in run.Results)
     {
-        var status = r.Passed ? "PASS" : "FAIL";
-        Console.WriteLine($"[{status}] {r.CaseId}: {r.Query}");
+        if (r.Passed)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"[PASS] {r.CaseId}: {r.Query}");
+        }
+        else
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"[FAIL] {r.CaseId}: {r.Query}");
+        }
+        Console.ResetColor();
         Console.WriteLine($"       Response: {r.ActualAnswer}");
         if (r.ReferencedUrls.Count > 0)
             Console.WriteLine($"       Sources: {string.Join(", ", r.ReferencedUrls)}");
@@ -38,5 +47,5 @@ Console.WriteLine("============");
 Console.Write("Enter your question: ");
 var query = Console.ReadLine() ?? string.Empty;
 
-var response = await new WikipediaAgent(promptBuilder, agentLogger, loggerFactory).AnswerAsync(query);
+var response = await new WikipediaAgent(promptBuilder, transcriptLogger, transcriptWriter).AnswerAsync(query);
 Console.WriteLine($"\nAnswer: {response.Answer}");

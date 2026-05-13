@@ -11,11 +11,13 @@ public class EvalExecutor(string suitesDirectory, IQAAgent agent)
     public async Task<EvalRunResult> RunAsync(string suiteName)
     {
         var suite = LoadSuite(suiteName);
+        var runId = Guid.NewGuid().ToString("N")[..8];
         var results = new List<EvalResult>();
 
         foreach (var testCase in suite.Cases)
         {
-            var response = await agent.AnswerAsync(testCase.Query);
+            var correlationId = $"{runId}_{suiteName}_{Guid.NewGuid().ToString("N")[..8]}";
+            var response = await agent.AnswerAsync(testCase.Query, correlationId);
             var sourceUrls = response.Sources.Select(s => s.PageUrl).ToList();
 
             var failures = testCase.ExpectedKeywords

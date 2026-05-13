@@ -2,6 +2,9 @@
 bin/
 obj/
 
+# Transcripts
+transcripts/
+
 # .NET
 *.user
 .vs/
